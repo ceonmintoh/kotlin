@@ -43,6 +43,10 @@ buildscript {
     }
 }
 
+plugins {
+    maven
+}
+
 apply { plugin("kotlin") }
 
 val jarContents by configurations.creating
@@ -109,4 +113,78 @@ artifacts.add(default.name, shadowJar.outputs.files.singleFile) {
     classifier = ""
 }
 
+artifacts.add("archives", shadowJar.outputs.files.singleFile) {
+    builtBy(shadowJar)
+    classifier = ""
+}
 
+apply<plugins.PublishedKotlinModule>()
+
+//tasks {
+//    "uploadArchives"(Upload::class) {
+//
+//        val preparePublication by rootProject.tasks
+//        dependsOn(preparePublication)
+//
+//        val username: String? by preparePublication.extra
+//        val password: String? by preparePublication.extra
+//
+//        repositories {
+//            withConvention(MavenRepositoryHandlerConvention::class) {
+//
+//                mavenDeployer {
+//                    withGroovyBuilder {
+//                        "repository"("url" to uri(preparePublication.extra["repoUrl"]))
+//
+//                        if (username != null && password != null) {
+//                            "authentication"("userName" to username, "password" to password)
+//                        }
+//                    }
+//
+//                    pom.project {
+//                        withGroovyBuilder {
+//                            "licenses" {
+//                                "license" {
+//                                    "name"("The Apache Software License, Version 2.0")
+//                                    "url"("http://www.apache.org/licenses/LICENSE-2.0.txt")
+//                                    "distribution"("repo")
+//                                }
+//                            }
+//                            "name"("${project.group}:${project.name}")
+//                            "packaging"("jar")
+//                            // optionally artifactId can be defined here
+//                            "description"(project.description)
+//                            "url"("https://kotlinlang.org/")
+//                            "licenses" {
+//                                "license" {
+//                                    "name"("The Apache License, Version 2.0")
+//                                    "url"("http://www.apache.org/licenses/LICENSE-2.0.txt")
+//                                }
+//                            }
+//                            "scm" {
+//                                "url"("https://github.com/JetBrains/kotlin")
+//                                "connection"("scm:git:https://github.com/JetBrains/kotlin.git")
+//                                "developerConnection"("scm:git:https://github.com/JetBrains/kotlin.git")
+//                            }
+//                            "developers" {
+//                                "developer" {
+//                                    "name"("Kotlin Team")
+//                                    "organization"("JetBrains")
+//                                    "organizationUrl"("https://www.jetbrains.com")
+//                                }
+//                            }
+//                        }
+//                    }
+//                    pom.whenConfigured {
+//                        dependencies.clear()
+////                        dependencies.removeIf {
+////                            withGroovyBuilder {
+////                                "scope"(*emptyArray()) == "test"
+////                            }
+////                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}

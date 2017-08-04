@@ -1,5 +1,5 @@
 // modules
-include ":buildSrc" // this fixes import into idea, so buildsrc is not longer imported with different gradle version
+//include ":buildSrc" // this fixes import into idea, so buildsrc is not longer imported with different gradle version
 include ":build-common",
         ":compiler",
         ":compiler:util",

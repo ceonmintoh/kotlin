@@ -129,6 +129,7 @@ apply {
     from("libraries/commonConfiguration.gradle")
     from("libraries/gradlePluginsConfiguration.gradle")
     from("libraries/configureGradleTools.gradle")
+//    from("libraries/prepareSonatypeStaging.gradle")
 }
 
 val importedAntTasksPrefix = "imported-ant-update-"

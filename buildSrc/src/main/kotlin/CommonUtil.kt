@@ -38,9 +38,6 @@ fun Project.dist(body: Copy.() -> Unit) {
     }
 }
 
-fun Project.publish() {
-
-}
 
 fun Project.ideaPlugin(subdir: String = "lib", body: Copy.() -> Unit) {
     task<Copy>("idea-plugin") {
