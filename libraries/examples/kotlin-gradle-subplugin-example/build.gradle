@@ -16,6 +16,9 @@ dependencies {
 
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compileOnly project(':compiler')
+    compileOnly project(':compiler:plugin-api')
+    compileOnly project(':compiler:cli-common')
+    compileOnly project(':compiler:cli')
     
     compileOnly "org.jetbrains.kotlin:gradle-api:1.6"
 }
