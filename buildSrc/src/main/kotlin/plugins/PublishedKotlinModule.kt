@@ -1,8 +1,10 @@
 package plugins
 
+import org.codehaus.groovy.runtime.InvokerHelper
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.dsl.RepositoryHandler
+import org.gradle.api.artifacts.maven.GroovyMavenDeployer
 
 import org.gradle.api.plugins.MavenRepositoryHandlerConvention
 import org.gradle.api.tasks.Upload
@@ -69,18 +71,18 @@ open class PublishedKotlinModule : Plugin<Project> {
                                     "developers" {
                                         "developer" {
                                             "name"("Kotlin Team")
-                                            "organization"( "name" to "JetBrains", "url" to "https://www.jetbrains.com")
+                                            "organization" {
+                                                "name"("JetBrains")
+                                                "url"("https://www.jetbrains.com")
+                                            }
                                         }
                                     }
                                 }
                             }
                             pom.whenConfigured {
-                                dependencies.clear()
-//                        dependencies.removeIf {
-//                            withGroovyBuilder {
-//                                "scope"(*emptyArray()) == "test"
-//                            }
-//                        }
+                                dependencies.removeIf {
+                                    InvokerHelper.getMetaClass(it).getProperty(it, "scope") == "test"
+                                }
                             }
                         }
                     }
