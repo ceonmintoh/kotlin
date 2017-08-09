@@ -70,7 +70,7 @@ dependencies {
     testCompile(commonDep("junit:junit"))
     testCompile(project(":kotlin-test:kotlin-test-jvm"))
     testCompile(project(":kotlin-test:kotlin-test-junit"))
-    testRuntimeCompilerJar(project(":compiler", configuration = "compilerJar"))
+    testRuntimeCompilerJar(project(":prepare:compiler", configuration = "compilerJar"))
     testStdlibJar(project(":kotlin-stdlib", configuration = "mainJar"))
     testScriptRuntimeJar(project(":kotlin-script-runtime", configuration = "mainJar"))
 }

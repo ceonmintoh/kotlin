@@ -11,8 +11,11 @@ buildscript {
     }
 }
 
-val embedCfg = configurations.create("embed")
-val mainCfg = configurations.create("default")
+val archives by configurations.creating
+
+val compilerJar by configurations.creating
+
+val embeddableCompilerJar by configurations.creating
 
 val embeddableCompilerBaseName: String by rootProject.extra
 
@@ -31,16 +34,18 @@ val packagesToRelocate =
                "org.fusesource")
 
 dependencies {
-    embedCfg(project(":prepare:compiler", configuration = "default"))
+    compilerJar(project(":prepare:compiler", configuration = "compilerJar"))
 }
 
-val embeddableTask = task<ShadowJar>("prepare") {
+val embeddable by task<ShadowJar> {
     destinationDir = File(buildDir, "libs")
     baseName = embeddableCompilerBaseName
-    configurations = listOf(mainCfg)
+    classifier = ""
+    version = rootProject.extra["build.number"] as String
+    configurations = listOf(embeddableCompilerJar)
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    dependsOn(":build-common:assemble", ":core:script.runtime:assemble")
-    from(embedCfg.files)
+    dependsOn(":prepare:compiler:proguard")
+    from(compilerJar)
     relocate("com.google.protobuf", "org.jetbrains.kotlin.protobuf")
     packagesToRelocate.forEach {
         relocate(it, "$kotlinEmbeddableRootPackage.$it")
@@ -51,9 +56,11 @@ val embeddableTask = task<ShadowJar>("prepare") {
     }
 }
 
-defaultTasks(embeddableTask.name)
+defaultTasks(embeddable.name)
 
-artifacts.add(mainCfg.name, embeddableTask.outputs.files.singleFile) {
-    builtBy(embeddableTask)
-    classifier = ""
+artifacts.add("archives", embeddable.outputs.files.singleFile) {
+    builtBy(embeddable)
 }
+
+apply<plugins.PublishedKotlinModule>()
+

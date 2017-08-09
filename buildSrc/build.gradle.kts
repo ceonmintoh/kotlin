@@ -27,3 +27,10 @@ apply {
 plugins {
     `kotlin-dsl`
 }
+
+samWithReceiver {
+    annotation("org.gradle.api.HasImplicitReceiver")
+}
+
+fun Project.`samWithReceiver`(configure: org.jetbrains.kotlin.samWithReceiver.gradle.SamWithReceiverExtension.() -> Unit): Unit =
+        extensions.configure("samWithReceiver", configure)
