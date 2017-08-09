@@ -3,6 +3,7 @@ import java.io.File
 import proguard.gradle.ProGuardTask
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.gradle.api.file.DuplicatesStrategy
+import org.gradle.jvm.tasks.Jar
 
 buildscript {
     repositories {
@@ -15,16 +16,19 @@ buildscript {
     }
 }
 
+apply { plugin("java") }
+
 // Set to false to disable proguard run on kotlin-compiler.jar. Speeds up the build
 val shrink = true
 val compilerManifestClassPath =
         "kotlin-runtime.jar kotlin-reflect.jar kotlin-script-runtime.jar"
 
 val fatJarContents by configurations.creating
+val fatSourcesJarContents by configurations.creating
 val proguardLibraryJars by configurations.creating
 val fatJar by configurations.creating
 val compilerJar by configurations.creating
-val archives by configurations.creating
+val archives by configurations
 
 val compilerBaseName: String by rootProject.extra
 
@@ -53,6 +57,9 @@ fun firstFromJavaHomeThatExists(vararg paths: String): File =
 dependencies {
     compilerModules.forEach {
         fatJarContents(project(it)) { isTransitive = false }
+        fatSourcesJarContents(project(it).run {
+            the<JavaPluginConvention>().sourceSets.getByName("main").allSource
+        })
     }
     buildVersion()
 
@@ -122,6 +129,19 @@ dist {
         from(packCompiler)
     }
     rename(".*", compilerBaseName + ".jar")
+}
+
+archives.artifacts.clear()
+
+
+val sourcesJar by task<Jar> {
+    baseName = compilerBaseName
+    classifier = "sources"
+    setupRuntimeJar("Kotlin Compiler Sources")
+    from(fatSourcesJarContents)
+    project.artifacts.add(archives.name, this) {
+        classifier = "sources"
+    }
 }
 
 artifacts.add(compilerJar.name, proguard.outputs.files.singleFile) {
