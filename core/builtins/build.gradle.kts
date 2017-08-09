@@ -48,9 +48,16 @@ tasks.withType<KotlinCompile> {
     dependsOn(serialize)
 }
 
+val jar: Jar by tasks
+jar.apply {
+    dependsOn(serialize)
+    from(builtinsSerialized) { include("kotlin/**") }
+}
+
 val builtinsJar by task<Jar> {
     dependsOn(serialize)
     from(builtinsSerialized) { include("kotlin/**") }
+    baseName = "platform-builtins"
     destinationDir = File(buildDir, "libs")
 }
 
