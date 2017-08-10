@@ -16,7 +16,9 @@ buildscript {
     }
 }
 
-apply { plugin("java") }
+plugins {
+    `java-base`
+}
 
 // Set to false to disable proguard run on kotlin-compiler.jar. Speeds up the build
 val shrink = true
@@ -54,12 +56,16 @@ fun firstFromJavaHomeThatExists(vararg paths: String): File =
         paths.mapNotNull { File(javaHome, it).takeIf { it.exists() } }.firstOrNull()
                 ?: throw GradleException("Cannot find under '$javaHome' neither of: ${paths.joinToString()}")
 
+val compiledModulesSources = compilerModules.map {
+    project(it).the<JavaPluginConvention>().sourceSets.getByName("main").allSource
+}
+
 dependencies {
     compilerModules.forEach {
         fatJarContents(project(it)) { isTransitive = false }
-        fatSourcesJarContents(project(it).run {
-            the<JavaPluginConvention>().sourceSets.getByName("main").allSource
-        })
+    }
+    compiledModulesSources.forEach {
+        fatSourcesJarContents(it)
     }
     buildVersion()
 
@@ -131,7 +137,7 @@ dist {
     rename(".*", compilerBaseName + ".jar")
 }
 
-archives.artifacts.clear()
+//archives.artifacts.clear()
 
 
 val sourcesJar by task<Jar> {
