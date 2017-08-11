@@ -57,17 +57,19 @@ fun firstFromJavaHomeThatExists(vararg paths: String): File =
         paths.mapNotNull { File(javaHome, it).takeIf { it.exists() } }.firstOrNull()
                 ?: throw GradleException("Cannot find under '$javaHome' neither of: ${paths.joinToString()}")
 
-//val compiledModulesSources = compilerModules.map {
-//    project(it).the<JavaPluginConvention>().sourceSets.getByName("main").allSource
-//}
+compilerModules.forEach { evaluationDependsOn(it) }
+
+val compiledModulesSources = compilerModules.map {
+    project(it).the<JavaPluginConvention>().sourceSets.getByName("main").allSource
+}
 
 dependencies {
     compilerModules.forEach {
         fatJarContents(project(it)) { isTransitive = false }
     }
-//    compiledModulesSources.forEach {
-//        fatSourcesJarContents(it)
-//    }
+    compiledModulesSources.forEach {
+        fatSourcesJarContents(it)
+    }
 //    buildVersion()
 
     fatJarContents(project(":core:builtins", configuration = "builtins"))
@@ -141,7 +143,9 @@ runtimeJarArtifactBy(proguard, proguard.outputs.files.singleFile) {
     name = compilerBaseName
     classifier = ""
 }
-sourcesJar()
+sourcesJar {
+    from(fatSourcesJarContents)
+}
 javadocJar()
 
 publish()
