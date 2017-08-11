@@ -14,9 +14,9 @@ dependencies {
     testCompile(project(":plugins:android-extensions-compiler"))
     testCompile(project(":plugins:android-extensions-idea"))
     testCompile(project(":plugins:allopen-ide")) { isTransitive = false }
-    testCompile(project(":plugins:allopen-cli"))
+    testCompile(project(":kotlin-allopen-compiler-plugin"))
     testCompile(project(":plugins:noarg-ide")) { isTransitive = false }
-    testCompile(project(":plugins:noarg-cli"))
+    testCompile(project(":kotlin-noarg-compiler-plugin"))
     testCompile(project(":plugins:annotation-based-compiler-plugins-ide-support")) { isTransitive = false }
     testCompile(project(":plugins:sam-with-receiver-ide")) { isTransitive = false }
     testCompile(project(":kotlin-sam-with-receiver-compiler-plugin"))

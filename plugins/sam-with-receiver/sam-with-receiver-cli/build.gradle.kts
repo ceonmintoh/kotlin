@@ -10,6 +10,7 @@ dependencies {
     compileOnly(project(":compiler:frontend.java"))
     compileOnly(project(":compiler:plugin-api"))
     runtime(project(":kotlin-compiler", configuration = "runtimeJar"))
+    runtime(project(":kotlin-stdlib"))
 }
 
 configureKotlinProjectSourcesDefault()
