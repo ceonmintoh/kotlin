@@ -84,7 +84,7 @@ dependencies {
     testCompile(project(":plugins:noarg-cli"))
     testCompile(project(":plugins:annotation-based-compiler-plugins-ide-support")) { isTransitive = false }
     testCompile(project(":plugins:sam-with-receiver-ide")) { isTransitive = false }
-    testCompile(project(":plugins:sam-with-receiver-cli"))
+    testCompile(project(":kotlin-sam-with-receiver-compiler-plugin"))
     testCompile(project(":idea:idea-android")) { isTransitive = false }
     testCompile(project(":plugins:lint")) { isTransitive = false }
     testCompile(project(":plugins:uast-kotlin"))

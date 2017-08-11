@@ -59,7 +59,7 @@ include ":build-common",
         ":plugins:allopen-ide",
         ":plugins:noarg-cli",
         ":plugins:noarg-ide",
-        ":plugins:sam-with-receiver-cli",
+        ":kotlin-sam-with-receiver-compiler-plugin",
         ":plugins:sam-with-receiver-ide",
         ":plugins:source-sections-compiler",
         ":plugins:uast-kotlin",
@@ -141,7 +141,7 @@ project(':plugins:allopen-cli').projectDir = "$rootDir/plugins/allopen/allopen-c
 project(':plugins:allopen-ide').projectDir = "$rootDir/plugins/allopen/allopen-ide" as File
 project(':plugins:noarg-cli').projectDir = "$rootDir/plugins/noarg/noarg-cli" as File
 project(':plugins:noarg-ide').projectDir = "$rootDir/plugins/noarg/noarg-ide" as File
-project(':plugins:sam-with-receiver-cli').projectDir = "$rootDir/plugins/sam-with-receiver/sam-with-receiver-cli" as File
+project(':kotlin-sam-with-receiver-compiler-plugin').projectDir = "$rootDir/plugins/sam-with-receiver/sam-with-receiver-cli" as File
 project(':plugins:sam-with-receiver-ide').projectDir = "$rootDir/plugins/sam-with-receiver/sam-with-receiver-ide" as File
 project(':plugins:source-sections-compiler').projectDir = "$rootDir/plugins/source-sections/source-sections-compiler" as File
 project(':tools:binary-compatibility-validator').projectDir = "$rootDir/libraries/tools/binary-compatibility-validator" as File
