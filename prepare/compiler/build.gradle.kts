@@ -3,7 +3,8 @@ import java.io.File
 import proguard.gradle.ProGuardTask
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.gradle.api.file.DuplicatesStrategy
-import org.gradle.jvm.tasks.Jar
+
+description = "Kotlin Compiler"
 
 buildscript {
     repositories {
@@ -56,18 +57,18 @@ fun firstFromJavaHomeThatExists(vararg paths: String): File =
         paths.mapNotNull { File(javaHome, it).takeIf { it.exists() } }.firstOrNull()
                 ?: throw GradleException("Cannot find under '$javaHome' neither of: ${paths.joinToString()}")
 
-val compiledModulesSources = compilerModules.map {
-    project(it).the<JavaPluginConvention>().sourceSets.getByName("main").allSource
-}
+//val compiledModulesSources = compilerModules.map {
+//    project(it).the<JavaPluginConvention>().sourceSets.getByName("main").allSource
+//}
 
 dependencies {
     compilerModules.forEach {
         fatJarContents(project(it)) { isTransitive = false }
     }
-    compiledModulesSources.forEach {
-        fatSourcesJarContents(it)
-    }
-    buildVersion()
+//    compiledModulesSources.forEach {
+//        fatSourcesJarContents(it)
+//    }
+//    buildVersion()
 
     fatJarContents(project(":core:builtins", configuration = "builtins"))
     fatJarContents(ideaSdkCoreDeps(*(rootProject.extra["ideaCoreSdkJars"] as Array<String>)))
@@ -98,11 +99,10 @@ val packCompiler by task<ShadowJar> {
     configurations = listOf(fatJar)
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     destinationDir = File(buildDir, "libs")
-    baseName = compilerBaseName
-    classifier = "before-proguard"
+//    baseName = compilerBaseName
     dependsOn(protobufFullTask)
 
-    setupRuntimeJar("Kotlin Compiler")
+    setupPublicJar("before-proguard", "")
     from(fatJarContents)
 
     manifest.attributes.put("Class-Path", compilerManifestClassPath)
@@ -137,29 +137,11 @@ dist {
     rename(".*", compilerBaseName + ".jar")
 }
 
-//archives.artifacts.clear()
-
-
-val sourcesJar by task<Jar> {
-    baseName = compilerBaseName
-    classifier = "sources"
-    setupRuntimeJar("Kotlin Compiler Sources")
-    from(fatSourcesJarContents)
-    project.artifacts.add(archives.name, this) {
-        classifier = "sources"
-    }
-}
-
-artifacts.add(compilerJar.name, proguard.outputs.files.singleFile) {
-    builtBy(proguard)
-    classifier = ""
-}
-
-
-artifacts.add(archives.name, proguard.outputs.files.singleFile) {
-    builtBy(proguard)
-    classifier = ""
+runtimeJarArtifactBy(proguard, proguard.outputs.files.singleFile) {
     name = compilerBaseName
+    classifier = ""
 }
+sourcesJar()
+javadocJar()
 
-apply<plugins.PublishedKotlinModule>()
+publish()
