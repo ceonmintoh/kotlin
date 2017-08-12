@@ -9,7 +9,6 @@ dependencies {
     buildVersion()
 }
 
-//configureKotlinProjectSources("src", "instrumentation/src")
 sourceSets {
     "main" {
         java {
@@ -18,13 +17,9 @@ sourceSets {
     }
     "test" { none() }
 }
-//configureKotlinProjectNoTests()
 
-val jar = runtimeJar {
+runtimeJar {
     manifest.attributes.put("Main-Class", "org.jetbrains.kotlin.preloading.Preloader")
 }
 
-dist {
-    from(jar)
-}
-
+dist()
