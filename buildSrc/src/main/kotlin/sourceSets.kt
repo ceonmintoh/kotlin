@@ -75,3 +75,37 @@ fun Project.configureKotlinProjectTestResources(vararg srcs: String,
         configureKotlinProjectSourceSet(*srcs, sourceSetName = "test", getSources = { this.resources },
                 sourcesBaseDir = sourcesBaseDir, configureSourceDirs = configureSourceDirs)
 
+
+inline fun Project.sourceSets(crossinline body: SourceSetsBuilder.() -> Unit) =
+        SourceSetsBuilder(this).body()
+
+class SourceSetsBuilder(val project: Project) {
+
+    inline operator fun String.invoke(crossinline body: SourceSet.() -> Unit) {
+        val sourceSetName = this
+        project.configure<JavaPluginConvention>
+        {
+            sourceSets.matching { it.name == sourceSetName }.forEach {
+                it.body()
+            }
+        }
+    }
+}
+
+fun SourceSet.none() {
+    java.srcDirs()
+    resources.srcDirs()
+}
+
+fun SourceSet.default() {
+    when (name) {
+        "main" -> {
+            java.srcDirs("src")
+            resources.srcDir("resources")
+            resources.srcDir("src").apply { include("META-INF/**", "**/*.properties") }
+        }
+        "test" -> {
+            java.srcDirs("test, tests")
+        }
+    }
+}
