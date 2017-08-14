@@ -36,10 +36,8 @@ repositories {
 }
 
 dependencies {
-    compile(gradleApi())
-    compile("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extra["kotlin_version"]}")
-    compile("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
-    compile("org.jetbrains.kotlin:kotlin-reflect:${rootProject.extra["kotlin_version"]}")
+    // TODO: adding the dep to the plugin breaks the build unexpectedly, resolve and uncomment
+//    compile("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extra["kotlin_version"]}")
 }
 
 samWithReceiver {

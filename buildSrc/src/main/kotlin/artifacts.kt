@@ -82,9 +82,15 @@ fun Project.publish(body: Upload.() -> Unit = {}): Upload {
 
 fun Project.ideaPlugin(subdir: String = "lib", body: Copy.() -> Unit) {
     task<Copy>("idea-plugin") {
-        dependsOnTaskIfExists("assemble")
         body()
         into(File(rootProject.extra["ideaPluginDir"].toString(), subdir).path)
+        rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
+    }
+}
+
+fun Project.ideaPlugin() = ideaPlugin {
+    tasks.findByName("jar")?.let {
+        from(it)
     }
 }
 

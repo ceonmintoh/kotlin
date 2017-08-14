@@ -107,7 +107,7 @@ fun SourceSet.default() {
             resources.srcDir("src").apply { include("META-INF/**", "**/*.properties") }
         }
         "test" -> {
-            java.srcDirs("test, tests")
+            java.srcDirs("test", "tests")
         }
     }
 }
