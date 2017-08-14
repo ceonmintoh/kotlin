@@ -7,7 +7,7 @@ import org.gradle.api.plugins.JavaPluginConvention
 import org.gradle.api.tasks.*
 import org.gradle.kotlin.dsl.*
 import java.io.File
-import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
+//import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSet
 
 private fun Project.configureKotlinProjectSourceSet(srcs: Iterable<File>,
                                                     sourceSetName: String,
@@ -112,13 +112,14 @@ fun SourceSet.default() {
     }
 }
 
-val SourceSet.kotlin: SourceDirectorySet
-    get() =
-        (this as HasConvention)
-                .convention
-                .getPlugin(KotlinSourceSet::class.java)
-                .kotlin
-
-
-fun SourceSet.kotlin(action: SourceDirectorySet.() -> Unit) =
-        kotlin.action()
+// TODO: adding dep to the plugin breaks the build unexpectedly, resolve and uncomment
+//val SourceSet.kotlin: SourceDirectorySet
+//    get() =
+//        (this as HasConvention)
+//                .convention
+//                .getPlugin(KotlinSourceSet::class.java)
+//                .kotlin
+//
+//
+//fun SourceSet.kotlin(action: SourceDirectorySet.() -> Unit) =
+//        kotlin.action()
