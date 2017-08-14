@@ -2,7 +2,8 @@
 buildscript {
     extra["kotlin_version"] = file("../kotlin-version-for-gradle.txt").readText().trim()
     extra["kotlin_gradle_plugin_version"] = extra["kotlin_version"]
-    extra["repos"] = listOf("https://dl.bintray.com/kotlin/kotlin-dev",
+    extra["repos"] = listOf(
+            "https://dl.bintray.com/kotlin/kotlin-dev",
             "https://repo.gradle.org/gradle/repo",
             "https://plugins.gradle.org/m2",
             "http://repository.jetbrains.com/utils/")
@@ -26,6 +27,19 @@ apply {
 
 plugins {
     `kotlin-dsl`
+}
+
+repositories {
+    for (repo in (rootProject.extra["repos"] as List<String>)) {
+        maven { setUrl(repo) }
+    }
+}
+
+dependencies {
+    compile(gradleApi())
+    compile("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extra["kotlin_version"]}")
+    compile("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlin_version"]}")
+    compile("org.jetbrains.kotlin:kotlin-reflect:${rootProject.extra["kotlin_version"]}")
 }
 
 samWithReceiver {
