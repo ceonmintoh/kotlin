@@ -1,5 +1,17 @@
+pluginManagement {
+    repositories {
+        def pluginRepo = System.getProperty("bootstrap.kotlin.repo")
+        if (pluginRepo != null) {
+            maven {
+                url pluginRepo
+            }
+        }
+        gradlePluginPortal()
+    }
+}
+
 // modules
-include ":buildSrc" // this fixes import into idea, so buildsrc is not longer imported with different gradle version
+//include ":buildSrc" // this fixes import into idea, so buildsrc is not longer imported with different gradle version
 include ":build-common",
         ":compiler",
         ":compiler:util",
