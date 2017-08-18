@@ -1,4 +1,3 @@
-
 @file:Suppress("unused") // usages in build scripts are not tracked properly
 
 import org.gradle.api.*
@@ -16,11 +15,6 @@ val bootstrapKotlinVersion: String = System.getProperty("bootstrap.kotlin.versio
 
 fun PluginDependenciesSpec.kotlin(module: String, version: String? = null): PluginDependencySpec =
         id("org.jetbrains.kotlin.$module") version (version ?: bootstrapKotlinVersion)
-
-fun Project.buildVersion(): Dependency {
-    val cfg = configurations.create("build-version")
-    return dependencies.add(cfg.name, dependencies.project(":prepare:build.version", configuration = "default"))
-}
 
 fun Project.commonDep(coord: String): String {
     val parts = coord.split(':')
