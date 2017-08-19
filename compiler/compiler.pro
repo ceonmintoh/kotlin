@@ -58,6 +58,8 @@ messages/**)
 -dontwarn java.lang.invoke.MethodHandle
 -dontwarn org.jline.builtins.Nano$Buffer
 -dontwarn net.jpountz.lz4.LZ4Factory
+-dontwarn org.jetbrains.annotations.ReadOnly
+-dontwarn org.jetbrains.annotations.Mutable
 
 #-libraryjars '<rtjar>'
 #-libraryjars '<jssejar>'
