@@ -25,3 +25,5 @@ configureKotlinProjectResources("idea-analysis/src", sourcesBaseDir = File(rootD
     include("**/*.properties")
 }
 configureKotlinProjectNoTests()
+
+
