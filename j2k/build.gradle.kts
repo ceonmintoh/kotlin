@@ -6,9 +6,6 @@ apply { plugin("kotlin") }
 //}
 
 dependencies {
-    val compile by configurations
-    val testCompile by configurations
-    val testRuntime by configurations
     compile(project(":kotlin-stdlib"))
     compile(project(":compiler:frontend"))
     compile(project(":compiler:frontend.java"))
@@ -45,8 +42,10 @@ dependencies {
     buildVersion()
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 tasks.withType<Test> {
     dependsOnTaskIfExistsRec("dist", project = rootProject)

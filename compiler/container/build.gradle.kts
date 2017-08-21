@@ -2,11 +2,6 @@
 apply { plugin("kotlin") }
 
 dependencies {
-    val compile by configurations
-    val compileOnly by configurations
-    val testCompile by configurations
-    val testCompileOnly by configurations
-    val testRuntime by configurations
     compile(project(":core:util.runtime"))
     compile(commonDep("javax.inject"))
     compile(ideaSdkCoreDeps("intellij-core"))
@@ -15,11 +10,12 @@ dependencies {
     testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 testsJar {}
-
 
 tasks.withType<Test> {
     dependsOnTaskIfExistsRec("dist", project = rootProject)

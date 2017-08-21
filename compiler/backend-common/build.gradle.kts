@@ -14,5 +14,5 @@ sourceSets {
         projectDefault()
         java.srcDir("../ir/backend.common/src")
     }
-    "test" { none() }
+    "test" {}
 }

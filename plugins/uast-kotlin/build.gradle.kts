@@ -2,11 +2,6 @@
 apply { plugin("kotlin") }
 
 dependencies {
-    val compile by configurations
-    val compileOnly by configurations
-    val testCompile by configurations
-    val testCompileOnly by configurations
-    val testRuntime by configurations
     compile(project(":kotlin-stdlib"))
     compile(project(":core:util.runtime"))
     compile(project(":compiler:backend"))
@@ -14,7 +9,6 @@ dependencies {
     compile(project(":compiler:frontend.java"))
     compile(project(":compiler:light-classes"))
     compileOnly(ideaSdkDeps("openapi", "idea"))
-    buildVersion()
     testCompile(project(":kotlin-test:kotlin-test-jvm"))
     testCompile(project(":compiler.tests-common"))
     testCompile(commonDep("junit:junit"))
@@ -25,11 +19,12 @@ dependencies {
     testRuntime(ideaSdkDeps("*.jar"))
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 testsJar {}
-
 
 tasks.withType<Test> {
     workingDir = rootDir

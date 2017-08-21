@@ -4,11 +4,6 @@ apply {
 }
 
 dependencies {
-    val compile by configurations
-    val compileOnly by configurations
-    val testCompile by configurations
-    val testCompileOnly by configurations
-    val testRuntime by configurations
     compile(project(":core"))
     compile(project(":idea"))
     compile(project(":j2k"))
@@ -59,9 +54,10 @@ dependencies {
     testRuntime(ideaPluginDeps("*.jar", plugin = "android"))
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
-
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 tasks.withType<Test> {
     workingDir = rootDir

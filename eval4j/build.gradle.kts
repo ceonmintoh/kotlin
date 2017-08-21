@@ -1,8 +1,6 @@
 apply { plugin("kotlin") }
 
 dependencies {
-    val compile by configurations
-    val testCompile by configurations
     compile(project(":kotlin-stdlib"))
     compile(project(":kotlin-reflect"))
     compile(project(":compiler:backend"))
@@ -13,8 +11,10 @@ dependencies {
     buildVersion()
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 tasks.withType<Test> {
     dependsOnTaskIfExistsRec("dist", project = rootProject)

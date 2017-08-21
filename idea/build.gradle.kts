@@ -94,26 +94,21 @@ dependencies {
     buildVersion()
 }
 
-configureKotlinProjectSources("src",
-                              "idea-maven/src",
-                              "idea-gradle/src",
-                              "idea-completion/src",
-                              "idea-live-templates/src",
-                              "idea-repl/src")
-configure<JavaPluginConvention> {
-    sourceSets["main"].apply {
-        resources {
-            srcDir(File(projectDir, "resources"))
-                    .include("**")
-            srcDir(File(projectDir, "src"))
-                    .include("META-INF/**",
-                             "**/*.properties")
-        }
+sourceSets {
+    "main" {
+        projectDefault()
+        java.srcDirs("idea-maven/src",
+                     "idea-gradle/src",
+                     "idea-completion/src",
+                     "idea-live-templates/src",
+                     "idea-repl/src")
+    }
+    "test" {
+        java.srcDirs("tests",
+                     "idea-maven/test",
+                     "idea-completion/tests")
     }
 }
-configureKotlinProjectTests("tests",
-                            "idea-maven/test",
-                            "idea-completion/tests")
 
 tasks.withType<Test> {
     dependsOnTaskIfExistsRec("dist", project = rootProject)

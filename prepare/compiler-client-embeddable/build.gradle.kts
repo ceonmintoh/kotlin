@@ -43,8 +43,13 @@ dependencies {
     testScriptRuntimeJar(project(":kotlin-script-runtime", configuration = "mainJar"))
 }
 
-configureKotlinProjectSources() // no sources
-configureKotlinProjectTests("libraries/tools/kotlin-compiler-client-embeddable-test/src", sourcesBaseDir = rootDir)
+sourceSets {
+    "main" {}
+    "test" {
+        // TODO: move closer
+        java.srcDir("../../libraries/tools/kotlin-compiler-client-embeddable-test/src")
+    }
+}
 
 tasks.withType<Test> {
     dependsOnTaskIfExistsRec("dist", project = rootProject)

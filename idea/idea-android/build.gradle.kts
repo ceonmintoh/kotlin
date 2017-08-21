@@ -1,12 +1,7 @@
+
 apply { plugin("kotlin") }
 
 dependencies {
-    val compile by configurations
-    val compileOnly by configurations
-    val testCompile by configurations
-    val testCompileOnly by configurations
-    val testRuntime by configurations
-
     compile(project(":kotlin-reflect"))
     compile(project(":compiler:util"))
     compile(project(":compiler:light-classes"))
@@ -47,8 +42,10 @@ dependencies {
     testRuntime(ideaPluginDeps("*.jar", plugin = "android"))
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 tasks.withType<Test> {
     workingDir = rootDir

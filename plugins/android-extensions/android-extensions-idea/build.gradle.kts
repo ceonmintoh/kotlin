@@ -43,11 +43,12 @@ dependencies {
     testRuntime(ideaPluginDeps("*.jar", plugin = "android"))
 }
 
-configureKotlinProjectSourcesDefault()
-configureKotlinProjectTestsDefault()
+sourceSets {
+    "main" { projectDefault() }
+    "test" { projectDefault() }
+}
 
 testsJar {}
-
 
 tasks.withType<Test> {
     workingDir = rootDir

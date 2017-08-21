@@ -39,16 +39,18 @@ dependencies {
     buildVersion()
 }
 
-configureKotlinProjectSources(
-        "compiler/daemon/src",
-        "compiler/conditional-preprocessor/src",
-        sourcesBaseDir = rootDir)
-configureKotlinProjectResources("idea/src", sourcesBaseDir = rootDir) {
-    include("META-INF/extensions/common.xml",
-            "META-INF/extensions/kotlin2jvm.xml",
-            "META-INF/extensions/kotlin2js.xml")
+sourceSets {
+    "main" {
+        java.srcDirs("daemon/src",
+                     "conditional-preprocessor/src")
+        resources.srcDir("../idea/src").apply {
+            include("META-INF/extensions/common.xml",
+                    "META-INF/extensions/kotlin2jvm.xml",
+                    "META-INF/extensions/kotlin2js.xml")
+        }
+    }
+    "test" { projectDefault() }
 }
-configureKotlinProjectTests("tests")
 
 testsJar {}
 

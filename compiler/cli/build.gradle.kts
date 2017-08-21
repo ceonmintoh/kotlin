@@ -28,5 +28,5 @@ sourceSets {
                      "../builtins-serializer/src",
                      "../javac-wrapper/src")
     }
-    "test" { none() }
+    "test" {}
 }
