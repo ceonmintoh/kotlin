@@ -179,6 +179,7 @@ allprojects {
 
     tasks.withType<KotlinCompile> {
         kotlinOptions.freeCompilerArgs = listOf("-Xallow-kotlin-package", "-module-name", project.name)
+        kotlinOptions.jvmTarget = "1.8"
     }
 
     tasks.withType<Kotlin2JsCompile> {
