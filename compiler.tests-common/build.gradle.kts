@@ -30,6 +30,6 @@ dependencies {
 }
 
 sourceSets {
-    "main" { java.setSrcDirs(listOf("../compiler/tests-common")) }
+    "main" { java.srcDir("../compiler/tests-common") }
     "test" {}
 }

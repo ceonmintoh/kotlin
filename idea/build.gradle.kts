@@ -2,14 +2,6 @@
 apply { plugin("kotlin") }
 
 dependencies {
-    val compile by configurations
-    val compileOnly by configurations
-    val testCompile by configurations
-    val testCompileOnly by configurations
-    val testRuntime by configurations
-
-    testRuntime(ideaSdkDeps("*.jar"))
-
     compile(project(":kotlin-stdlib"))
     compile(project(":core"))
     compile(project(":compiler:backend"))
@@ -64,6 +56,8 @@ dependencies {
 
     testCompileOnly(ideaSdkDeps("groovy-all", "velocity", "gson", "jsr305"))
 
+    testRuntime(ideaSdkDeps("*.jar"))
+
     testRuntime(ideaPluginDeps("resources_en", plugin = "junit"))
     testRuntime(ideaPluginDeps("jcommander", "resources_en", plugin = "testng"))
     testRuntime(ideaPluginDeps("resources_en", plugin = "properties"))
@@ -90,8 +84,6 @@ dependencies {
     (rootProject.extra["compilerModules"] as Array<String>).forEach {
         testCompile(project(it))
     }
-
-    buildVersion()
 }
 
 sourceSets {
@@ -110,16 +102,9 @@ sourceSets {
     }
 }
 
-tasks.withType<Test> {
+projectTest {
     dependsOnTaskIfExistsRec("dist", project = rootProject)
-    jvmArgs("-ea", "-XX:+HeapDumpOnOutOfMemoryError", "-Xmx1200m", "-XX:+UseCodeCacheFlushing", "-XX:ReservedCodeCacheSize=128m", "-Djna.nosys=true")
-    maxHeapSize = "1200m"
     workingDir = rootDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
-    ignoreFailures = true
 }
 
 testsJar {}
-
-

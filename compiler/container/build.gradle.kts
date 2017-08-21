@@ -17,11 +17,8 @@ sourceSets {
 
 testsJar {}
 
-tasks.withType<Test> {
+projectTest {
     dependsOnTaskIfExistsRec("dist", project = rootProject)
     dependsOn(":prepare:mock-runtime-for-test:dist")
     workingDir = rootDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
-    ignoreFailures = true
 }

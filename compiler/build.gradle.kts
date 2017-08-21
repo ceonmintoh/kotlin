@@ -54,15 +54,10 @@ sourceSets {
 
 testsJar {}
 
-tasks.withType<Test> {
+projectTest {
     dependsOnTaskIfExistsRec("dist", project = rootProject)
     dependsOn(":prepare:mock-runtime-for-test:dist")
     workingDir = rootDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
     systemProperty("kotlin.test.script.classpath", the<JavaPluginConvention>().sourceSets.getByName("test").output.classesDirs.joinToString(File.pathSeparator))
-    jvmArgs("-ea", "-XX:+HeapDumpOnOutOfMemoryError", "-Xmx1200m", "-XX:+UseCodeCacheFlushing", "-XX:ReservedCodeCacheSize=128m", "-Djna.nosys=true")
-    maxHeapSize = "1200m"
-    ignoreFailures = true
 }
 

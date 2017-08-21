@@ -14,10 +14,7 @@ sourceSets {
     "test" { projectDefault() }
 }
 
-tasks.withType<Test> {
+projectTest {
     workingDir = projectDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
-    ignoreFailures = true
 }
 

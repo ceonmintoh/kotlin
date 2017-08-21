@@ -17,10 +17,10 @@ dependencies {
 
 sourceSets {
     "main" {
-        java.setSrcDirs(listOf("android-annotations/src",
-                               "lint-api/src",
-                               "lint-checks/src",
-                               "lint-idea/src"))
+        java.srcDirs("android-annotations/src",
+                     "lint-api/src",
+                     "lint-checks/src",
+                     "lint-idea/src")
     }
     "test" {}
 }

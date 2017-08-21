@@ -31,12 +31,12 @@ fun SourceSet.none() {
 fun SourceSet.projectDefault() {
     when (name) {
         "main" -> {
-            java.setSrcDirs(listOf("src"))
-            resources.setSrcDirs(listOf("resources"))
+            java.srcDirs("src")
+            resources.srcDir("resources").apply { include("**") }
             resources.srcDir("src").apply { include("META-INF/**", "**/*.properties") }
         }
         "test" -> {
-            java.setSrcDirs(listOf("test", "tests"))
+            java.srcDirs("test", "tests")
         }
     }
 }

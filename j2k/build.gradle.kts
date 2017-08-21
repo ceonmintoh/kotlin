@@ -39,7 +39,6 @@ dependencies {
 //    testRuntime(ideaPluginDeps("*.jar", plugin = "java-i18n"))
 //    testRuntime(ideaPluginDeps("*.jar", plugin = "coverage"))
 //    testRuntime(ideaPluginDeps("*.jar", plugin = "java-decompiler"))
-    buildVersion()
 }
 
 sourceSets {
@@ -47,14 +46,9 @@ sourceSets {
     "test" { projectDefault() }
 }
 
-tasks.withType<Test> {
+projectTest {
     dependsOnTaskIfExistsRec("dist", project = rootProject)
-    jvmArgs("-ea", "-XX:+HeapDumpOnOutOfMemoryError", "-Xmx1200m", "-XX:+UseCodeCacheFlushing", "-XX:ReservedCodeCacheSize=128m", "-Djna.nosys=true")
-    maxHeapSize = "1200m"
     workingDir = rootDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
-    ignoreFailures = true
 }
 
 testsJar()

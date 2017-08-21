@@ -24,7 +24,7 @@ sourceSets {
     "main" {
         projectDefault()
         java.srcDir("../runtime.jvm/src")
-        resources.srcDir(builtinsSerialized)
+        resources.srcDir(builtinsSerialized).apply { include("**") }
     }
     "test" {}
 }
