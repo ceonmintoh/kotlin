@@ -3,7 +3,7 @@ import java.io.File
 
 apply { plugin("kotlin") }
 
-jvmTarget = "1.8"
+jvmTarget = "1.6"
 
 val compilerModules: Array<String> by rootProject.extra
 val otherCompilerModules = compilerModules.filter { it != path }
