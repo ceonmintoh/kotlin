@@ -73,7 +73,6 @@ dependencies {
     compiledModulesSources.forEach {
         fatSourcesJarContents(it)
     }
-//    buildVersion()
 
     fatJarContents(project(":core:builtins", configuration = "builtins"))
     fatJarContents(ideaSdkCoreDeps(*coreSdkJarsSimple))
@@ -93,10 +92,6 @@ dependencies {
     proguardLibraryJars(project(":kotlin-script-runtime", configuration = "mainJar"))
     proguardLibraryJars(project(":kotlin-reflect", configuration = "mainJar"))
     proguardLibraryJars(preloadedDeps("kotlinx-coroutines-core"))
-
-//    proguardLibraryJars(project(":prepare:runtime", configuration = "default").apply { isTransitive = false })
-//    proguardLibraryJars(project(":prepare:reflect", configuration = "default").apply { isTransitive = false })
-//    proguardLibraryJars(project(":core:script.runtime").apply { isTransitive = false })
 }
 
 val packCompiler by task<ShadowJar> {
