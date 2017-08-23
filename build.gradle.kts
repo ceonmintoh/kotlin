@@ -38,6 +38,8 @@ buildScan {
     setLicenseAgree("yes")
 }
 
+println("!!! ${findJdksOnMacOS()/*.joinToString("\\n") { "${it.first} -> ${it.second}" } */}")
+
 val buildNumber = "1.1-SNAPSHOT"
 extra["build.number"] = buildNumber
 
@@ -97,6 +99,7 @@ extra["ideaCoreSdkJars"] = arrayOf("annotations", "asm-all", "guava", "intellij-
 
 extra["compilerModules"] = arrayOf(":compiler:util",
                                    ":compiler:container",
+                                   ":compiler:conditional-preprocessor",
                                    ":compiler:resolution",
                                    ":compiler:serialization",
                                    ":compiler:frontend",
@@ -104,6 +107,7 @@ extra["compilerModules"] = arrayOf(":compiler:util",
                                    ":compiler:frontend.script",
                                    ":compiler:cli-common",
                                    ":compiler:daemon-common",
+                                   ":compiler:daemon",
                                    ":compiler:ir.tree",
                                    ":compiler:ir.psi2ir",
                                    ":compiler:backend-common",
