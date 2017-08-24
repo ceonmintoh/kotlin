@@ -38,7 +38,7 @@ buildScan {
     setLicenseAgree("yes")
 }
 
-println("!!! ${findJdksOnMacOS()/*.joinToString("\\n") { "${it.first} -> ${it.second}" } */}")
+//println("!!! ${findJdksOnMacOS()/*.joinToString("\\n") { "${it.first} -> ${it.second}" } */}")
 
 val buildNumber = "1.1-SNAPSHOT"
 extra["build.number"] = buildNumber
