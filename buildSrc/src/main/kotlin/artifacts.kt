@@ -8,10 +8,11 @@ import org.gradle.api.artifacts.Configuration
 import org.gradle.api.artifacts.ConfigurationContainer
 import org.gradle.api.artifacts.Dependency
 import org.gradle.api.file.DuplicatesStrategy
+import org.gradle.api.plugins.BasePluginConvention
 import org.gradle.api.plugins.JavaPluginConvention
 import org.gradle.api.tasks.javadoc.Javadoc
 import org.gradle.jvm.tasks.Jar
-
+import java.io.File
 
 fun Project.testsJar(body: Jar.() -> Unit = {}): Jar {
     val testsJarCfg = configurations.getOrCreate("tests-jar").extendsFrom(configurations["testCompile"])
@@ -105,16 +106,22 @@ fun Project.ideaPlugin(subdir: String = "lib") = ideaPlugin(subdir) {
     fromRuntimeJarIfExists(this)
 }
 
+// TODO: find a way to extract target name(s) from the task, remove ad-hoc error-prone parallel name generation
+fun Project.dist(targetFileName: String? = null, body: Copy.() -> Unit): Copy {
+    val distJarCfg = configurations.getOrCreate("distJar")
+    val distLibDir: File by rootProject.extra
+    val targetFile = File(distLibDir, targetFileName ?: (
+            the<BasePluginConvention>().archivesBaseName + ".jar"))
 
-fun Project.dist(body: Copy.() -> Unit) {
-    task<Copy>("dist") {
+    return task<Copy>("dist") {
         body()
         rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
-        into(rootProject.extra["distLibDir"].toString())
+        into(distLibDir)
+        project.addArtifact(distJarCfg, this, targetFile)
     }
 }
 
-fun Project.dist() = dist {
+fun Project.dist(): Copy = dist {
     fromRuntimeJarIfExists(this)
 }
 

@@ -37,9 +37,4 @@ val jar = runtimeJar {
     archiveName = "kotlin-mock-runtime-for-test.jar"
 }
 
-task<Copy>("dist") {
-    from(jar)
-    into(rootProject.extra["distDir"].toString())
-    rename("-${Regex.escape(rootProject.extra["build.number"].toString())}", "")
-}
-
+dist()

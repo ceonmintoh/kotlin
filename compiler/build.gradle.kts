@@ -9,34 +9,55 @@ jvmTarget = "1.6"
 val compilerModules: Array<String> by rootProject.extra
 val otherCompilerModules = compilerModules.filter { it != path }
 
+// TODO: it seems incomlete, find and add missing dependencies
+val testDistProjects = listOf(
+//        ":prepare:mock-runtime-for-test",
+        ":kotlin-compiler",
+        ":kotlin-runtime",
+        ":kotlin-script-runtime",
+        ":kotlin-stdlib",
+        ":kotlin-stdlib-jre7",
+        ":kotlin-stdlib-jre8",
+        ":kotlin-stdlib-js",
+        ":kotlin-reflect",
+        ":kotlin-test:kotlin-test-jvm",
+        ":kotlin-test:kotlin-test-junit",
+        ":kotlin-test:kotlin-test-js",
+        ":kotlin-daemon-client",
+        ":android-extensions-compiler",
+        ":kotlin-ant")
+
 dependencies {
+    testDistProjects.forEach {
+        testCompile(projectDist(it))
+    }
     testCompile(commonDep("junit:junit"))
-    testCompile(project(":kotlin-test:kotlin-test-jvm"))
-    testCompile(project(":kotlin-test:kotlin-test-junit"))
+//    testCompileOnly(project(":kotlin-test:kotlin-test-jvm"))
+//    testCompileOnly(project(":kotlin-test:kotlin-test-junit"))
     testCompile(project(":compiler.tests-common"))
-    testCompileOnly(project(":compiler:ir.ir2cfg"))
-    testCompileOnly(project(":compiler:ir.tree")) // used for deepCopyWithSymbols call that is removed by proguard from the compiler TODO: make it more straightforward
+    testCompile(project(":compiler:ir.ir2cfg"))
+    testCompile(project(":compiler:ir.tree")) // used for deepCopyWithSymbols call that is removed by proguard from the compiler TODO: make it more straightforward
     testCompile(ideaSdkDeps("openapi", "idea", "util", "asm-all", "commons-httpclient-3.1-patched"))
     // deps below are test runtime deps, but made test compile to split compilation and running to reduce mem req
-    testCompile(project(":kotlin-stdlib"))
-    testCompile(project(":kotlin-script-runtime"))
-    testCompile(project(":kotlin-runtime"))
-    testCompile(project(":kotlin-reflect"))
-    testCompile(project(":android-extensions-compiler"))
-    testCompile(project(":kotlin-ant"))
+//    testCompileOnly(project(":kotlin-stdlib"))
+//    testCompileOnly(project(":kotlin-script-runtime"))
+//    testCompileOnly(project(":kotlin-runtime"))
+//    testCompileOnly(project(":kotlin-reflect"))
+//    testCompileOnly(project(":android-extensions-compiler"))
+//    testCompileOnly(project(":kotlin-ant"))
     otherCompilerModules.forEach {
-        testCompile(project(it))
+        testCompileOnly(project(it))
     }
+//    testRuntime(files("${rootProject.extra["distLibDir"]}${File.separator}*.jar"))
     testRuntime(ideaSdkCoreDeps("*.jar"))
     testRuntime(ideaSdkDeps("*.jar"))
-//    testRuntime(project(":kotlin-compiler", configuration = "default"))
 }
 
 sourceSets {
     "main" {}
     "test" {
         projectDefault()
-        java.srcDir("tests-ir-jvm/tests")
+//        java.srcDir("tests-ir-jvm/tests")
     }
 }
 
@@ -51,22 +72,6 @@ jar.apply {
 }
 
 testsJar {}
-
-// TODO: it seems incomlete, find and add missing dependencies
-val testDistProjects = listOf(
-       ":prepare:mock-runtime-for-test",
-       ":kotlin-compiler",
-       ":kotlin-runtime",
-       ":kotlin-script-runtime",
-       ":kotlin-stdlib",
-       ":kotlin-stdlib-jre7",
-       ":kotlin-stdlib-jre8",
-       ":kotlin-stdlib-js",
-       ":kotlin-reflect",
-       ":kotlin-test:kotlin-test-jvm",
-       ":kotlin-test:kotlin-test-junit",
-       ":kotlin-test:kotlin-test-js",
-       ":kotlin-daemon-client")
 
 projectTest {
     dependsOn(*testDistProjects.map { "$it:dist" }.toTypedArray())
