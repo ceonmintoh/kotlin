@@ -9,9 +9,16 @@ jvmTarget = "1.6"
 val compilerModules: Array<String> by rootProject.extra
 val otherCompilerModules = compilerModules.filter { it != path }
 
-// TODO: it seems incomlete, find and add missing dependencies
+val depDistProjects = listOf(
+        ":kotlin-script-runtime",
+        ":kotlin-stdlib",
+        ":kotlin-reflect",
+        ":kotlin-test:kotlin-test-jvm")
+
+// TODO: it seems incomplete, find and add missing dependencies
 val testDistProjects = listOf(
-//        ":prepare:mock-runtime-for-test",
+        "", // for root project
+        ":prepare:mock-runtime-for-test",
         ":kotlin-compiler",
         ":kotlin-runtime",
         ":kotlin-script-runtime",
@@ -28,27 +35,19 @@ val testDistProjects = listOf(
         ":kotlin-ant")
 
 dependencies {
-    testDistProjects.forEach {
+    depDistProjects.forEach {
         testCompile(projectDist(it))
     }
     testCompile(commonDep("junit:junit"))
-//    testCompileOnly(project(":kotlin-test:kotlin-test-jvm"))
-//    testCompileOnly(project(":kotlin-test:kotlin-test-junit"))
+    testCompileOnly(project(":kotlin-test:kotlin-test-jvm"))
+    testCompileOnly(project(":kotlin-test:kotlin-test-junit"))
     testCompile(project(":compiler.tests-common"))
     testCompile(project(":compiler:ir.ir2cfg"))
     testCompile(project(":compiler:ir.tree")) // used for deepCopyWithSymbols call that is removed by proguard from the compiler TODO: make it more straightforward
-    testCompile(ideaSdkDeps("openapi", "idea", "util", "asm-all", "commons-httpclient-3.1-patched"))
-    // deps below are test runtime deps, but made test compile to split compilation and running to reduce mem req
-//    testCompileOnly(project(":kotlin-stdlib"))
-//    testCompileOnly(project(":kotlin-script-runtime"))
-//    testCompileOnly(project(":kotlin-runtime"))
-//    testCompileOnly(project(":kotlin-reflect"))
-//    testCompileOnly(project(":android-extensions-compiler"))
-//    testCompileOnly(project(":kotlin-ant"))
     otherCompilerModules.forEach {
         testCompileOnly(project(it))
     }
-//    testRuntime(files("${rootProject.extra["distLibDir"]}${File.separator}*.jar"))
+    testCompile(ideaSdkDeps("openapi", "idea", "util", "asm-all", "commons-httpclient-3.1-patched"))
     testRuntime(ideaSdkCoreDeps("*.jar"))
     testRuntime(ideaSdkDeps("*.jar"))
 }
@@ -57,6 +56,7 @@ sourceSets {
     "main" {}
     "test" {
         projectDefault()
+        // not yet ready
 //        java.srcDir("tests-ir-jvm/tests")
     }
 }
