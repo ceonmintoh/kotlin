@@ -6,7 +6,7 @@ apply { plugin("kotlin") }
 //}
 
 dependencies {
-    compile(project(":kotlin-stdlib"))
+    compile(projectDist(":kotlin-stdlib"))
     compile(project(":compiler:frontend"))
     compile(project(":compiler:frontend.java"))
     compile(project(":compiler:light-classes"))
@@ -15,7 +15,7 @@ dependencies {
     testCompile(project(":idea"))
     testCompile(project(":idea:idea-test-framework"))
     testCompile(project(":compiler:light-classes"))
-    testCompile(project(":kotlin-test:kotlin-test-junit"))
+    testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
     testCompile(project(":compiler.tests-common"))
 //    testRuntime(project(":idea:idea-android"))
 //    testRuntime(project(":plugins:android-extensions-idea"))

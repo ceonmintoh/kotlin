@@ -39,8 +39,8 @@ dependencies {
         testCompile(projectDist(it))
     }
     testCompile(commonDep("junit:junit"))
-    testCompileOnly(project(":kotlin-test:kotlin-test-jvm"))
-    testCompileOnly(project(":kotlin-test:kotlin-test-junit"))
+    testCompileOnly(projectDist(":kotlin-test:kotlin-test-jvm"))
+    testCompileOnly(projectDist(":kotlin-test:kotlin-test-junit"))
     testCompile(project(":compiler.tests-common"))
     testCompile(project(":compiler:ir.ir2cfg"))
     testCompile(project(":compiler:ir.tree")) // used for deepCopyWithSymbols call that is removed by proguard from the compiler TODO: make it more straightforward

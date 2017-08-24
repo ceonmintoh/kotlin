@@ -8,7 +8,7 @@ dependencies {
     compile(commonDep("javax.inject"))
     compile(ideaSdkCoreDeps("intellij-core"))
     testCompile(commonDep("junit:junit"))
-    testCompile(project(":kotlin-test:kotlin-test-jvm"))
+    testCompile(projectDist(":kotlin-test:kotlin-test-jvm"))
     testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
 }
 

@@ -7,7 +7,7 @@ jvmTarget = "1.6"
 javaHome = rootProject.extra["JDK_16"] as String
 
 dependencies {
-    compile(project(":kotlin-stdlib"))
+    compile(projectDist(":kotlin-stdlib"))
 }
 
 sourceSets {
@@ -34,7 +34,8 @@ tasks.withType<JavaCompile> {
 
 val jar = runtimeJar {
     from(fileTree("${rootProject.extra["distDir"]}/builtins")) { include("kotlin/**") }
-    archiveName = "kotlin-mock-runtime-for-test.jar"
 }
 
-dist()
+val distDir: String by rootProject.extra
+
+dist(targetName = "kotlin-mock-runtime-for-test.jar", targetDir = File(distDir))

@@ -94,8 +94,8 @@ fun Project.publish(body: Upload.() -> Unit = {}): Upload {
     }
 }
 
-fun Project.ideaPlugin(subdir: String = "lib", body: Copy.() -> Unit) {
-    task<Copy>("idea-plugin") {
+fun Project.ideaPlugin(subdir: String = "lib", body: AbstractCopyTask.() -> Unit) {
+    task<Jar>("idea-plugin") {
         body()
         into(File(rootProject.extra["ideaPluginDir"].toString(), subdir).path)
         rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
@@ -106,23 +106,25 @@ fun Project.ideaPlugin(subdir: String = "lib") = ideaPlugin(subdir) {
     fromRuntimeJarIfExists(this)
 }
 
-// TODO: find a way to extract target name(s) from the task, remove ad-hoc error-prone parallel name generation
-fun Project.dist(targetFileName: String? = null, body: Copy.() -> Unit): Copy {
+fun Project.dist(targetDir: File? = null,
+                 targetName: String? = null,
+                 fromTask: Task? = null,
+                 body: AbstractCopyTask.() -> Unit = {}): AbstractCopyTask {
     val distJarCfg = configurations.getOrCreate("distJar")
     val distLibDir: File by rootProject.extra
-    val targetFile = File(distLibDir, targetFileName ?: (
-            the<BasePluginConvention>().archivesBaseName + ".jar"))
+    val distJarName = targetName ?: (the<BasePluginConvention>().archivesBaseName + ".jar")
 
     return task<Copy>("dist") {
         body()
-        rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
-        into(distLibDir)
-        project.addArtifact(distJarCfg, this, targetFile)
+        when {
+            fromTask != null -> from(fromTask)
+            else -> project.fromRuntimeJarIfExists(this)
+        }
+        rename(".*", distJarName)
+//        rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
+        into(targetDir ?: distLibDir)
+        project.addArtifact(distJarCfg, this, File(targetDir ?: distLibDir, distJarName))
     }
-}
-
-fun Project.dist(): Copy = dist {
-    fromRuntimeJarIfExists(this)
 }
 
 private fun<T: AbstractCopyTask> Project.fromRuntimeJarIfExists(task: T) {
