@@ -22,6 +22,7 @@ dependencies {
     testCompile(projectTests(":idea"))
     testCompile(ideaPluginDeps("properties", plugin = "properties"))
     testCompile(ideaSdkDeps("gson"))
+    testCompile(commonDep("junit:junit"))
 
     testRuntime(project(":plugins:android-extensions-idea"))
     testRuntime(project(":plugins:sam-with-receiver-ide"))

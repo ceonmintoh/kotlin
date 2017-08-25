@@ -138,8 +138,10 @@ ext.configurePublishing = { Project project ->
         task dist(type: Copy, dependsOn: assemble) {
             rename "-${java.util.regex.Pattern.quote(version)}", ''
             into distLibDir
-            project.artifacts {
-                distJar file: file("$distLibDir${File.separator}${archivesBaseName}.jar"), builtBy: "dist"
+            afterEvaluate {
+                project.artifacts {
+                    distJar file: file("$distLibDir${File.separator}${archivesBaseName}.jar"), builtBy: "dist"
+                }
             }
         }
 

@@ -49,6 +49,7 @@ dependencies {
     testCompile(project(":compiler:cli"))
     testCompile(project(":compiler.tests-common"))
     testCompile(project(":idea:idea-test-framework")) { isTransitive = false }
+    testCompile(commonDep("junit:junit"))
 
     testCompileOnly(ideaPluginDeps("gradle-base-services", "gradle-tooling-extension-impl", "gradle-wrapper", plugin = "gradle"))
     testCompileOnly(ideaPluginDeps("Groovy", plugin = "Groovy"))

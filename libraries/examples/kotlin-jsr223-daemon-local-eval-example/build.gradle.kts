@@ -9,6 +9,7 @@ dependencies {
     compile(projectRuntimeJar(":kotlin-compiler"))
     compile(project(":kotlin-script-util"))
     compile(projectRuntimeJar(":kotlin-daemon-client"))
+    testCompile(commonDep("junit:junit"))
     testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
     testRuntime(projectDist(":kotlin-reflect"))
 }
