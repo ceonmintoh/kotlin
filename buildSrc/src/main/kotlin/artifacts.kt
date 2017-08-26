@@ -95,7 +95,7 @@ fun Project.publish(body: Upload.() -> Unit = {}): Upload {
 }
 
 fun Project.ideaPlugin(subdir: String = "lib", body: AbstractCopyTask.() -> Unit) {
-    task<Jar>("idea-plugin") {
+    task<Copy>("idea-plugin") {
         body()
         into(File(rootProject.extra["ideaPluginDir"].toString(), subdir).path)
         rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
