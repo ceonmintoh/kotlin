@@ -344,7 +344,9 @@ public class KotlinTestUtils {
 
     @NotNull
     public static String getHomeDirectory() {
-        return new File(".").getAbsolutePath();
+        String userDir = System.getProperty("user.dir");
+        File dir = new File(userDir == null ? "." : userDir);
+        return FileUtil.toCanonicalPath(dir.getAbsolutePath());
     }
 
     public static File findMockJdkRtJar() {
