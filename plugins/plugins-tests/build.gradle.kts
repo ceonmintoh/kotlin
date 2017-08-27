@@ -38,12 +38,8 @@ sourceSets {
 
 testsJar {}
 
-val test: Test by tasks
-test.apply {
+projectTest {
     dependsOnTaskIfExistsRec("dist", project = rootProject)
     workingDir = rootDir
-    systemProperty("idea.is.unit.test", "true")
-    environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
-    ignoreFailures = true
 }
 
