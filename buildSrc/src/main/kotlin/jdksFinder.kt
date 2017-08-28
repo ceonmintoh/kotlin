@@ -104,7 +104,7 @@ fun MutableCollection<JdkId>.discoverJdksOnUnix(project: Project) {
             dir.isDirectory &&
             unixConventionalJdkDirRex.containsMatchIn(dir.name) &&
             File(dir, "bin", "java").isFile
-        }
+        } ?: continue
         for (dir in installedJdks) {
             val versionMatch = javaVersionRegex.find(dir.name)
             if (versionMatch == null) {
