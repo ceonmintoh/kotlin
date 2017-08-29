@@ -11,7 +11,7 @@ fun Project.projectTest(body: Test.() -> Unit = {}): Test = getOrCreateTask("tes
     environment("NO_FS_ROOTS_ACCESS_CHECK", "true")
     environment("KOTLIN_HOME", rootProject.extra["distKotlinHomeDir"])
     systemProperty("jps.kotlin.home", rootProject.extra["distKotlinHomeDir"])
-    ignoreFailures = true
+    ignoreFailures = System.getenv("kotlin_build_ignore_test_failures")?.let { it == "yes" } ?: false
     body()
 }
 
