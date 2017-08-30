@@ -29,9 +29,11 @@ repositories {
     System.getProperty("bootstrap.kotlin.repo")?.let {
         maven { setUrl(it) }
     }
+    maven { setUrl("https://repo.gradle.org/gradle/libs-releases-local") }
 }
 
 dependencies {
+    compile("net.rubygrapefruit:native-platform:0.14")
     // TODO: adding the dep to the plugin breaks the build unexpectedly, resolve and uncomment
 //    compile("org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.extra["bootstrap_kotlin_version"]}")
 }
