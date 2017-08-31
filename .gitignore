@@ -6,6 +6,7 @@
 /dist
 /gh-pages
 /ideaSDK
+/clionSDK
 /android-studio/sdk
 out/
 /tmp
@@ -27,6 +28,5 @@ build/
 .idea/libraries/Gradle*.xml
 .idea/modules
 .idea/gradle.xml
-.idea/compiler.xml
 .idea/inspectionProfiles/profiles_settings.xml
 
