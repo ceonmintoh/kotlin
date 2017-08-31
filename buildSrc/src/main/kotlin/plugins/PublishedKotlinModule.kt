@@ -3,12 +3,12 @@ package plugins
 import org.codehaus.groovy.runtime.InvokerHelper
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.artifacts.dsl.RepositoryHandler
-import org.gradle.api.artifacts.maven.GroovyMavenDeployer
 
 import org.gradle.api.plugins.MavenRepositoryHandlerConvention
 import org.gradle.api.tasks.Upload
 import org.gradle.kotlin.dsl.*
+import org.gradle.plugins.signing.Sign
+import org.gradle.plugins.signing.SigningExtension
 
 
 /**
@@ -22,6 +22,26 @@ open class PublishedKotlinModule : Plugin<Project> {
         project.run {
 
             plugins.apply("maven")
+
+            if (!project.hasProperty("prebuiltJar")) {
+                plugins.apply("signing")
+
+                val signingProp = project.rootProject.properties["signingRequired"]
+                val signingRequired = when (signingProp) {
+                    is Boolean -> signingProp == true
+                    is String -> listOf("true", "yes").contains(signingProp.toLowerCase().trim())
+                    else -> project.rootProject.extra["isSonatypeRelease"] as? Boolean == true
+                }
+
+                configure<SigningExtension> {
+                    isRequired = signingRequired
+                    sign(configurations["archives"])
+                }
+
+                (tasks.getByName("signArchives") as Sign).apply {
+                    enabled = signingRequired
+                }
+            }
 
             (tasks.getByName("uploadArchives") as Upload).apply {
 
