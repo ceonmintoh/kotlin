@@ -1,11 +1,11 @@
 @file:Suppress("unused") // usages in build scripts are not tracked properly
 
+import net.rubygrapefruit.platform.Native
 import net.rubygrapefruit.platform.WindowsRegistry
 import org.gradle.api.GradleException
 import org.gradle.api.Project
 import java.io.File
 import net.rubygrapefruit.platform.WindowsRegistry.Key.HKEY_LOCAL_MACHINE
-import org.gradle.internal.nativeintegration.services.NativeServices
 import org.gradle.internal.os.OperatingSystem
 
 enum class JdkMajorVersion {
@@ -129,8 +129,7 @@ private val windowsConventionalJdkRegistryPaths = listOf(
         "SOFTWARE\\Wow6432Node\\JavaSoft\\Java Runtime Environment")
 
 fun MutableCollection<JdkId>.discoverJdksOnWindows(project: Project) {
-    val nativeServices = NativeServices.getInstance()
-    val registry = nativeServices.get(WindowsRegistry::class.java)
+    val registry = Native.get(WindowsRegistry::class.java)
     for (regPath in windowsConventionalJdkRegistryPaths) {
         val jdkKeys = try {
             registry.getSubkeys(HKEY_LOCAL_MACHINE, regPath)
