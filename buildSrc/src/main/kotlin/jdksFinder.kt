@@ -12,14 +12,19 @@ enum class JdkMajorVersion {
     JDK_16, JDK_17, JDK_18, JDK_9
 }
 
+val jdkAlternativeVarNames = mapOf(JdkMajorVersion.JDK_9 to listOf("JDK_19"))
+
 data class JdkId(val explicit: Boolean, val majorVersion: JdkMajorVersion, var version: String, var homeDir: File)
 
 fun Project.getConfiguredJdks(): List<JdkId> {
     val res = arrayListOf<JdkId>()
     for (jdkMajorVersion in JdkMajorVersion.values()) {
-        val explicitJdk = System.getenv(jdkMajorVersion.name)?.let { File(it)} ?: continue
+        val explicitJdkEnvVal = System.getenv(jdkMajorVersion.name)
+                ?: jdkAlternativeVarNames[jdkMajorVersion]?.mapNotNull { System.getenv(it) }?.firstOrNull()
+                ?: continue
+        val explicitJdk = File(explicitJdkEnvVal)
         if (!explicitJdk.isDirectory) {
-            throw GradleException("Invalid environment value $jdkMajorVersion: $explicitJdk, expecting JDK home path")
+            throw GradleException("Invalid environment value $jdkMajorVersion: $explicitJdkEnvVal, expecting JDK home path")
         }
         res.add(JdkId(true, jdkMajorVersion, "X", explicitJdk))
     }
