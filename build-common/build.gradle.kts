@@ -10,7 +10,11 @@ dependencies {
     compile(project(":compiler:frontend.java"))
     compile(project(":js:js.serializer"))
     compile(project(":js:js.frontend"))
-    compile(ideaSdkDeps("util"))
+    if (System.getProperty("build.for.clion") != "true") {
+        compile(ideaSdkDeps("util"))
+    } else {
+        compile(clionSdkDeps("util"))
+    }
     testCompile(commonDep("junit:junit"))
     testCompile(project(":compiler.tests-common"))
     testCompile(protobufFull())

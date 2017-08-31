@@ -8,7 +8,11 @@ dependencies {
     compile(project(":compiler:frontend"))
     compile(project(":compiler:frontend.java"))
     compile(project(":compiler:frontend.script"))
-    compile(ideaSdkCoreDeps(*(rootProject.extra["ideaCoreSdkJars"] as Array<String>)))
+    if (System.getProperty("build.for.clion") != "true") {
+        compile(ideaSdkCoreDeps(*(rootProject.extra["ideaCoreSdkJars"] as Array<String>)))
+    } else {
+        //todo[Alefas]: find substitution
+    }
 }
 
 sourceSets {

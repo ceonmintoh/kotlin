@@ -6,11 +6,17 @@ jvmTarget = "1.6"
 dependencies {
     compile(project(":core:util.runtime"))
     compile(commonDep("javax.inject"))
-    compile(ideaSdkCoreDeps("intellij-core"))
     testCompile(projectDist(":kotlin-test:kotlin-test-jvm"))
     testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
     testCompile(commonDep("junit:junit"))
-    testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
+    if (System.getProperty("build.for.clion") != "true") {
+        compile(ideaSdkCoreDeps("intellij-core"))
+        testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
+    } else {
+        compile(clionSdkDeps("util"))
+        testRuntime(clionSdkDeps("trove4j"))
+        //todo[Alefas]: tests for CLion?
+    }
 }
 
 sourceSets {

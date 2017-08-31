@@ -2,80 +2,71 @@
 apply { plugin("kotlin") }
 
 dependencies {
-    compile(projectDist(":kotlin-stdlib"))
-    compile(project(":core"))
+    compile(projectDist(":kotlin-daemon-client"))
+
     compile(project(":compiler:backend"))
     compile(project(":compiler:cli-common"))
-    compile(projectDist(":kotlin-daemon-client"))
-    compile(project(":compiler:frontend"))
-    compile(project(":compiler:frontend.java"))
-    compile(project(":compiler:frontend.script"))
-    compile(project(":js:js.frontend"))
-    compile(project(":js:js.serializer"))
-    compile(project(":compiler:light-classes"))
-    compile(project(":compiler:util"))
     compile(project(":compiler:compiler-runner"))
     compile(project(":compiler:plugin-api"))
-    compile(project(":eval4j"))
-    compile(project(":j2k"))
     compile(project(":idea:formatter"))
     compile(project(":idea:idea-core"))
-    compile(project(":idea:ide-common"))
-    compile(project(":idea:idea-jps-common"))
-    compile(project(":idea:kotlin-gradle-tooling"))
-    compile(project(":plugins:uast-kotlin"))
-    compile(project(":plugins:uast-kotlin-idea"))
 
-    compile(ideaSdkCoreDeps("intellij-core", "util"))
+    compile(preloadedDeps("markdown"))
 
-    compileOnly(ideaSdkDeps("openapi", "idea", "velocity", "boot", "gson", "swingx-core", "jsr305", "forms_rt"))
+    if (System.getProperty("build.for.clion") != "true") {
+        compile(project(":idea:kotlin-gradle-tooling"))
+        compile(project(":eval4j"))
+        compile(project(":plugins:uast-kotlin"))
+        compile(project(":plugins:uast-kotlin-idea"))
 
-    compile(ideaPluginDeps("IntelliLang", plugin = "IntelliLang"))
-    compile(ideaPluginDeps("copyright", plugin = "copyright"))
-    compile(ideaPluginDeps("properties", plugin = "properties"))
-    compile(ideaPluginDeps("java-i18n", plugin = "java-i18n"))
+        compileOnly(ideaSdkDeps("velocity", "boot", "gson", "swingx-core", "jsr305", "forms_rt"))
 
-    compile(preloadedDeps("markdown", "kotlinx-coroutines-core"))
+        compile(ideaPluginDeps("IntelliLang", plugin = "IntelliLang"))
+        compile(ideaPluginDeps("copyright", plugin = "copyright"))
+        compile(ideaPluginDeps("properties", plugin = "properties"))
+        compile(ideaPluginDeps("java-i18n", plugin = "java-i18n"))
 
-    testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
-    testCompile(project(":compiler:cli"))
-    testCompile(project(":compiler.tests-common"))
-    testCompile(project(":idea:idea-test-framework")) { isTransitive = false }
-    testCompile(commonDep("junit:junit"))
+        //todo[Alefas]: Enable tests in CLion
+        testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
+        testCompile(project(":compiler:cli"))
+        testCompile(project(":compiler.tests-common"))
+        testCompile(project(":idea:idea-test-framework")) { isTransitive = false }
+        testCompile(commonDep("junit:junit"))
 
-    testCompileOnly(ideaPluginDeps("gradle-base-services", "gradle-tooling-extension-impl", "gradle-wrapper", plugin = "gradle"))
-    testCompileOnly(ideaPluginDeps("Groovy", plugin = "Groovy"))
-    testCompileOnly(ideaPluginDeps("maven", "maven-server-api", plugin = "maven"))
+        testCompileOnly(ideaPluginDeps("gradle-base-services", "gradle-tooling-extension-impl", "gradle-wrapper", plugin = "gradle"))
+        testCompileOnly(ideaPluginDeps("Groovy", plugin = "Groovy"))
+        testCompileOnly(ideaPluginDeps("maven", "maven-server-api", plugin = "maven"))
 
-    testCompileOnly(ideaSdkDeps("groovy-all", "velocity", "gson", "jsr305"))
+        testCompileOnly(ideaSdkDeps("groovy-all", "velocity", "gson", "jsr305"))
 
-    testRuntime(ideaSdkDeps("*.jar"))
+        testRuntime(ideaSdkDeps("*.jar"))
 
-    testRuntime(ideaPluginDeps("resources_en", plugin = "junit"))
-    testRuntime(ideaPluginDeps("jcommander", "resources_en", plugin = "testng"))
-    testRuntime(ideaPluginDeps("resources_en", plugin = "properties"))
-    testRuntime(ideaPluginDeps("*.jar", plugin = "gradle"))
-    testRuntime(ideaPluginDeps("*.jar", plugin = "Groovy"))
-    testRuntime(ideaPluginDeps("jacocoant", plugin = "coverage"))
-    testRuntime(ideaPluginDeps("*.jar", plugin = "maven"))
-    testRuntime(ideaPluginDeps("*.jar", plugin = "android"))
+        testRuntime(ideaPluginDeps("resources_en", plugin = "junit"))
+        testRuntime(ideaPluginDeps("jcommander", "resources_en", plugin = "testng"))
+        testRuntime(ideaPluginDeps("resources_en", plugin = "properties"))
+        testRuntime(ideaPluginDeps("*.jar", plugin = "gradle"))
+        testRuntime(ideaPluginDeps("*.jar", plugin = "Groovy"))
+        testRuntime(ideaPluginDeps("jacocoant", plugin = "coverage"))
+        testRuntime(ideaPluginDeps("*.jar", plugin = "maven"))
+        testRuntime(ideaPluginDeps("*.jar", plugin = "android"))
 
-    // deps below are test runtime deps, but made test compile to split compilation and running to reduce mem req
-    testCompile(project(":android-extensions-compiler"))
-    testCompile(project(":plugins:android-extensions-idea")) { isTransitive = false }
-    testCompile(project(":allopen-ide-plugin")) { isTransitive = false }
-    testCompile(project(":kotlin-allopen-compiler-plugin"))
-    testCompile(project(":noarg-ide-plugin")) { isTransitive = false }
-    testCompile(project(":kotlin-noarg-compiler-plugin"))
-    testCompile(project(":plugins:annotation-based-compiler-plugins-ide-support")) { isTransitive = false }
-    testCompile(project(":sam-with-receiver-ide-plugin")) { isTransitive = false }
-    testCompile(project(":kotlin-sam-with-receiver-compiler-plugin"))
-    testCompile(project(":idea:idea-android")) { isTransitive = false }
-    testCompile(project(":plugins:lint")) { isTransitive = false }
-    testCompile(project(":plugins:uast-kotlin"))
+        // deps below are test runtime deps, but made test compile to split compilation and running to reduce mem req
+        testCompile(project(":android-extensions-compiler"))
+        testCompile(project(":plugins:android-extensions-idea")) { isTransitive = false }
+        testCompile(project(":allopen-ide-plugin")) { isTransitive = false }
+        testCompile(project(":kotlin-allopen-compiler-plugin"))
+        testCompile(project(":noarg-ide-plugin")) { isTransitive = false }
+        testCompile(project(":kotlin-noarg-compiler-plugin"))
+        testCompile(project(":plugins:annotation-based-compiler-plugins-ide-support")) { isTransitive = false }
+        testCompile(project(":sam-with-receiver-ide-plugin")) { isTransitive = false }
+        testCompile(project(":kotlin-sam-with-receiver-compiler-plugin"))
+        testCompile(project(":idea:idea-android")) { isTransitive = false }
+        testCompile(project(":plugins:lint")) { isTransitive = false }
+        testCompile(project(":plugins:uast-kotlin"))
 
-    (rootProject.extra["compilerModules"] as Array<String>).forEach {
-        testCompile(project(it))
+        (rootProject.extra["compilerModules"] as Array<String>).forEach {
+            testCompile(project(it))
+        }
     }
 }
 
