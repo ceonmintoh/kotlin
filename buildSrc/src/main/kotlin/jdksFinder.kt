@@ -36,7 +36,7 @@ fun Project.getConfiguredJdks(): List<JdkId> {
 
 // see JEP 223
 private val javaMajorVersionRegex = Regex("""(?:1\.)?(\d+).*""")
-private val javaVersionRegex = Regex("""(?:1\.)?(\d+)(?:\.\d+)?(?:[+-_]\w+){0,3}""")
+private val javaVersionRegex = Regex("""(?:1\.)?(\d+)(\.\d+)?([+-_]\w+){0,3}""")
 
 fun MutableCollection<JdkId>.addIfBetter(project: Project, version: String, id: String, homeDir: File): Boolean {
     val matchString = javaMajorVersionRegex.matchEntire(version)?.groupValues?.get(1)
@@ -56,12 +56,36 @@ fun MutableCollection<JdkId>.addIfBetter(project: Project, version: String, id: 
         return true
     }
     if (prev.explicit) return false
-    if (prev.version < version || (prev.version == version && id.contains("64"))) { // prefer 64-bit
+    val versionsComparisonRes = compareVersions(prev.version, version)
+    if (versionsComparisonRes < 0 || (versionsComparisonRes == 0 && id.contains("64"))) { // prefer 64-bit
         prev.version = version
         prev.homeDir = homeDir
         return true
     }
     return false
+}
+
+private fun compareVersions(left: String, right: String): Int {
+    if (left == right) return 0
+    fun MatchResult.extractNumVer(): List<Int> =
+            groups.drop(2).map {
+                it?.value?.filter { it in '0'..'9' }?.toIntOrNull() ?: 0
+            }
+    val lmi = (javaVersionRegex.matchEntire(left)?.extractNumVer() ?: emptyList()).iterator()
+    val rmi = (javaVersionRegex.matchEntire(right)?.extractNumVer() ?: emptyList()).iterator()
+    while (lmi.hasNext() && rmi.hasNext()) {
+        val l = lmi.next()
+        val r = rmi.next()
+        when {
+            l < r -> return -1
+            l > r -> return 1
+        }
+    }
+    return when {
+        rmi.hasNext() -> -1
+        lmi.hasNext() -> 1
+        else -> 0
+    }
 }
 
 fun MutableCollection<JdkId>.discoverJdks(project: Project) {
@@ -124,9 +148,7 @@ fun MutableCollection<JdkId>.discoverJdksOnUnix(project: Project) {
 
 private val windowsConventionalJdkRegistryPaths = listOf(
         "SOFTWARE\\JavaSoft\\Java Development Kit",
-        "SOFTWARE\\JavaSoft\\Java Runtime Environment",
-        "SOFTWARE\\Wow6432Node\\JavaSoft\\Java Development Kit",
-        "SOFTWARE\\Wow6432Node\\JavaSoft\\Java Runtime Environment")
+        "SOFTWARE\\Wow6432Node\\JavaSoft\\Java Development Kit")
 
 fun MutableCollection<JdkId>.discoverJdksOnWindows(project: Project) {
     val registry = Native.get(WindowsRegistry::class.java)
