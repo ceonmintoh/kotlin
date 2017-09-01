@@ -10,6 +10,8 @@ dependencies {
     compile(project(":idea"))
     compile(project(":idea:idea-core"))
     compile(project(":idea:ide-common"))
+    compile(project(":idea:idea-gradle"))
+
     compile(ideaSdkDeps("openapi", "idea"))
     compile(ideaPluginDeps("gradle-tooling-api", plugin = "gradle"))
     compile(ideaPluginDeps("android", "android-common", "sdklib", "sdk-common", "layoutlib-api", plugin = "android"))

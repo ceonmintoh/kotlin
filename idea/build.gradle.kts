@@ -30,18 +30,10 @@ dependencies {
 
     compileOnly(ideaSdkDeps("openapi", "idea", "velocity", "boot", "gson", "swingx-core", "jsr305", "forms_rt"))
 
-    compile(ideaPluginDeps("idea-junit", plugin = "junit"))
     compile(ideaPluginDeps("IntelliLang", plugin = "IntelliLang"))
-    compile(ideaPluginDeps("testng", "testng-plugin", plugin = "testng"))
     compile(ideaPluginDeps("copyright", plugin = "copyright"))
     compile(ideaPluginDeps("properties", plugin = "properties"))
     compile(ideaPluginDeps("java-i18n", plugin = "java-i18n"))
-    compile(ideaPluginDeps("coverage", plugin = "coverage"))
-    compile(ideaPluginDeps("java-decompiler", plugin = "java-decompiler"))
-
-    compileOnly(ideaPluginDeps("gradle-tooling-api", "gradle", plugin = "gradle"))
-    compileOnly(ideaPluginDeps("Groovy", plugin = "Groovy"))
-    compileOnly(ideaPluginDeps("maven", "maven-server-api", plugin = "maven"))
 
     compile(preloadedDeps("markdown", "kotlinx-coroutines-core"))
 
@@ -90,16 +82,14 @@ dependencies {
 sourceSets {
     "main" {
         projectDefault()
-        java.srcDirs("idea-maven/src",
-                     "idea-gradle/src",
-                     "idea-completion/src",
+        java.srcDirs("idea-completion/src",
                      "idea-live-templates/src",
                      "idea-repl/src")
         resources.srcDir("idea-maven/resources")
     }
     "test" {
         projectDefault()
-        java.srcDirs("idea-maven/test",
+        java.srcDirs(
                      "idea-completion/tests",
                      "idea-live-templates/tests")
     }
