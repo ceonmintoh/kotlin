@@ -7,7 +7,6 @@ dependencies {
     compile(project(":js:js.ast"))
     compile(project(":js:js.parser"))
     compile(project(":js:js.serializer"))
-    compile(ideaSdkCoreDeps("intellij-core"))
 }
 
 sourceSets {

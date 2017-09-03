@@ -9,7 +9,6 @@ dependencies {
     compile(project(":js:js.ast"))
     compile(project(":js:js.frontend"))
     compile(project(":js:js.parser"))
-    compile(ideaSdkCoreDeps("intellij-core"))
 }
 
 sourceSets {

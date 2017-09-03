@@ -4,7 +4,11 @@ apply { plugin("kotlin") }
 dependencies {
     compile(project(":compiler:util"))
     compile(project(":compiler:frontend"))
-    compile(ideaSdkCoreDeps("trove4j", "intellij-core"))
+    if (!isClionBuild()) {
+        compile(ideaSdkCoreDeps("trove4j", "intellij-core"))
+    } else {
+        compile(clionSdkDeps("trove4j", "clion"))
+    }
 }
 
 sourceSets {
