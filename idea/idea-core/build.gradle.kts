@@ -6,7 +6,7 @@ dependencies {
     compile(project(":idea:ide-common"))
     compile(preloadedDeps("kotlinx-coroutines-core", "kotlinx-coroutines-jdk8"))
 
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(project(":j2k"))
         compile(project(":idea:idea-jps-common"))
         compile(project(":android-extensions-compiler"))

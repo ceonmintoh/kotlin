@@ -3,7 +3,7 @@ apply { plugin("kotlin") }
 
 dependencies {
     compile(project(":compiler:frontend"))
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(ideaSdkDeps("openapi"))
     } else {
         compile(clionSdkDeps("openapi"))

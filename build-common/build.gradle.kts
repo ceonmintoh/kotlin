@@ -10,7 +10,7 @@ dependencies {
     compile(project(":compiler:frontend.java"))
     compile(project(":js:js.serializer"))
     compile(project(":js:js.frontend"))
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(ideaSdkDeps("util"))
     } else {
         compile(clionSdkDeps("util"))

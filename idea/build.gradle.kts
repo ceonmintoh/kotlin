@@ -13,7 +13,7 @@ dependencies {
 
     compile(preloadedDeps("markdown"))
 
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(project(":idea:kotlin-gradle-tooling"))
         compile(project(":eval4j"))
         compile(project(":plugins:uast-kotlin"))

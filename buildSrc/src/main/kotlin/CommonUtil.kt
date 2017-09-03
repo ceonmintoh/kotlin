@@ -78,3 +78,5 @@ var Project.jvmTarget: String?
 var Project.javaHome: String?
     get() = extra.takeIf { it.has("javaHome") }?.get("javaHome") as? String
     set(v) { extra["javaHome"] = v }
+
+fun Project.isClionBuild(): Boolean = System.getProperty("build.for.clion") == "true"

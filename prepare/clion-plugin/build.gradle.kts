@@ -30,7 +30,6 @@ buildscript {
 }
 
 val projectsToShadow = listOf(
-        ":plugins:annotation-based-compiler-plugins-ide-support",
         ":compiler:backend",
         ":compiler:backend-common",
         ":kotlin-build-common",
@@ -38,7 +37,6 @@ val projectsToShadow = listOf(
         ":compiler:container",
         ":compiler:daemon-common",
         ":core",
-        ":eval4j",
         ":idea:formatter",
         ":compiler:frontend",
         ":compiler:frontend.java",

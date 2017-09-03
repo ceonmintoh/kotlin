@@ -69,8 +69,8 @@ val distDir = "$rootDir/dist"
 val distKotlinHomeDir = "$distDir/kotlinc"
 val distLibDir = "$distKotlinHomeDir/lib"
 val ideaPluginDir =
-        if (System.getProperty("build.for.clion") != "true") "$distDir/artifacts/Kotlin"
-        else                                                 "$distDir/artifacts/KotlinCLion"
+        if (!isClionBuild()) "$distDir/artifacts/Kotlin"
+        else                 "$distDir/artifacts/KotlinCLion"
 
 extra["distDir"] = distDir
 extra["distKotlinHomeDir"] = distKotlinHomeDir
@@ -233,7 +233,11 @@ val compilerCopyTask = task<Copy>("idea-plugin-copy-compiler") {
 task<Copy>("dist-plugin") {
     dependsOn(compilerCopyTask)
     dependsOnTaskIfExistsRec("idea-plugin")
-    shouldRunAfter(":prepare:kotlin-plugin:idea-plugin")
+    if (!isClionBuild()) {
+        shouldRunAfter(":prepare:kotlin-plugin:idea-plugin")
+    } else {
+        shouldRunAfter(":prepare:clion-plugin:idea-plugin")
+    }
     into("$ideaPluginDir/lib")
 }
 

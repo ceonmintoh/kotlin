@@ -7,7 +7,7 @@ dependencies {
     compile(project(":core"))
     compile(project(":compiler:util"))
     compile(project(":compiler:frontend"))
-    if (System.getProperty("build.for.clion") == "true") {
+    if (isClionBuild()) {
         compile(ideaSdkCoreDeps("asm-all"))
     }
 }

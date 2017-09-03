@@ -7,7 +7,7 @@ dependencies {
     compile(project(":core"))
     compile(project(":compiler:util"))
     compile(project(":compiler:cli-common"))
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(ideaSdkCoreDeps(*(rootProject.extra["ideaCoreSdkJars"] as Array<String>)))
     } else {
         //todo[Alefas]: find substitution?

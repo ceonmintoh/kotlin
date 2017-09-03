@@ -9,7 +9,7 @@ dependencies {
     testCompile(projectDist(":kotlin-test:kotlin-test-jvm"))
     testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
     testCompile(commonDep("junit:junit"))
-    if (System.getProperty("build.for.clion") != "true") {
+    if (!isClionBuild()) {
         compile(ideaSdkCoreDeps("intellij-core"))
         testRuntime(ideaSdkCoreDeps("trove4j", "intellij-core"))
     } else {
