@@ -26,7 +26,6 @@ import com.intellij.psi.util.PsiTreeUtil
 import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinBundle
-import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
 import org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion
 import org.jetbrains.kotlin.idea.quickfix.KotlinQuickFixAction
 import org.jetbrains.kotlin.idea.quickfix.KotlinSingleIntentionActionFactory
@@ -117,7 +116,8 @@ abstract class AddKotlinLibQuickFix(element: KtElement,
         val element = element ?: return
         val module = ProjectRootManager.getInstance(project).fileIndex.getModuleForFile(element.containingFile.virtualFile) ?: return
 
-        val configurator = findApplicableConfigurator(module)
-        configurator.addLibraryDependency(module, element, getLibraryDescriptor(module), libraryJarDescriptors)
+        //todo[Alefas]: return back, commented for CLion build.
+        /*val configurator = findApplicableConfigurator(module)
+        configurator.addLibraryDependency(module, element, getLibraryDescriptor(module), libraryJarDescriptors)*/
     }
 }

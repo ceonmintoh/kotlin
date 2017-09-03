@@ -4,11 +4,11 @@ dependencies {
     compile(project(":compiler:frontend.script"))
     compile(project(":compiler:light-classes"))
     compile(project(":idea:ide-common"))
+    compile(project(":idea:idea-jps-common"))
+    compile(project(":j2k"))
     compile(preloadedDeps("kotlinx-coroutines-core", "kotlinx-coroutines-jdk8"))
 
     if (!isClionBuild()) {
-        compile(project(":j2k"))
-        compile(project(":idea:idea-jps-common"))
         compile(project(":android-extensions-compiler"))
 
         compile(ideaSdkCoreDeps("intellij-core", "util"))
@@ -16,7 +16,7 @@ dependencies {
         compile(ideaPluginDeps("gradle-tooling-api", "gradle", plugin = "gradle"))
     } else {
         compile(preloadedDeps("java-api", "java-impl"))
-        compile(clionSdkDeps("openapi", "clion"))
+        compile(clionSdkDeps("openapi", "clion", "forms_rt"))
     }
 }
 

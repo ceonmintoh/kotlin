@@ -99,7 +99,7 @@ abstract class AbstractKotlinExceptionFilterTest : KotlinCodeInsightTestCase() {
             e.targetException.stackTrace[0]
         }
 
-        val filter = KotlinExceptionFilterFactory().create(GlobalSearchScope.allScope(project))
+        val filter = org.jetbrains.kotlin.idea.filters.KotlinExceptionFilterFactory().create(GlobalSearchScope.allScope(project))
         val prefix = InTextDirectivesUtils.findStringWithPrefixes(fileText, "// PREFIX: ") ?: "at"
         val stackTraceString = stackTraceElement.toString()
         var result = filter.applyFilter("$prefix $stackTraceString", 0) ?: throw AssertionError("Couldn't apply filter to $stackTraceElement")

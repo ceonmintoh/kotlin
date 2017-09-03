@@ -71,7 +71,8 @@ fun getLibraryRootsWithAbiIncompatibleForKotlinJs(module: Module): Collection<Bi
 }
 
 fun updateLibraries(project: Project, libraries: Collection<Library>) {
-    if (project.allModules().any { module -> KotlinPluginUtil.isMavenModule(module) }) {
+    //todo[Alefas]: this is not possible in CLion
+    /*if (project.allModules().any { module -> KotlinPluginUtil.isMavenModule(module) }) {
         Messages.showMessageDialog(project, "Automatic library version update for Maven projects is currently unsupported. Please update your pom.xml manually.",
                                    "Update Kotlin Runtime Library",
                                    Messages.getErrorIcon())
@@ -106,7 +107,7 @@ fun updateLibraries(project: Project, libraries: Collection<Library>) {
         }
     }
 
-    collector.showNotification()
+    collector.showNotification()*/
 }
 
 private fun updateJar(
@@ -351,6 +352,11 @@ fun getDefaultJvmTarget(sdk: Sdk?, version: String): JvmTarget? {
         return JvmTarget.JVM_1_8
     }
     return null
+}
+
+//todo[Alefas]: copy/paste
+fun isSnapshot(version: String): Boolean {
+    return version.contains("SNAPSHOT", ignoreCase = true)
 }
 
 fun hasJreSpecificRuntime(version: String): Boolean =

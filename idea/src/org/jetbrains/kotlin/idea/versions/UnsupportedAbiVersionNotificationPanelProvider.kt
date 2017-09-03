@@ -19,7 +19,6 @@ package org.jetbrains.kotlin.idea.versions
 import com.intellij.ProjectTopics
 import com.intellij.icons.AllIcons
 import com.intellij.openapi.application.ApplicationManager
-import com.intellij.openapi.compiler.CompilerManager
 import com.intellij.openapi.components.ServiceManager
 import com.intellij.openapi.fileEditor.FileEditor
 import com.intellij.openapi.fileEditor.OpenFileDescriptor
@@ -212,8 +211,6 @@ class UnsupportedAbiVersionNotificationPanelProvider(private val project: Projec
             if (DumbService.isDumb(project)) return null
             if (ApplicationManager.getApplication().isUnitTestMode) return null
             if (file.fileType !== KotlinFileType.INSTANCE) return null
-
-            if (CompilerManager.getInstance(project).isExcludedFromCompilation(file)) return null
 
             val module = ModuleUtilCore.findModuleForFile(file, project) ?: return null
 

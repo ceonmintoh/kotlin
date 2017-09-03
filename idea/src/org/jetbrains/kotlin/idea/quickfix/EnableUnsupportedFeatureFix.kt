@@ -34,8 +34,6 @@ import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinPluginUtil
 import org.jetbrains.kotlin.idea.actions.internal.KotlinInternalMode
 import org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder
-import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
-import org.jetbrains.kotlin.idea.facet.KotlinFacet
 import org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion
 import org.jetbrains.kotlin.idea.util.projectStructure.allModules
 import org.jetbrains.kotlin.idea.versions.findKotlinRuntimeLibrary
@@ -67,13 +65,14 @@ sealed class EnableUnsupportedFeatureFix(
             }
             val forTests = ModuleRootManager.getInstance(module).fileIndex.isInTestSourceContent(file.virtualFile)
 
-            findApplicableConfigurator(module).updateLanguageVersion(
+            //todo[Alefas]:
+            /*findApplicableConfigurator(module).updateLanguageVersion(
                     module,
                     if (apiVersionOnly) null else feature.sinceVersion!!.versionString,
                     targetApiLevel,
                     feature.sinceApiVersion,
                     forTests
-            )
+            )*/
         }
     }
 
@@ -119,8 +118,9 @@ sealed class EnableUnsupportedFeatureFix(
 
             val module = ModuleUtilCore.findModuleForPsiElement(diagnostic.psiElement) ?: return null
             if (!KotlinPluginUtil.isGradleModule(module) && !KotlinPluginUtil.isMavenModule(module)) {
-                val facetSettings = KotlinFacet.get(module)?.configuration?.settings
-                if (facetSettings == null || facetSettings.useProjectSettings) return InProject(diagnostic.psiElement, feature, apiVersionOnly)
+                //todo[Alefas]:
+                /*val facetSettings = KotlinFacet.get(module)?.configuration?.settings
+                if (facetSettings == null || facetSettings.useProjectSettings) return InProject(diagnostic.psiElement, feature, apiVersionOnly)*/
             }
             return InModule(diagnostic.psiElement, feature, apiVersionOnly)
         }

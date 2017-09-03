@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2015 JetBrains s.r.o.
+ * Copyright 2010-2017 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.jetbrains.kotlin.idea.completion
+package org.jetbrains.kotlin.idea.properties
 
 import com.intellij.codeInsight.completion.CompletionParameters
 import com.intellij.codeInsight.completion.CompletionResultSet
@@ -26,6 +26,7 @@ import org.jetbrains.kotlin.psi.psiUtil.isPlain
 import org.jetbrains.kotlin.psi.psiUtil.startOffset
 import org.jetbrains.kotlin.utils.addToStdlib.firstIsInstanceOrNull
 
+//todo[Alefas]: Support somehow in IDEA.
 object PropertyKeyCompletion {
     fun perform(parameters: CompletionParameters, result: CompletionResultSet): Boolean {
         val template = parameters.position.getStrictParentOfType<KtStringTemplateExpression>() ?: return false

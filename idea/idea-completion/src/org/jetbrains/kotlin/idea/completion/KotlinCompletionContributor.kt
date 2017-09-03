@@ -277,7 +277,8 @@ class KotlinCompletionContributor : CompletionContributor() {
             return
         }
 
-        if (PropertyKeyCompletion.perform(parameters, result)) return
+        //todo[Alefas]: This is not possible in CLion.
+        //if (PropertyKeyCompletion.perform(parameters, result)) return
 
         fun addPostProcessor(session: CompletionSession) {
             if (lookupElementPostProcessor != null) {

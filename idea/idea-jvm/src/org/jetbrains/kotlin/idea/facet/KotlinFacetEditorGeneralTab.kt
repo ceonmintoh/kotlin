@@ -16,9 +16,7 @@
 
 package org.jetbrains.kotlin.idea.facet
 
-import com.intellij.facet.impl.ui.libraries.DelegatingLibrariesValidatorContext
 import com.intellij.facet.ui.*
-import com.intellij.facet.ui.libraries.FrameworkLibraryValidator
 import com.intellij.ide.actions.ShowSettingsUtilImpl
 import com.intellij.openapi.project.Project
 import com.intellij.ui.DocumentAdapter
@@ -205,19 +203,20 @@ class KotlinFacetEditorGeneralTab(
 
     val editor = EditorComponent(editorContext.project, configuration)
 
-    private val libraryValidator: FrameworkLibraryValidator
+//    private val libraryValidator: FrameworkLibraryValidator
     private val coroutineValidator = ArgumentConsistencyValidator()
 
     private var enableValidation = false
 
     init {
-        libraryValidator = FrameworkLibraryValidatorWithDynamicDescription(
+        //todo[Alefas]: disabled for CLion build.
+        /*libraryValidator = FrameworkLibraryValidatorWithDynamicDescription(
                 DelegatingLibrariesValidatorContext(editorContext),
                 validatorsManager,
                 "kotlin"
         ) { editor.targetPlatformComboBox.selectedItem as TargetPlatformKind<*> }
 
-        validatorsManager.registerValidator(libraryValidator)
+        validatorsManager.registerValidator(libraryValidator)*/
         validatorsManager.registerValidator(coroutineValidator)
 
         with(editor.compilerConfigurable) {

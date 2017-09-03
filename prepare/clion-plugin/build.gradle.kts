@@ -32,8 +32,10 @@ val projectsToShadow = listOf(
         ":idea:ide-common",
         ":idea",
         ":idea:idea-core",
+        ":idea:idea-jps-common",
         ":compiler:ir.psi2ir",
         ":compiler:ir.tree",
+        ":j2k",
         ":js:js.ast",
         ":js:js.frontend",
         ":js:js.parser",
@@ -58,7 +60,8 @@ dependencies {
     sideJars(projectDist(":kotlin-reflect"))
     sideJars(commonDep("io.javaslang", "javaslang"))
     sideJars(commonDep("javax.inject"))
-    sideJars(preloadedDeps("markdown", "kotlinx-coroutines-core", "kotlinx-coroutines-jdk8"))
+    sideJars(preloadedDeps("markdown", "kotlinx-coroutines-core", "kotlinx-coroutines-jdk8", "java-api", "java-impl"))
+    sideJars(ideaSdkDeps("asm"))
 }
 
 val jar = runtimeJar(task<ShadowJar>("shadowJar")) {
@@ -70,7 +73,7 @@ val jar = runtimeJar(task<ShadowJar>("shadowJar")) {
     }
 }
 
-ideaPlugin {
+clionPlugin {
     shouldRunAfter(":dist")
     from(jar)
     from(sideJars)

@@ -20,7 +20,6 @@ import com.intellij.openapi.progress.ProgressManager
 import com.intellij.openapi.util.Comparing
 import com.intellij.openapi.util.Key
 import com.intellij.psi.*
-import com.intellij.refactoring.move.moveMembers.MockMoveMembersOptions
 import com.intellij.refactoring.move.moveMembers.MoveMemberHandler
 import com.intellij.refactoring.move.moveMembers.MoveMembersProcessor
 import com.intellij.refactoring.util.MoveRenameUsageInfo

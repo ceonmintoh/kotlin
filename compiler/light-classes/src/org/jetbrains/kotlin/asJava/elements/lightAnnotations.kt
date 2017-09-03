@@ -50,6 +50,18 @@ abstract class KtLightAbstractAnnotation(parent: PsiElement, computeDelegate: ()
     override fun getParameterList() = clsDelegate.parameterList
 
     open fun fqNameMatches(fqName: String): Boolean = qualifiedName == fqName
+
+    override fun canNavigate(): Boolean {
+        return super<KtLightElementBase>.canNavigate()
+    }
+
+    override fun canNavigateToSource(): Boolean {
+        return super<KtLightElementBase>.canNavigateToSource()
+    }
+
+    override fun navigate(requestFocus: Boolean) {
+        super<KtLightElementBase>.navigate(requestFocus)
+    }
 }
 
 private typealias AnnotationValueOrigin = () -> PsiElement?
@@ -242,6 +254,18 @@ class KtLightNonSourceAnnotation(
 }
 
 class KtLightNonExistentAnnotation(parent: KtLightElement<*, *>) : KtLightElementBase(parent), PsiAnnotation {
+    override fun canNavigate(): Boolean {
+        return super<KtLightElementBase>.canNavigate()
+    }
+
+    override fun canNavigateToSource(): Boolean {
+        return super<KtLightElementBase>.canNavigateToSource()
+    }
+
+    override fun navigate(requestFocus: Boolean) {
+        super<KtLightElementBase>.navigate(requestFocus)
+    }
+
     override val kotlinOrigin get() = null
     override fun toString() = this.javaClass.name
 

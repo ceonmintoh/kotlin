@@ -28,8 +28,6 @@ import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinPluginUtil
 import org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder
-import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
-import org.jetbrains.kotlin.idea.facet.KotlinFacet
 import org.jetbrains.kotlin.psi.KtFile
 
 sealed class ChangeCoroutineSupportFix(
@@ -45,7 +43,8 @@ sealed class ChangeCoroutineSupportFix(
         override fun invoke(project: Project, editor: Editor?, file: KtFile) {
             val module = ModuleUtilCore.findModuleForPsiElement(file) ?: return
 
-            findApplicableConfigurator(module).changeCoroutineConfiguration(module, coroutineSupport)
+            //todo[Alefas]:
+            //findApplicableConfigurator(module).changeCoroutineConfiguration(module, coroutineSupport)
         }
     }
 
@@ -97,13 +96,16 @@ sealed class ChangeCoroutineSupportFix(
                 else -> return emptyList()
             }
             val module = ModuleUtilCore.findModuleForPsiElement(diagnostic.psiElement) ?: return emptyList()
-            val facetSettings = KotlinFacet.get(module)?.configuration?.settings
+
+            //todo[Alefas]:
+            /*val facetSettings = KotlinFacet.get(module)?.configuration?.settings
 
             val configureInProject = (facetSettings == null || facetSettings.useProjectSettings) &&
                                      !KotlinPluginUtil.isGradleModule(module) && !KotlinPluginUtil.isMavenModule(module)
             val quickFixConstructor: (PsiElement, LanguageFeature.State) -> ChangeCoroutineSupportFix =
                     if (configureInProject) ::InProject else ::InModule
-            return newCoroutineSupports.map { quickFixConstructor(diagnostic.psiElement, it) }
+            return newCoroutineSupports.map { quickFixConstructor(diagnostic.psiElement, it) }*/
+            return emptyList()
         }
     }
 }

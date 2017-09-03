@@ -21,10 +21,10 @@ import com.intellij.execution.runners.ExecutionEnvironment;
 import com.intellij.ide.browsers.BrowserLauncher;
 import com.intellij.ide.browsers.WebBrowser;
 import com.intellij.ide.browsers.WebBrowserManager;
-import com.intellij.openapi.compiler.CompilerPaths;
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleManager;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.roots.CompilerModuleExtension;
 import com.intellij.openapi.util.io.FileUtil;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
@@ -61,10 +61,41 @@ public final class K2JSRunnerUtils {
         }
     }
 
+    //todo[Alefas]: copy/paste
+    @Nullable
+    public static VirtualFile getModuleOutputDirectory(@NotNull Module module, boolean forTestClasses) {
+        final CompilerModuleExtension compilerModuleExtension = CompilerModuleExtension.getInstance(module);
+        if (compilerModuleExtension == null) {
+            return null;
+        }
+        VirtualFile outPath;
+        if (forTestClasses) {
+            final VirtualFile path = compilerModuleExtension.getCompilerOutputPathForTests();
+            if (path != null) {
+                outPath = path;
+            }
+            else {
+                outPath = compilerModuleExtension.getCompilerOutputPath();
+            }
+        }
+        else {
+            outPath = compilerModuleExtension.getCompilerOutputPath();
+        }
+        if (outPath == null) {
+            return null;
+        }
+        if (!outPath.isValid()) {
+            return null;
+        }
+        return outPath;
+    }
+
     @Nullable
     private static VirtualFile getOutputDir(@NotNull Project project) {
         Module module = getJsModule(project);
-        return CompilerPaths.getModuleOutputDirectory(module, /*forTests = */ false);
+        //todo[Alefas]:
+        //return CompilerPaths.getModuleOutputDirectory(module, /*forTests = */ false);
+        return getModuleOutputDirectory(module, /*forTests = */ false);
     }
 
     @NotNull

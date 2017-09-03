@@ -36,6 +36,9 @@
 
         <runConfigurationProducer implementation="org.jetbrains.kotlin.idea.run.KotlinTestClassGradleConfigurationProducer"/>
         <runConfigurationProducer implementation="org.jetbrains.kotlin.idea.run.KotlinTestMethodGradleConfigurationProducer"/>
+
+        <projectOpenProcessor implementation="org.jetbrains.kotlin.gradle.GradleKotlinDSLProjectOpenProcessor"/>
+        <projectImportProvider implementation="org.jetbrains.kotlin.gradle.GradleKotlinDSLProjectImportProvider"/>
     </extensions>
 
     <extensions defaultExtensionNs="org.jetbrains.kotlin">

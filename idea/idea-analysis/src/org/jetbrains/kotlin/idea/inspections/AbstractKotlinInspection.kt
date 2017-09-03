@@ -32,9 +32,10 @@ abstract class AbstractKotlinInspection: LocalInspectionTool(), CustomSuppressab
     }
 
     override fun isSuppressedFor(element: PsiElement): Boolean {
-        if (SuppressManager.getInstance()!!.isSuppressedFor(element, id)) {
+        //todo[Alefas]: NPE because of SuppressManager in CLion
+        /*if (SuppressManager.getInstance()!!.isSuppressedFor(element, id)) {
             return true
-        }
+        }*/
 
         val project = element.project
         if (KotlinCacheService.getInstance(project).getSuppressionCache().isSuppressed(element, suppressionKey, toSeverity(defaultLevel))) {

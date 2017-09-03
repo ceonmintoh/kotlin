@@ -24,7 +24,6 @@ import com.intellij.codeInsight.template.TemplateManager
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.PsiDocumentManager
-import org.apache.commons.lang.StringEscapeUtils.escapeJava
 import org.jetbrains.kotlin.idea.caches.resolve.analyze
 import org.jetbrains.kotlin.idea.intentions.ChooseStringExpression
 import org.jetbrains.kotlin.idea.intentions.SelfTargetingRangeIntention
@@ -66,7 +65,8 @@ class DoubleBangToIfThenIntention : SelfTargetingRangeIntention<KtPostfixExpress
         val thrownExpression =
                 ((if (isStatement) ifStatement.then else ifStatement.`else`) as KtThrowExpression).thrownExpression!!
 
-        val message = escapeJava("Expression '$expressionText' must not be null")
+        //TODO[Alefas]: Add Java String escaping(!) Currently it's disabled for CLion build.
+        val message = "Expression '$expressionText' must not be null"
         val nullPtrExceptionText = "NullPointerException(\"$message\")"
         val kotlinNullPtrExceptionText = "KotlinNullPointerException()"
 

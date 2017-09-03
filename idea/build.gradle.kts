@@ -21,11 +21,6 @@ dependencies {
 
         compileOnly(ideaSdkDeps("velocity", "boot", "gson", "swingx-core", "jsr305", "forms_rt"))
 
-        compile(ideaPluginDeps("IntelliLang", plugin = "IntelliLang"))
-        compile(ideaPluginDeps("copyright", plugin = "copyright"))
-        compile(ideaPluginDeps("properties", plugin = "properties"))
-        compile(ideaPluginDeps("java-i18n", plugin = "java-i18n"))
-
         //todo[Alefas]: Enable tests in CLion
         testCompile(projectDist(":kotlin-test:kotlin-test-junit"))
         testCompile(project(":compiler:cli"))
@@ -74,8 +69,7 @@ sourceSets {
     "main" {
         projectDefault()
         java.srcDirs("idea-completion/src",
-                     "idea-live-templates/src",
-                     "idea-repl/src")
+                     "idea-live-templates/src")
         resources.srcDir("idea-maven/resources")
     }
     "test" {

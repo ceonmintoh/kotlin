@@ -38,7 +38,7 @@ import com.intellij.psi.PsiFile
 import com.intellij.util.IncorrectOperationException
 import org.jetbrains.kotlin.idea.KotlinFileType
 import org.jetbrains.kotlin.idea.KotlinIcons
-import org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded
+//import org.jetbrains.kotlin.idea.configuration.showConfigureKotlinNotificationIfNeeded
 import org.jetbrains.kotlin.idea.util.application.runWriteAction
 import org.jetbrains.kotlin.psi.KtFile
 import org.jetbrains.kotlin.psi.KtNamedDeclaration
@@ -55,7 +55,8 @@ class NewKotlinFileAction
 
         val module = ModuleUtilCore.findModuleForPsiElement(createdElement!!)
         if (module != null) {
-            showConfigureKotlinNotificationIfNeeded(module)
+            //todo[Alefas]: Fix me! Commented for CLion build.
+            //showConfigureKotlinNotificationIfNeeded(module)
         }
 
         if (createdElement is KtFile) {

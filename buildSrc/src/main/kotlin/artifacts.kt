@@ -102,6 +102,14 @@ fun Project.ideaPlugin(subdir: String = "lib", body: AbstractCopyTask.() -> Unit
     }
 }
 
+fun Project.clionPlugin(subdir: String = "lib", body: AbstractCopyTask.() -> Unit) {
+    task<Copy>("clionPlugin") {
+        body()
+        into(File(rootProject.extra["clionPluginDir"].toString(), subdir).path)
+        rename("-${java.util.regex.Pattern.quote(rootProject.extra["build.number"].toString())}", "")
+    }
+}
+
 fun Project.ideaPlugin(subdir: String = "lib") = ideaPlugin(subdir) {
     fromRuntimeJarIfExists(this)
 }

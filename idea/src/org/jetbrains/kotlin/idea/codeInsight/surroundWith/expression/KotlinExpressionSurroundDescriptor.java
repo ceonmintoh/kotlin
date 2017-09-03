@@ -31,7 +31,8 @@ public class KotlinExpressionSurroundDescriptor implements SurroundDescriptor {
             new KotlinStringTemplateSurrounder(),
             new KotlinParenthesesSurrounder(),
             new KotlinWhenSurrounder() ,
-            new KotlinRuntimeTypeCastSurrounder(),
+            //todo[Alefas]: fixme
+            //new KotlinRuntimeTypeCastSurrounder(),
             new KotlinWithIfExpressionSurrounder(/* withElse = */false),
             new KotlinWithIfExpressionSurrounder(/* withElse = */true)
     };
