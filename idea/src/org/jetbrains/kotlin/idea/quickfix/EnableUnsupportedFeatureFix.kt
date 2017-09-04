@@ -27,7 +27,6 @@ import com.intellij.openapi.roots.libraries.Library
 import com.intellij.openapi.ui.Messages
 import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.config.ApiVersion
-import org.jetbrains.kotlin.config.KotlinFacetSettingsProvider
 import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
@@ -56,7 +55,8 @@ sealed class EnableUnsupportedFeatureFix(
         override fun invoke(project: Project, editor: Editor?, file: KtFile) {
             val module = ModuleUtilCore.findModuleForPsiElement(file) ?: return
 
-            val facetSettings = KotlinFacetSettingsProvider.getInstance(project).getInitializedSettings(module)
+            //todo[Alefas]:
+            /*val facetSettings = KotlinFacetSettingsProvider.getInstance(project).getInitializedSettings(module)
             val targetApiLevel = facetSettings.apiLevel?.let { apiLevel ->
                 if (ApiVersion.createByLanguageVersion(apiLevel) < feature.sinceApiVersion)
                     feature.sinceApiVersion.versionString
@@ -65,8 +65,7 @@ sealed class EnableUnsupportedFeatureFix(
             }
             val forTests = ModuleRootManager.getInstance(module).fileIndex.isInTestSourceContent(file.virtualFile)
 
-            //todo[Alefas]:
-            /*findApplicableConfigurator(module).updateLanguageVersion(
+            findApplicableConfigurator(module).updateLanguageVersion(
                     module,
                     if (apiVersionOnly) null else feature.sinceVersion!!.versionString,
                     targetApiLevel,

@@ -61,7 +61,7 @@ dependencies {
     sideJars(commonDep("io.javaslang", "javaslang"))
     sideJars(commonDep("javax.inject"))
     sideJars(preloadedDeps("markdown", "kotlinx-coroutines-core", "kotlinx-coroutines-jdk8", "java-api", "java-impl"))
-    sideJars(ideaSdkDeps("asm"))
+    sideJars(ideaSdkDeps("asm-all"))
 }
 
 val jar = runtimeJar(task<ShadowJar>("shadowJar")) {

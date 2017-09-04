@@ -29,7 +29,6 @@
   <xi:include href="/META-INF/JavaAnalysisPlugin.xml" xpointer="xpointer(/idea-plugin/*)"/>
   <xi:include href="/META-INF/InspectionGadgets.xml" xpointer="xpointer(/idea-plugin/*)"/>
   <xi:include href="/META-INF/IntentionPowerPack.xml" xpointer="xpointer(/idea-plugin/*)"/>
-  <xi:include href="/META-INF/libraryJarUsage.xml" xpointer="xpointer(/idea-plugin/*)"/>
 
   <!-- ULTIMATE-PLUGIN-PLACEHOLDER -->
 
@@ -335,6 +334,9 @@
 
     <projectService serviceInterface="org.jetbrains.kotlin.idea.caches.resolve.ScriptBinariesScopeCache"
                     serviceImplementation="org.jetbrains.kotlin.idea.caches.resolve.ScriptBinariesScopeCache"/>
+
+    <projectService serviceInterface="org.jetbrains.kotlin.config.KotlinFacetSettingsProvider"
+                    serviceImplementation="org.jetbrains.kotlin.idea.facet.KotlinFacetSettingsProviderImpl"/>
 
     <errorHandler implementation="org.jetbrains.kotlin.idea.reporter.KotlinReportSubmitter"/>
 
@@ -718,6 +720,8 @@
     <methodReferencesSearch implementation="org.jetbrains.kotlin.idea.search.ideaExtensions.DefaultAnnotationMethodKotlinImplicitReferenceSearcher"/>
 
     <readWriteAccessDetector implementation="org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReadWriteAccessDetector" id="kotlin"/>
+
+    <facetType implementation="org.jetbrains.kotlin.idea.facet.KotlinFacetType"/>
 
     <applicationService serviceInterface="org.jetbrains.kotlin.idea.editor.KotlinEditorOptions"
                         serviceImplementation="org.jetbrains.kotlin.idea.editor.KotlinEditorOptions"/>

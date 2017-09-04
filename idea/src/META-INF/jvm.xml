@@ -47,9 +47,6 @@
         <projectService serviceInterface="org.jetbrains.kotlin.console.KotlinConsoleKeeper"
                         serviceImplementation="org.jetbrains.kotlin.console.KotlinConsoleKeeper"/>
 
-        <projectService serviceInterface="org.jetbrains.kotlin.config.KotlinFacetSettingsProvider"
-                        serviceImplementation="org.jetbrains.kotlin.idea.facet.KotlinFacetSettingsProviderImpl"/>
-
         <buildProcess.parametersProvider implementation="org.jetbrains.kotlin.idea.compiler.configuration.KotlinBuildProcessParametersProvider"/>
 
         <projectService serviceInterface="org.jetbrains.kotlin.idea.debugger.evaluate.KotlinDebuggerCaches"
@@ -92,8 +89,6 @@
         <editorNotificationProvider implementation="org.jetbrains.kotlin.idea.configuration.KotlinSetupEnvironmentNotificationProvider"/>
 
         <consoleFilterProvider implementation="org.jetbrains.kotlin.idea.run.KotlinConsoleFilterProvider"/>
-
-        <facetType implementation="org.jetbrains.kotlin.idea.facet.KotlinFacetType"/>
 
         <exceptionFilter implementation="org.jetbrains.kotlin.idea.filters.KotlinExceptionFilterFactory" order="first"/>
 
