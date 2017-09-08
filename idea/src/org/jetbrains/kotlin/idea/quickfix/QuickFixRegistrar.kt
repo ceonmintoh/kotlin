@@ -150,8 +150,6 @@ class QuickFixRegistrar : QuickFixContributor {
         NAMED_PARAMETER_NOT_FOUND.registerFactory(ImportForMismatchingArgumentsFix)
         NONE_APPLICABLE.registerFactory(ImportForMismatchingArgumentsFix)
 
-        UNRESOLVED_REFERENCE.registerFactory(AddTestLibQuickFix)
-
         UNRESOLVED_REFERENCE_WRONG_RECEIVER.registerFactory(ImportFix)
 
         FUNCTION_EXPECTED.registerFactory(InvokeImportFix)
@@ -401,8 +399,6 @@ class QuickFixRegistrar : QuickFixContributor {
         PROTECTED_CALL_FROM_PUBLIC_INLINE.registerFactory(ReplaceProtectedToPublishedApiCallFix)
 
         POSITIONED_VALUE_ARGUMENT_FOR_JAVA_ANNOTATION.registerFactory(ReplaceJavaAnnotationPositionedArgumentsFix)
-
-        NO_REFLECTION_IN_CLASS_PATH.registerFactory(AddReflectionQuickFix)
 
         ErrorsJvm.JAVA_TYPE_MISMATCH.registerFactory(CastExpressionFix.GenericVarianceConversion)
 

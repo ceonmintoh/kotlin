@@ -26,6 +26,7 @@ import com.intellij.psi.util.PsiTreeUtil
 import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinBundle
+import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
 import org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion
 import org.jetbrains.kotlin.idea.quickfix.KotlinQuickFixAction
 import org.jetbrains.kotlin.idea.quickfix.KotlinSingleIntentionActionFactory
@@ -38,8 +39,8 @@ import org.jetbrains.kotlin.psi.KtFile
 import org.jetbrains.kotlin.psi.KtImportDirective
 
 class AddReflectionQuickFix(element: KtElement)
-        : AddKotlinLibQuickFix(element, listOf(LibraryJarDescriptor.REFLECT_JAR,
-                                               LibraryJarDescriptor.REFLECT_SRC_JAR)) {
+    : AddKotlinLibQuickFix(element, listOf(LibraryJarDescriptor.REFLECT_JAR,
+                                           LibraryJarDescriptor.REFLECT_SRC_JAR)) {
     override fun getText() = KotlinBundle.message("add.reflection.to.classpath")
     override fun getFamilyName() = text
 
@@ -52,8 +53,8 @@ class AddReflectionQuickFix(element: KtElement)
 }
 
 class AddTestLibQuickFix(element: KtElement)
-        : AddKotlinLibQuickFix(element, listOf(LibraryJarDescriptor.TEST_JAR,
-                                               LibraryJarDescriptor.TEST_SRC_JAR)) {
+    : AddKotlinLibQuickFix(element, listOf(LibraryJarDescriptor.TEST_JAR,
+                                           LibraryJarDescriptor.TEST_SRC_JAR)) {
     override fun getText() = KotlinBundle.message("add.test.to.classpath")
     override fun getFamilyName() = text
 
@@ -116,8 +117,7 @@ abstract class AddKotlinLibQuickFix(element: KtElement,
         val element = element ?: return
         val module = ProjectRootManager.getInstance(project).fileIndex.getModuleForFile(element.containingFile.virtualFile) ?: return
 
-        //todo[Alefas]: return back, commented for CLion build.
-        /*val configurator = findApplicableConfigurator(module)
-        configurator.addLibraryDependency(module, element, getLibraryDescriptor(module), libraryJarDescriptors)*/
+        val configurator = findApplicableConfigurator(module)
+        configurator.addLibraryDependency(module, element, getLibraryDescriptor(module), libraryJarDescriptors)
     }
 }
