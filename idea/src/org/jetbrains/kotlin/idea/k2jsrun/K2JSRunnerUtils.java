@@ -61,41 +61,24 @@ public final class K2JSRunnerUtils {
         }
     }
 
-    //todo[Alefas]: copy/paste
     @Nullable
-    public static VirtualFile getModuleOutputDirectory(@NotNull Module module, boolean forTestClasses) {
-        final CompilerModuleExtension compilerModuleExtension = CompilerModuleExtension.getInstance(module);
+    private static VirtualFile getModuleOutputDirectory(@NotNull Module module) {
+        CompilerModuleExtension compilerModuleExtension = CompilerModuleExtension.getInstance(module);
+
         if (compilerModuleExtension == null) {
             return null;
         }
-        VirtualFile outPath;
-        if (forTestClasses) {
-            final VirtualFile path = compilerModuleExtension.getCompilerOutputPathForTests();
-            if (path != null) {
-                outPath = path;
-            }
-            else {
-                outPath = compilerModuleExtension.getCompilerOutputPath();
-            }
-        }
-        else {
-            outPath = compilerModuleExtension.getCompilerOutputPath();
-        }
-        if (outPath == null) {
-            return null;
-        }
-        if (!outPath.isValid()) {
-            return null;
-        }
+
+        VirtualFile outPath = compilerModuleExtension.getCompilerOutputPath();
+
+        if (outPath == null || !outPath.isValid()) return null;
         return outPath;
     }
 
     @Nullable
     private static VirtualFile getOutputDir(@NotNull Project project) {
         Module module = getJsModule(project);
-        //todo[Alefas]:
-        //return CompilerPaths.getModuleOutputDirectory(module, /*forTests = */ false);
-        return getModuleOutputDirectory(module, /*forTests = */ false);
+        return getModuleOutputDirectory(module);
     }
 
     @NotNull
