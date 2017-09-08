@@ -72,8 +72,6 @@ public class KotlinPrimaryConstructorParameterTableModel extends KotlinCallableP
 
         @Override
         public TableCellEditor doCreateEditor(ParameterTableModelItemBase<KotlinParameterInfo> item) {
-            //todo[Alefas]: is it important?
-            //return new ComboBoxCellEditor(new JComboBox());
             return new DefaultCellEditor(new JComboBox());
         }
 
