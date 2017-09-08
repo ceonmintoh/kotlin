@@ -33,7 +33,6 @@ class KtLightClassForDecompiledDeclaration(
         override val kotlinOrigin: KtClassOrObject?,
         private val file: KtClsFile
 ) : KtLightClassBase(clsDelegate.manager) {
-    //todo[Alefas]: Why we need this check for CLion?
     val fqName = kotlinOrigin?.fqName ?: clsDelegate.qualifiedName?: FqName(clsDelegate.qualifiedName!!)
 
     override fun copy() = this
