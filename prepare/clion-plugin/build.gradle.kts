@@ -62,8 +62,6 @@ dependencies {
     sideJars(commonDep("javax.inject"))
     sideJars(preloadedDeps("markdown", "kotlinx-coroutines-core", "kotlinx-coroutines-jdk8", "java-api", "java-impl"))
     sideJars(ideaSdkDeps("asm-all"))
-    //todo[Alefas]: we need only some of this reosources, not all...
-    sideJars(preloadedDeps("resources_en", "resources"))
 }
 
 val jar = runtimeJar(task<ShadowJar>("shadowJar")) {
