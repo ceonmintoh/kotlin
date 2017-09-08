@@ -1,4 +1,6 @@
 <idea-plugin>
+    <!-- TODO[Alefas] Move to module idea-jvm, it will solve error highlighting problem here -->
+
     <application-components>
         <component>
             <implementation-class>org.jetbrains.kotlin.idea.JvmPluginStartupComponent</implementation-class>
@@ -93,6 +95,9 @@
         <exceptionFilter implementation="org.jetbrains.kotlin.idea.filters.KotlinExceptionFilterFactory" order="first"/>
 
         <externalSystemTaskNotificationListener implementation="org.jetbrains.kotlin.idea.configuration.KotlinExternalSystemSyncListener"/>
+
+        <lang.surroundDescriptor language="kotlin"
+                                 implementationClass="org.jetbrains.kotlin.idea.debugger.surroundWith.KotlinDebuggerExpressionSurroundDescriptor"/>
     </extensions>
 
     <extensions defaultExtensionNs="org.jetbrains.uast">
