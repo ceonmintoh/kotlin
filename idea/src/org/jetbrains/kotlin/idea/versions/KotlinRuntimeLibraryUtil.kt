@@ -354,7 +354,6 @@ fun getDefaultJvmTarget(sdk: Sdk?, version: String): JvmTarget? {
     return null
 }
 
-//todo[Alefas]: copy/paste
 fun isSnapshot(version: String): Boolean {
     return version.contains("SNAPSHOT", ignoreCase = true)
 }
