@@ -20,6 +20,7 @@ import com.intellij.codeInsight.completion.*
 import com.intellij.codeInsight.lookup.LookupElement
 import com.intellij.codeInsight.lookup.LookupElementDecorator
 import com.intellij.openapi.editor.Document
+import com.intellij.openapi.extensions.ExtensionPointName
 import com.intellij.openapi.util.Key
 import com.intellij.patterns.PlatformPatterns
 import com.intellij.patterns.PsiJavaPatterns.elementType
@@ -277,8 +278,9 @@ class KotlinCompletionContributor : CompletionContributor() {
             return
         }
 
-        //todo[Alefas]: This is not possible in CLion.
-        //if (PropertyKeyCompletion.perform(parameters, result)) return
+        for (extension in KotlinCompletionExtension.EP_NAME.getExtensions(parameters.position.project)) {
+            if (extension.perform(parameters, result)) return
+        }
 
         fun addPostProcessor(session: CompletionSession) {
             if (lookupElementPostProcessor != null) {
@@ -457,5 +459,14 @@ class KotlinCompletionContributor : CompletionContributor() {
 
     private fun isInSimpleStringTemplate(tokenBefore: PsiElement?): Boolean {
         return tokenBefore?.parents?.firstIsInstanceOrNull<KtStringTemplateExpression>()?.isPlain() ?: false
+    }
+}
+
+abstract class KotlinCompletionExtension {
+    abstract fun perform(parameters: CompletionParameters, result: CompletionResultSet): Boolean
+
+    companion object {
+        val EP_NAME: ExtensionPointName<KotlinCompletionExtension> =
+                ExtensionPointName.create<KotlinCompletionExtension>("org.jetbrains.kotlin.completionExtension")
     }
 }

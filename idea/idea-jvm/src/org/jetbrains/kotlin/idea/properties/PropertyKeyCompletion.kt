@@ -20,15 +20,15 @@ import com.intellij.codeInsight.completion.CompletionParameters
 import com.intellij.codeInsight.completion.CompletionResultSet
 import com.intellij.lang.properties.references.PropertiesCompletionContributor
 import com.intellij.lang.properties.references.PropertyReference
+import org.jetbrains.kotlin.idea.completion.KotlinCompletionExtension
 import org.jetbrains.kotlin.psi.KtStringTemplateExpression
 import org.jetbrains.kotlin.psi.psiUtil.getStrictParentOfType
 import org.jetbrains.kotlin.psi.psiUtil.isPlain
 import org.jetbrains.kotlin.psi.psiUtil.startOffset
 import org.jetbrains.kotlin.utils.addToStdlib.firstIsInstanceOrNull
 
-//todo[Alefas]: Support somehow in IDEA.
-object PropertyKeyCompletion {
-    fun perform(parameters: CompletionParameters, result: CompletionResultSet): Boolean {
+class PropertyKeyCompletion : KotlinCompletionExtension() {
+    override fun perform(parameters: CompletionParameters, result: CompletionResultSet): Boolean {
         val template = parameters.position.getStrictParentOfType<KtStringTemplateExpression>() ?: return false
         if (!template.isPlain()) return false
 

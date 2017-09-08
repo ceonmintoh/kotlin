@@ -114,5 +114,7 @@
         <storageComponentContainerContributor implementation="org.jetbrains.kotlin.noarg.ide.IdeNoArgComponentContainerContributor"/>
         <expressionCodegenExtension implementation="org.jetbrains.kotlin.noarg.NoArgExpressionCodegenExtension"/>
         <defaultErrorMessages implementation="org.jetbrains.kotlin.noarg.diagnostic.DefaultErrorMessagesNoArg"/>
+
+        <completionExtension implementation="org.jetbrains.kotlin.idea.properties.PropertyKeyCompletion"/>
     </extensions>
 </idea-plugin>
