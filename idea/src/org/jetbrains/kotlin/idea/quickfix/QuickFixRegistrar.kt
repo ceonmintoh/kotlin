@@ -491,9 +491,6 @@ class QuickFixRegistrar : QuickFixContributor {
 
         UNSUPPORTED_FEATURE.registerFactory(EnableUnsupportedFeatureFix)
 
-        EXPERIMENTAL_FEATURE_ERROR.registerFactory(ChangeCoroutineSupportFix)
-        EXPERIMENTAL_FEATURE_WARNING.registerFactory(ChangeCoroutineSupportFix)
-
         UNRESOLVED_REFERENCE.registerFactory(CreateLabelFix)
         YIELD_IS_RESERVED.registerFactory(UnsupportedYieldFix)
         INVALID_TYPE_OF_ANNOTATION_MEMBER.registerFactory(TypeOfAnnotationMemberFix)

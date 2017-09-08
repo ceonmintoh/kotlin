@@ -117,5 +117,6 @@
 
         <completionExtension implementation="org.jetbrains.kotlin.idea.properties.PropertyKeyCompletion"/>
         <newFileHook implementation="org.jetbrains.kotlin.idea.configuration.NewKotlinFileConfigurationHook"/>
+        <quickFixContributor implementation="org.jetbrains.kotlin.idea.quickfix.JvmQuickFixRegistrar"/>
     </extensions>
 </idea-plugin>

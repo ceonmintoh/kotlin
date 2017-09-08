@@ -1,5 +1,5 @@
 /*
- * Copyright 2010-2016 JetBrains s.r.o.
+ * Copyright 2010-2017 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,8 @@ import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinPluginUtil
 import org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder
+import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
+import org.jetbrains.kotlin.idea.facet.KotlinFacet
 import org.jetbrains.kotlin.psi.KtFile
 
 sealed class ChangeCoroutineSupportFix(
@@ -43,8 +45,7 @@ sealed class ChangeCoroutineSupportFix(
         override fun invoke(project: Project, editor: Editor?, file: KtFile) {
             val module = ModuleUtilCore.findModuleForPsiElement(file) ?: return
 
-            //todo[Alefas]:
-            //findApplicableConfigurator(module).changeCoroutineConfiguration(module, coroutineSupport)
+            findApplicableConfigurator(module).changeCoroutineConfiguration(module, coroutineSupport)
         }
     }
 
@@ -97,15 +98,13 @@ sealed class ChangeCoroutineSupportFix(
             }
             val module = ModuleUtilCore.findModuleForPsiElement(diagnostic.psiElement) ?: return emptyList()
 
-            //todo[Alefas]:
-            /*val facetSettings = KotlinFacet.get(module)?.configuration?.settings
+            val facetSettings = KotlinFacet.get(module)?.configuration?.settings
 
             val configureInProject = (facetSettings == null || facetSettings.useProjectSettings) &&
                                      !KotlinPluginUtil.isGradleModule(module) && !KotlinPluginUtil.isMavenModule(module)
             val quickFixConstructor: (PsiElement, LanguageFeature.State) -> ChangeCoroutineSupportFix =
                     if (configureInProject) ::InProject else ::InModule
-            return newCoroutineSupports.map { quickFixConstructor(diagnostic.psiElement, it) }*/
-            return emptyList()
+            return newCoroutineSupports.map { quickFixConstructor(diagnostic.psiElement, it) }
         }
     }
 }
