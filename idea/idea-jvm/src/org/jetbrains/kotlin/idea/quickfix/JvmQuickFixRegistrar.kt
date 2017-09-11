@@ -30,6 +30,8 @@ class JvmQuickFixRegistrar : QuickFixContributor {
 
         UNRESOLVED_REFERENCE.registerFactory(AddTestLibQuickFix)
 
+        UNSUPPORTED_FEATURE.registerFactory(EnableUnsupportedFeatureFix)
+
         EXPERIMENTAL_FEATURE_ERROR.registerFactory(ChangeCoroutineSupportFix)
         EXPERIMENTAL_FEATURE_WARNING.registerFactory(ChangeCoroutineSupportFix)
 

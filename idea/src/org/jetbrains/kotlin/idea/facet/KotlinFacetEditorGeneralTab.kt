@@ -203,21 +203,14 @@ class KotlinFacetEditorGeneralTab(
 
     val editor = EditorComponent(editorContext.project, configuration)
 
-//    private val libraryValidator: FrameworkLibraryValidator
-    private val coroutineValidator = ArgumentConsistencyValidator()
-
     private var enableValidation = false
 
     init {
-        //todo[Alefas]: disabled for CLion build.
-        /*libraryValidator = FrameworkLibraryValidatorWithDynamicDescription(
-                DelegatingLibrariesValidatorContext(editorContext),
-                validatorsManager,
-                "kotlin"
-        ) { editor.targetPlatformComboBox.selectedItem as TargetPlatformKind<*> }
+        for (creator in KotlinFacetValidatorCreator.EP_NAME.getExtensions()) {
+          validatorsManager.registerValidator(creator.create(, ))
+        }
 
-        validatorsManager.registerValidator(libraryValidator)*/
-        validatorsManager.registerValidator(coroutineValidator)
+        validatorsManager.registerValidator(ArgumentConsistencyValidator())
 
         with(editor.compilerConfigurable) {
             reportWarningsCheckBox.validateOnChange()

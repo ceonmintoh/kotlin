@@ -1,6 +1,4 @@
 <idea-plugin>
-    <!-- TODO[Alefas] Move to module idea-jvm, it will solve error highlighting problem here -->
-
     <application-components>
         <component>
             <implementation-class>org.jetbrains.kotlin.idea.JvmPluginStartupComponent</implementation-class>
@@ -118,5 +116,6 @@
         <completionExtension implementation="org.jetbrains.kotlin.idea.properties.PropertyKeyCompletion"/>
         <newFileHook implementation="org.jetbrains.kotlin.idea.configuration.NewKotlinFileConfigurationHook"/>
         <quickFixContributor implementation="org.jetbrains.kotlin.idea.quickfix.JvmQuickFixRegistrar"/>
+        <clearBuildState implementation="org.jetbrains.kotlin.idea.compiler.configuration.ClearBuildManagerState"/>
     </extensions>
 </idea-plugin>

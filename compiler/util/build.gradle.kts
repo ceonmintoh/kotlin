@@ -9,7 +9,6 @@ dependencies {
         compile(ideaSdkCoreDeps(*(rootProject.extra["ideaCoreSdkJars"] as Array<String>)))
     } else {
         compile(clionSdkDeps("openapi", "util", "annotations", "log4j", "trove4j", "guava"))
-        //todo[Alefas]: find substitution
     }
 }
 

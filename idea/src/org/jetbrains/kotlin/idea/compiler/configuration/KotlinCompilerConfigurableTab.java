@@ -551,8 +551,9 @@ public class KotlinCompilerConfigurableTab implements SearchableConfigurable, Co
             KotlinCompilerSettings.Companion.getInstance(project).setSettings(compilerSettings);
         }
 
-        //todo[Alefas]:
-        //BuildManager.getInstance().clearState(project);
+        for (ClearBuildStateExtension extension : ClearBuildStateExtension.getExtensions()) {
+            extension.clearState(project);
+        }
     }
 
     @Override

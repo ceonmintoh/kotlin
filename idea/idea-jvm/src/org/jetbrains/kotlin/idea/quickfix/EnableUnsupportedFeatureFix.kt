@@ -27,12 +27,15 @@ import com.intellij.openapi.roots.libraries.Library
 import com.intellij.openapi.ui.Messages
 import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.config.ApiVersion
+import org.jetbrains.kotlin.config.KotlinFacetSettingsProvider
 import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.diagnostics.Diagnostic
 import org.jetbrains.kotlin.diagnostics.Errors
 import org.jetbrains.kotlin.idea.KotlinPluginUtil
 import org.jetbrains.kotlin.idea.actions.internal.KotlinInternalMode
 import org.jetbrains.kotlin.idea.compiler.configuration.KotlinCommonCompilerArgumentsHolder
+import org.jetbrains.kotlin.idea.configuration.findApplicableConfigurator
+import org.jetbrains.kotlin.idea.facet.KotlinFacet
 import org.jetbrains.kotlin.idea.facet.getRuntimeLibraryVersion
 import org.jetbrains.kotlin.idea.util.projectStructure.allModules
 import org.jetbrains.kotlin.idea.versions.findKotlinRuntimeLibrary
@@ -55,8 +58,7 @@ sealed class EnableUnsupportedFeatureFix(
         override fun invoke(project: Project, editor: Editor?, file: KtFile) {
             val module = ModuleUtilCore.findModuleForPsiElement(file) ?: return
 
-            //todo[Alefas]:
-            /*val facetSettings = KotlinFacetSettingsProvider.getInstance(project).getInitializedSettings(module)
+            val facetSettings = KotlinFacetSettingsProvider.getInstance(project).getInitializedSettings(module)
             val targetApiLevel = facetSettings.apiLevel?.let { apiLevel ->
                 if (ApiVersion.createByLanguageVersion(apiLevel) < feature.sinceApiVersion)
                     feature.sinceApiVersion.versionString
@@ -71,7 +73,7 @@ sealed class EnableUnsupportedFeatureFix(
                     targetApiLevel,
                     feature.sinceApiVersion,
                     forTests
-            )*/
+            )
         }
     }
 
@@ -117,9 +119,8 @@ sealed class EnableUnsupportedFeatureFix(
 
             val module = ModuleUtilCore.findModuleForPsiElement(diagnostic.psiElement) ?: return null
             if (!KotlinPluginUtil.isGradleModule(module) && !KotlinPluginUtil.isMavenModule(module)) {
-                //todo[Alefas]:
-                /*val facetSettings = KotlinFacet.get(module)?.configuration?.settings
-                if (facetSettings == null || facetSettings.useProjectSettings) return InProject(diagnostic.psiElement, feature, apiVersionOnly)*/
+                val facetSettings = KotlinFacet.get(module)?.configuration?.settings
+                if (facetSettings == null || facetSettings.useProjectSettings) return InProject(diagnostic.psiElement, feature, apiVersionOnly)
             }
             return InModule(diagnostic.psiElement, feature, apiVersionOnly)
         }

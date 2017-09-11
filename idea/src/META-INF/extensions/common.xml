@@ -2,6 +2,8 @@
     <id>org.jetbrains.kotlin</id>
 
     <extensionPoints>
+        <extensionPoint name="clearBuildState"
+                        interface="org.jetbrains.kotlin.idea.compiler.configuration.ClearBuildStateExtension"/>
         <extensionPoint name="newFileHook"
                         interface="org.jetbrains.kotlin.idea.actions.NewKotlinFileHook"/>
         <extensionPoint name="completionExtension"
