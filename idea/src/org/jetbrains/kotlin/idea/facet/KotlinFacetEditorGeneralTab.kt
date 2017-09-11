@@ -207,7 +207,7 @@ class KotlinFacetEditorGeneralTab(
 
     init {
         for (creator in KotlinFacetValidatorCreator.EP_NAME.getExtensions()) {
-          validatorsManager.registerValidator(creator.create(, ))
+          validatorsManager.registerValidator(creator.create(editor, validatorsManager, editorContext))
         }
 
         validatorsManager.registerValidator(ArgumentConsistencyValidator())
