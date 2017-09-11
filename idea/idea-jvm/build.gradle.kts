@@ -6,7 +6,7 @@ dependencies {
     compile(project(":compiler:light-classes"))
     compile(project(":compiler:frontend.java"))
 
-    compileOnly(ideaSdkDeps("openapi", "idea"))
+    compileOnly(ideaSdkDeps("openapi", "idea", "boot", "gson", "swingx-core"))
 
     compile(ideaPluginDeps("idea-junit", plugin = "junit"))
     compile(ideaPluginDeps("testng", "testng-plugin", plugin = "testng"))
