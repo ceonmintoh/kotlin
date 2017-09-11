@@ -76,10 +76,8 @@ class JvmPlatformSupport : IdePlatformSupport() {
         get() = null
 
     override fun isModuleForPlatform(module: Module): Boolean {
-        //todo[Alefas]: !
-//        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
-//        return settings.targetPlatformKind is TargetPlatformKind.Jvm
-        return true
+        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
+        return settings.targetPlatformKind is TargetPlatformKind.Jvm
     }
 
     override fun createBuiltIns(settings: PlatformAnalysisSettings, sdkContext: GlobalContextImpl): KotlinBuiltIns {
@@ -98,10 +96,8 @@ class JsPlatformSupport : IdePlatformSupport() {
         get() = JSLibraryKind
 
     override fun isModuleForPlatform(module: Module): Boolean {
-        //todo[Alefas]: !
-//        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
-//        return settings.targetPlatformKind is TargetPlatformKind.JavaScript
-        return false
+        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
+        return settings.targetPlatformKind is TargetPlatformKind.JavaScript
     }
 
     override fun createBuiltIns(settings: PlatformAnalysisSettings, sdkContext: GlobalContextImpl): KotlinBuiltIns {
@@ -120,10 +116,8 @@ class CommonPlatformSupport : IdePlatformSupport() {
         get() = CommonLibraryKind
 
     override fun isModuleForPlatform(module: Module): Boolean {
-        //todo[Alefas]: !
-//        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
-//        return settings.targetPlatformKind is TargetPlatformKind.Common
-        return false
+        val settings = KotlinFacetSettingsProvider.getInstance(module.project).getInitializedSettings(module)
+        return settings.targetPlatformKind is TargetPlatformKind.Common
     }
 
     override fun createBuiltIns(settings: PlatformAnalysisSettings, sdkContext: GlobalContextImpl): KotlinBuiltIns {

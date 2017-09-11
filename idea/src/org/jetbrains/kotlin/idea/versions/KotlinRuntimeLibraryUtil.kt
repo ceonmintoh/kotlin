@@ -70,83 +70,6 @@ fun getLibraryRootsWithAbiIncompatibleForKotlinJs(module: Module): Collection<Bi
     return getLibraryRootsWithAbiIncompatibleVersion(module, JsMetadataVersion.INSTANCE, KotlinJsMetadataVersionIndex)
 }
 
-fun updateLibraries(project: Project, libraries: Collection<Library>) {
-    //todo[Alefas]: this is not possible in CLion
-    /*if (project.allModules().any { module -> KotlinPluginUtil.isMavenModule(module) }) {
-        Messages.showMessageDialog(project, "Automatic library version update for Maven projects is currently unsupported. Please update your pom.xml manually.",
-                                   "Update Kotlin Runtime Library",
-                                   Messages.getErrorIcon())
-        return
-    }
-
-    if (project.allModules().any { module -> KotlinPluginUtil.isGradleModule(module) }) {
-        Messages.showMessageDialog(project, "Automatic library version update for Gradle projects is currently unsupported. Please update your build.gradle manually.",
-                                   "Update Kotlin Runtime Library",
-                                   Messages.getErrorIcon())
-        return
-    }
-
-    val kJvmConfigurator = getConfiguratorByName(KotlinJavaModuleConfigurator.NAME) as KotlinJavaModuleConfigurator? ?:
-                           error("Configurator with given name doesn't exists: " + KotlinJavaModuleConfigurator.NAME)
-
-    val kJsConfigurator = getConfiguratorByName(KotlinJsModuleConfigurator.NAME) as KotlinJsModuleConfigurator? ?:
-                          error("Configurator with given name doesn't exists: " + KotlinJsModuleConfigurator.NAME)
-
-    val collector = createConfigureKotlinNotificationCollector(project)
-    val sdk = ProjectRootManager.getInstance(project).projectSdk
-    // TODO use module SDK
-
-    for (library in libraries) {
-        val libraryJarDescriptors = if (JavaRuntimeDetectionUtil.getJavaRuntimeVersion(library) != null)
-            kJvmConfigurator.getLibraryJarDescriptors(sdk)
-        else
-            kJsConfigurator.getLibraryJarDescriptors(sdk)
-
-        for (libraryJarDescriptor in libraryJarDescriptors) {
-            updateJar(project, library, libraryJarDescriptor)
-        }
-    }
-
-    collector.showNotification()*/
-}
-
-private fun updateJar(
-        project: Project,
-        library: Library,
-        libraryJarDescriptor: LibraryJarDescriptor) {
-    val fileToReplace = libraryJarDescriptor.findExistingJar(library)
-
-    if (fileToReplace == null && !libraryJarDescriptor.shouldExist) {
-        return
-    }
-
-    val oldUrl = fileToReplace?.url
-    val jarPath: File = libraryJarDescriptor.getPathInPlugin()
-
-    if (!jarPath.exists()) {
-        showRuntimeJarNotFoundDialog(project, libraryJarDescriptor.jarName)
-        return
-    }
-
-    val jarFileToReplace = getLocalJar(fileToReplace)!!
-    val newVFile = replaceFile(jarPath, jarFileToReplace)
-    if (newVFile != null) {
-        val model = library.modifiableModel
-        runWriteAction {
-            try {
-                if (oldUrl != null) {
-                    model.removeRoot(oldUrl, libraryJarDescriptor.orderRootType)
-                }
-                val newRoot = JarFileSystem.getInstance().getJarRootForLocalFile(newVFile)!!
-                model.addRoot(newRoot, libraryJarDescriptor.orderRootType)
-            }
-            finally {
-                model.commit()
-            }
-        }
-    }
-}
-
 fun findAllUsedLibraries(project: Project): MultiMap<Library, Module> {
     val libraries = MultiMap<Library, Module>()
 
@@ -245,34 +168,6 @@ fun getLocalJar(kotlinRuntimeJar: VirtualFile?): VirtualFile? {
         return localJarFile
     }
     return kotlinRuntimeJar
-}
-
-internal fun replaceFile(updatedFile: File, jarFileToReplace: VirtualFile): VirtualFile? {
-    val jarIoFileToReplace = File(jarFileToReplace.path)
-
-    if (FileUtil.filesEqual(updatedFile, jarIoFileToReplace)) {
-        return null
-    }
-
-    FileUtil.copy(updatedFile, jarIoFileToReplace)
-    if (jarIoFileToReplace.name != updatedFile.name) {
-        val newFile = File(jarIoFileToReplace.parent, updatedFile.name)
-        if (!newFile.exists()) {
-            if (!jarIoFileToReplace.renameTo(newFile)) {
-                LOG.info("Failed to rename ${jarIoFileToReplace.path} to ${newFile.path}")
-                return null
-            }
-            val newVFile = LocalFileSystem.getInstance().refreshAndFindFileByIoFile(newFile)
-            if (newVFile == null) {
-                LOG.info("Failed to find ${newFile.path} in VFS")
-                return null
-            }
-            newVFile.refresh(false, true)
-            return newVFile
-        }
-    }
-    jarFileToReplace.refresh(false, true)
-    return null
 }
 
 data class BinaryVersionedFile<out T : BinaryVersion>(val file: VirtualFile, val version: T, val supportedVersion: T)

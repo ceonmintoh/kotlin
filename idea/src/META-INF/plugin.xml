@@ -697,8 +697,6 @@
     <todoIndexer filetype="Kotlin" implementationClass="org.jetbrains.kotlin.idea.search.KotlinTodoIndexer"/>
     <indexPatternBuilder implementation="org.jetbrains.kotlin.idea.search.KotlinIndexPatternBuilder"/>
 
-    <editorNotificationProvider implementation="org.jetbrains.kotlin.idea.versions.UnsupportedAbiVersionNotificationPanelProvider"/>
-
     <attachSourcesProvider implementation="org.jetbrains.kotlin.idea.actions.DecompileKotlinToJavaActionProvider"/>
 
     <referencesSearch implementation="org.jetbrains.kotlin.idea.search.ideaExtensions.KotlinReferencesSearcher"/>
