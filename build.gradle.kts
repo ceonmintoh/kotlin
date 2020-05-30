@@ -814,7 +814,6 @@ tasks {
         dependsOn(
             ":idea:idea-maven:test",
             ":nj2k:test",
-            ":idea:jvm-debugger:jvm-debugger-evaluation:test",
             ":idea:jvm-debugger:jvm-debugger-sequence:test",
             ":idea:scripting-support:test"
         )
