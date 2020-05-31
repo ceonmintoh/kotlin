@@ -624,11 +624,6 @@ val copyCompilerToIdeaPlugin by task<Copy> {
     from(distDir) { include("kotlinc/**") }
 }
 
-val ideaPlugin by task<Task> {
-    dependsOn(copyCompilerToIdeaPlugin)
-    dependsOn(":prepare:idea-plugin:ideaPlugin")
-}
-
 tasks {
     named<Delete>("clean") {
         delete += setOf("$buildDir/repo", distDir)
@@ -804,55 +799,9 @@ tasks {
         dependsOn(":compiler:android-tests:test")
     }
 
-    register("idea-plugin-additional-tests") {
-        dependsOn("dist")
-        dependsOn(
-            ":idea:idea-maven:test",
-            ":nj2k:test",
-            ":idea:scripting-support:test"
-        )
-    }
-
-    if (Ide.IJ()) {
-        register("idea-new-project-wizard-tests") {
-            dependsOn(
-                ":libraries:tools:new-project-wizard:test",
-                ":libraries:tools:new-project-wizard:new-project-wizard-cli:test",
-                ":idea:idea-new-project-wizard:test"
-            )
-        }
-    }
-
-    register("idea-plugin-performance-tests") {
-        dependsOn(
-            "dist",
-            ":idea:performanceTests:performanceTest",
-            ":idea:performanceTests:aggregateResults"
-        )
-    }
-
-    register("idea-fir-plugin-performance-tests") {
-        dependsOn("dist")
-        dependsOn(
-            ":idea:idea-fir-performance-tests:ideaFirPerformanceTest"
-        )
-    }
-
-    register("idea-fir-plugin-tests") {
-        dependsOn("dist")
-        dependsOn(
-            ":idea:idea-fir:test",
-            ":idea:idea-frontend-api:test",
-            ":idea:idea-frontend-fir:test",
-            ":idea:idea-frontend-fir:idea-fir-low-level-api:test"
-        )
-    }
-
-
     register("android-ide-tests") {
         dependsOn("dist")
         dependsOn(
-            ":idea:idea-android:test",
             ":kotlin-annotation-processing:test",
             ":plugins:parcelize:parcelize-ide:test"
         )
