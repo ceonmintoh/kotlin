@@ -20,17 +20,12 @@ class ArtifactGenerator(private val dependencyMapper: ArtifactDependencyMapper) 
 
         fun Project.getProject(name: String) = findProject(name) ?: error("Cannot find project $name")
 
-        val prepareIdeaPluginProject = rootProject.getProject(":prepare:idea-plugin")
-
         root.add(ArtifactElement.Directory("kotlinc").apply {
             val kotlincDirectory = rootProject.extra["distKotlinHomeDir"].toString()
             add(ArtifactElement.DirectoryCopy(File(kotlincDirectory)))
         })
 
         root.add(ArtifactElement.Directory("lib").apply {
-            val librariesConfiguration = prepareIdeaPluginProject.configurations.getByName("libraries")
-            add(getArtifactElements(librariesConfiguration, false))
-
             add(ArtifactElement.Directory("jps").apply {
                 val prepareJpsPluginProject = rootProject.getProject(":kotlin-jps-plugin")
                 add(ArtifactElement.Archive(prepareJpsPluginProject.name + ".jar").apply {
@@ -41,9 +36,6 @@ class ArtifactGenerator(private val dependencyMapper: ArtifactDependencyMapper) 
 
             add(ArtifactElement.Archive("kotlin-plugin.jar").apply {
                 add(ArtifactElement.FileCopy(File(rootProject.projectDir, "resources/kotlinManifest.properties")))
-
-                val embeddedConfiguration = prepareIdeaPluginProject.configurations.getByName(EMBEDDED_CONFIGURATION_NAME)
-                add(getArtifactElements(embeddedConfiguration, true))
             })
         })
 
