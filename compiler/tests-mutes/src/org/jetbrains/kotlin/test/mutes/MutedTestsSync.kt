@@ -36,8 +36,8 @@ private fun syncMutedTests(
     remotelyMutedTests: Map<String, MuteTestJson>,
     locallyMutedTests: Map<String, MuteTestJson>
 ) {
-    val uploadList = locallyMutedTests - remotelyMutedTests.keys
     val deleteList = remotelyMutedTests - locallyMutedTests.keys
+    val uploadList = locallyMutedTests - remotelyMutedTests.keys
     deleteMutedTests(deleteList)
     uploadMutedTests(uploadList)
 }
