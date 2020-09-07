@@ -75,8 +75,8 @@ internal val projectId = getMandatoryProperty("$mutesPackageName.tests.project.i
 internal fun getBuildTypeIds(bunchId: String) = System.getProperty("$mutesPackageName.$bunchId")
 
 class RemotelyMutedTests {
-    val projectTests = getTestsJson(projectId, false)
     val tests = getMutedTestsOnTeamcityForRootProject(projectId)
+    val projectTests = getTestsJson(projectId, false)
     internal fun getTestsJson(scopeId: String, isBuildType: Boolean = true): Map<String, MuteTestJson> {
         return filterMutedTestsByScope(tests, scopeId, isBuildType)
     }
