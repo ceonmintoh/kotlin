@@ -10,8 +10,8 @@
 set -e
 set -o pipefail
 
-SAFEPUSH_REFS_PREFIX=refs/heads
 BUILD_SERVER=https://buildserver.labs.intellij.net
+SAFEPUSH_REFS_PREFIX=refs/heads
 # FIXME remove hardcode and add possibility to execute from any branch
 TARGET_BRANCH=auto-push-check
 
