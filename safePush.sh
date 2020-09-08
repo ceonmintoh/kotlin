@@ -7,8 +7,8 @@
 # Limitations:
 #  At the moment Safe Push can be performed only to master branch.
 
-set -e
 set -o pipefail
+set -e
 
 SAFEPUSH_REFS_PREFIX=refs/heads
 BUILD_SERVER=https://buildserver.labs.intellij.net
