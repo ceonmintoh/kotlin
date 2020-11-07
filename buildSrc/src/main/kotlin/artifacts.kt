@@ -158,10 +158,15 @@ fun Project.publish(body: Upload.() -> Unit = {}): Upload {
 }
 
 fun Project.idePluginDependency(block: () -> Unit) {
-    val shouldActivate = rootProject.findProperty("publish.ide.plugin.dependencies")?.toString()?.toBoolean() == true
+    val shouldActivate = rootProject.findProperty("publish.ide.plugin.dependencies")?.toString()?.toBoolean() == true ||
+                         isKotlinIdeCooperativeCompilation()
     if (shouldActivate) {
         block()
     }
+}
+
+fun Project.isKotlinIdeCooperativeCompilation(): Boolean {
+    return rootProject.file("../kotlin.kotlin-ide.iml").exists()
 }
 
 fun Project.publishProjectJars(projects: List<String>, libraryDependencies: List<String> = emptyList()) {

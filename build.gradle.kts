@@ -812,6 +812,15 @@ tasks {
         }
     }
 
+    register("classes") {
+        if (isKotlinIdeCooperativeCompilation()) {
+            val idePluginDependencies = rootProject.file("prepare/ide-plugin-dependencies").listFiles()!!.map {
+                ":prepare:ide-plugin-dependencies:${it.name}:jar"
+            }.toTypedArray()
+            finalizedBy(*idePluginDependencies)
+        }
+    }
+
     register("test") {
         doLast {
             throw GradleException("Don't use directly, use aggregate tasks *-check instead")
