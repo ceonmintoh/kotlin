@@ -169,6 +169,14 @@ fun Project.isKotlinIdeCooperativeCompilation(): Boolean {
     return rootProject.file("../kotlin.kotlin-ide.iml").exists()
 }
 
+fun Project.publishProjectJarsForIde(projects: List<String>, libraryDependencies: List<String> = emptyList()) {
+    rootProject.buildDir.resolve("artifacts-for-ide-to-modules-mapping/$name.txt").run {
+        parentFile.mkdirs()
+        writeText(projects.joinToString("\n"))
+    }
+    publishProjectJars(projects, libraryDependencies)
+}
+
 fun Project.publishProjectJars(projects: List<String>, libraryDependencies: List<String> = emptyList()) {
     apply<JavaPlugin>()
 
