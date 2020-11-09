@@ -333,6 +333,7 @@ include ":prepare:ide-plugin-dependencies:android-extensions-compiler-plugin-for
         ":prepare:ide-plugin-dependencies:kotlin-scripting-compiler-impl-for-ide",
         ":prepare:ide-plugin-dependencies:kotlin-stdlib-common-for-ide",
         ":prepare:ide-plugin-dependencies:kotlin-stdlib-for-ide",
+        ":prepare:ide-plugin-dependencies:kotlin-stdlib-jdk7-for-ide",
         ":prepare:ide-plugin-dependencies:compiler-components-for-jps"
 
 if (buildProperties.includeCidrPlugins) {
