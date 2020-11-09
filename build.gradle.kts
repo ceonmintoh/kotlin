@@ -795,6 +795,7 @@ tasks {
                 ":prepare:ide-plugin-dependencies:compiler-components-for-jps:publish",
                 ":prepare:ide-plugin-dependencies:kotlin-script-runtime-for-ide:publish",
                 ":prepare:ide-plugin-dependencies:kotlin-script-util-for-ide:publish",
+                ":prepare:ide-plugin-dependencies:kotlin-scripting-common-for-ide:publish",
                 ":kotlin-scripting-common:publish",
                 ":kotlin-scripting-jvm:publish",
                 ":kotlin-scripting-compiler:publish",
