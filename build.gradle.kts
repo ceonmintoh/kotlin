@@ -808,6 +808,8 @@ tasks {
         }
     }
 
+    register("testClasses")
+
     register("classes") {
         if (isKotlinIdeCooperativeCompilation()) {
             val idePluginDependencies = rootProject.file("prepare/ide-plugin-dependencies").listFiles()!!.map {
