@@ -802,7 +802,7 @@ tasks {
                 ":kotlin-stdlib-common:publish",
                 ":kotlin-stdlib:publish",
                 ":kotlin-stdlib-jdk7:publish",
-                ":kotlin-stdlib-jdk8:publish",
+                ":prepare:ide-plugin-dependencies:kotlin-stdlib-jdk8-for-ide:publish",
                 ":kotlin-coroutines-experimental-compat:publish"
             )
         }
