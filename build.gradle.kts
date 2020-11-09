@@ -803,7 +803,7 @@ tasks {
                 ":prepare:ide-plugin-dependencies:kotlin-stdlib-for-ide:publish",
                 ":prepare:ide-plugin-dependencies:kotlin-stdlib-jdk7-for-ide:publish",
                 ":prepare:ide-plugin-dependencies:kotlin-stdlib-jdk8-for-ide:publish",
-                ":kotlin-coroutines-experimental-compat:publish"
+                ":prepare:ide-plugin-dependencies:kotlin-coroutines-experimental-compat:publish"
             )
         }
     }
