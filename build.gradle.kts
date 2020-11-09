@@ -808,15 +808,11 @@ tasks {
         }
     }
 
-    register("testClasses")
-
-    register("classes") {
-        if (isKotlinIdeCooperativeCompilation()) {
-            val idePluginDependencies = rootProject.file("prepare/ide-plugin-dependencies").listFiles()!!.map {
-                ":prepare:ide-plugin-dependencies:${it.name}:jar"
-            }.toTypedArray()
-            finalizedBy(*idePluginDependencies)
-        }
+    register("jarsForIde") {
+        val idePluginDependencies = rootProject.file("prepare/ide-plugin-dependencies").listFiles()!!.map {
+            ":prepare:ide-plugin-dependencies:${it.name}:jar"
+        }.toTypedArray()
+        dependsOn(*idePluginDependencies)
     }
 
     register("test") {
