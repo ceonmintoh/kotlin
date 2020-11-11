@@ -7,7 +7,7 @@ val KotlinBuildProperties.isCooperativeCompilationWithKotlinIde: Boolean
     get() = rootProjectDir.resolve("../kotlin.kotlin-ide.iml").exists()
 
 val KotlinBuildProperties.includeJava9: Boolean
-    get() = !isInJpsBuildIdeaSync && getBoolean("kotlin.build.java9", true)
+    get() = !isInJpsBuildIdeaSync && !isCooperativeCompilationWithKotlinIde && getBoolean("kotlin.build.java9", true)
 
 val KotlinBuildProperties.useBootstrapStdlib: Boolean
     get() = isInJpsBuildIdeaSync || getBoolean("kotlin.build.useBootstrapStdlib", false) || isCooperativeCompilationWithKotlinIde
