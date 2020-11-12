@@ -150,7 +150,7 @@ fun Project.firstFromJavaHomeThatExists(vararg paths: String, jdkHome: File = Fi
     }
 
 fun Project.toolsJarApi(): Any =
-    if (kotlinBuildProperties.isInJpsBuildIdeaSync)
+    if (kotlinBuildProperties.run { isInJpsBuildIdeaSync || isCooperativeCompilationWithKotlinIde })
         files(toolsJarFile() ?: error("tools.jar is not found!"))
     else
         dependencies.project(":dependencies:tools-jar-api")
