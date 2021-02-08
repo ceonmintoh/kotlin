@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../plugins/kapt3/kapt3-runtime/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../plugins/kapt3/kapt3-runtime/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/kapt3/kapt3-runtime/resources" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/kapt3/kapt3-runtime/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../plugins/kapt3/kapt3-runtime/src" isTestSource="false" />

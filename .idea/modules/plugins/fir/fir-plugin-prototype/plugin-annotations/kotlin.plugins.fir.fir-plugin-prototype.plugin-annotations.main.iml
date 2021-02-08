@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../../plugins/fir/fir-plugin-prototype/plugin-annotations/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../../plugins/fir/fir-plugin-prototype/plugin-annotations/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../../plugins/fir/fir-plugin-prototype/plugin-annotations/resources" />
     <content url="file://$MODULE_DIR$/../../../../../../plugins/fir/fir-plugin-prototype/plugin-annotations/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../../plugins/fir/fir-plugin-prototype/plugin-annotations/src" isTestSource="false" />

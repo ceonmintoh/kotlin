@@ -32,6 +32,7 @@
     <output url="file://$MODULE_DIR$/../../../../compiler/psi/build/classes/kotlin/main" />
     <exclude-output />
     <output url="file://$MODULE_DIR$/../../../../compiler/psi/build/classes/java/main" />
+    <output url="file://$MODULE_DIR$/../../../../compiler/psi/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/psi/resources" />
     <content url="file://$MODULE_DIR$/../../../../compiler/psi/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../compiler/psi/src" isTestSource="false" />

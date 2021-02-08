@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../plugins/parcelize/parcelize-runtime/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../plugins/parcelize/parcelize-runtime/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/parcelize/parcelize-runtime/resources" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/parcelize/parcelize-runtime/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../plugins/parcelize/parcelize-runtime/src" isTestSource="false" />

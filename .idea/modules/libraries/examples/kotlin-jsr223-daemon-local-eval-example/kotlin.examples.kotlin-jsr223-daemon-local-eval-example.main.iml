@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/examples/kotlin-jsr223-daemon-local-eval-example/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/examples/kotlin-jsr223-daemon-local-eval-example/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/examples/kotlin-jsr223-daemon-local-eval-example/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/examples/kotlin-jsr223-daemon-local-eval-example/src/main/resources" type="java-resource" />
     </content>

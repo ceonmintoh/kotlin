@@ -28,6 +28,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/src" type="kotlin-source" />
     </content>

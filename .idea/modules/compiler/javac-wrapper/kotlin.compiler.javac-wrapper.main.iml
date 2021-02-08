@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../compiler/javac-wrapper/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../compiler/javac-wrapper/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/javac-wrapper/resources" />
     <content url="file://$MODULE_DIR$/../../../../compiler/javac-wrapper/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../compiler/javac-wrapper/src" isTestSource="false" />

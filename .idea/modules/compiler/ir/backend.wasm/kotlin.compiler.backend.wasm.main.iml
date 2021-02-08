@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../compiler/ir/backend.wasm/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../compiler/ir/backend.wasm/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/ir/backend.wasm/resources" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/ir/backend.wasm/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../compiler/ir/backend.wasm/src" isTestSource="false" />

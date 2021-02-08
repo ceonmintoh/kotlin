@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-serialization/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-serialization/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-serialization/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-serialization/src/main/kotlin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-serialization/src/main/resources" type="java-resource" />

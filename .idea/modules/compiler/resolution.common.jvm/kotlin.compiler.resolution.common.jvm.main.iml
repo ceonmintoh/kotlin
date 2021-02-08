@@ -32,6 +32,7 @@
     <output url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/build/classes/kotlin/main" />
     <exclude-output />
     <output url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/build/classes/java/main" />
+    <output url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/resources" />
     <content url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../compiler/resolution.common.jvm/src" isTestSource="false" />

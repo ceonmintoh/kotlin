@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../plugins/sam-with-receiver/sam-with-receiver-cli/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../plugins/sam-with-receiver/sam-with-receiver-cli/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/sam-with-receiver/sam-with-receiver-cli/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../plugins/sam-with-receiver/sam-with-receiver-cli/resources" type="java-resource" />
     </content>

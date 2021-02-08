@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../compiler/fir/fir-serialization/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../compiler/fir/fir-serialization/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/fir/fir-serialization/resources" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/fir/fir-serialization/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../compiler/fir/fir-serialization/src" isTestSource="false" />

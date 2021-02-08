@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-dsl-codegen/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-dsl-codegen/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-dsl-codegen/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-dsl-codegen/src/main/kotlin" isTestSource="false" />
     </content>

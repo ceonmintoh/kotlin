@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../../../libraries/examples/scripting/jvm-maven-deps/script/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../../../libraries/examples/scripting/jvm-maven-deps/script/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../../../libraries/examples/scripting/jvm-maven-deps/script/resources" />
     <content url="file://$MODULE_DIR$/../../../../../../../libraries/examples/scripting/jvm-maven-deps/script/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../../../libraries/examples/scripting/jvm-maven-deps/script/src" isTestSource="false" />

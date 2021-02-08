@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../js/js.serializer/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../js/js.serializer/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../js/js.serializer/resources" />
     <content url="file://$MODULE_DIR$/../../../../js/js.serializer/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../js/js.serializer/src" isTestSource="false" />

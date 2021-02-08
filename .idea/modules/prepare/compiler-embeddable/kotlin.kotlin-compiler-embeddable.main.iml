@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../prepare/compiler-embeddable/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../prepare/compiler-embeddable/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../prepare/compiler-embeddable/src/main/kotlin" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/dukat/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/dukat/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/dukat/src/main">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/dukat/src/main/kotlin" isTestSource="false" />
     </content>

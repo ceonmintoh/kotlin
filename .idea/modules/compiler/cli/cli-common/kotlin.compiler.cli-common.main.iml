@@ -32,6 +32,7 @@
     <output url="file://$MODULE_DIR$/../../../../../compiler/cli/cli-common/build/classes/kotlin/main" />
     <exclude-output />
     <output url="file://$MODULE_DIR$/../../../../../compiler/cli/cli-common/build/classes/java/main" />
+    <output url="file://$MODULE_DIR$/../../../../../compiler/cli/cli-common/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/cli/cli-common/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../compiler/cli/cli-common/resources" type="java-resource" />
     </content>

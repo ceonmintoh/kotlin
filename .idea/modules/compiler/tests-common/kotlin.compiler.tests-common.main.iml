@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../compiler/tests-common/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../compiler/tests-common/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/tests-common/src/main/kotlin" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

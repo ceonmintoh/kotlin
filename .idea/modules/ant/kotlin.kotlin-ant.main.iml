@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../ant/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../ant/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../ant/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../ant/resources" type="java-resource" />
     </content>

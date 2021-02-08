@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../compiler/util-io/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../compiler/util-io/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/util-io/resources" />
     <content url="file://$MODULE_DIR$/../../../../compiler/util-io/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../compiler/util-io/src" isTestSource="false" />

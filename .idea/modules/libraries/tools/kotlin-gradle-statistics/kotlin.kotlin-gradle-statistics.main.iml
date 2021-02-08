@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-statistics/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-statistics/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-statistics/resources" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-statistics/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-statistics/src" isTestSource="false" />

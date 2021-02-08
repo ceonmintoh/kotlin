@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../core/compiler.common.jvm/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../core/compiler.common.jvm/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../core/compiler.common.jvm/resources" />
     <content url="file://$MODULE_DIR$/../../../../core/compiler.common.jvm/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../core/compiler.common.jvm/src" isTestSource="false" />

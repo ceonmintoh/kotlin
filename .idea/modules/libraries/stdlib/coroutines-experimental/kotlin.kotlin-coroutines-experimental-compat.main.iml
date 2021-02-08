@@ -32,6 +32,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/coroutines-experimental/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/coroutines-experimental/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/coroutines-experimental/jvm/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/coroutines-experimental/jvm/src" isTestSource="false" />
     </content>

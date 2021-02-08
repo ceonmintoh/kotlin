@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../compiler/visualizer/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../compiler/visualizer/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../compiler/visualizer/resources" />
     <content url="file://$MODULE_DIR$/../../../../compiler/visualizer/src" />
     <orderEntry type="inheritedJdk" />

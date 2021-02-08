@@ -31,6 +31,7 @@
     <output url="file://$MODULE_DIR$/../../../../core/descriptors.jvm/build/classes/kotlin/main" />
     <exclude-output />
     <output url="file://$MODULE_DIR$/../../../../core/descriptors.jvm/build/classes/java/main" />
+    <output url="file://$MODULE_DIR$/../../../../core/descriptors.jvm/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../core/descriptors.jvm/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../core/descriptors.jvm/resources" type="java-resource" />
     </content>

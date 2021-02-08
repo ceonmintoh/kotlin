@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../plugins/noarg/noarg-cli/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../plugins/noarg/noarg-cli/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/noarg/noarg-cli/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../plugins/noarg/noarg-cli/resources" type="java-resource" />
     </content>

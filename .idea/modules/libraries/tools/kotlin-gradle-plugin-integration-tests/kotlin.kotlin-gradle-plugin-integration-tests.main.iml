@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-integration-tests/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-integration-tests/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin-integration-tests/src/main" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../libraries/kotlinx-metadata/jvm/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/kotlinx-metadata/jvm/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/kotlinx-metadata/jvm/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/kotlinx-metadata/jvm/resources" type="java-resource" />
     </content>

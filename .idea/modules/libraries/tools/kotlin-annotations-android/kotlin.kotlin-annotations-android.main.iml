@@ -30,6 +30,7 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotations-android/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotations-android/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotations-android/resources" />
     <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotations-android/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotations-android/src" isTestSource="false" />

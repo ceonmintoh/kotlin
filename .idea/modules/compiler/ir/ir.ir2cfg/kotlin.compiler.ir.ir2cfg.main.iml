@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../compiler/ir/ir.ir2cfg/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../compiler/ir/ir.ir2cfg/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/ir/ir.ir2cfg/resources" />
     <content url="file://$MODULE_DIR$/../../../../../compiler/ir/ir.ir2cfg/src">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../compiler/ir/ir.ir2cfg/src" isTestSource="false" />

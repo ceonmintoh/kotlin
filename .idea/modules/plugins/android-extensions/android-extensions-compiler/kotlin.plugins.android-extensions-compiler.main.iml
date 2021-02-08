@@ -31,6 +31,7 @@
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/../../../../../plugins/android-extensions/android-extensions-compiler/build/classes/kotlin/main" />
     <exclude-output />
+    <output url="file://$MODULE_DIR$/../../../../../plugins/android-extensions/android-extensions-compiler/build/classes/java/main" />
     <content url="file://$MODULE_DIR$/../../../../../plugins/android-extensions/android-extensions-compiler/resources">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../plugins/android-extensions/android-extensions-compiler/resources" type="java-resource" />
     </content>
