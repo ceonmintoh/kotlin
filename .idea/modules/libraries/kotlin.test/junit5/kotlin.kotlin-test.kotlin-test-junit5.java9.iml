@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-test:kotlin-test-junit5:java9" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/kotlin.test/junit5" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/kotlin.test/junit5/build/classes/kotlin/java9" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../../libraries/kotlin.test/annotations-common/build/libs/kotlin-test-annotations-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/jvm/build/libs/kotlin-test-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.0.0/f7fe1b74bef74d640493781abecafba191472ad/junit-jupiter-api-5.0.0.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/common/build/libs/kotlin-test-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/jvm/build/libs/kotlin-stdlib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.0.0/d2e03d9b21020746d48fe45834ff7d71fbcbd7b2/junit-platform-commons-1.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.0.0/3ef5276905e36f4d8055fe3cb0bdcc7503ffc85d/apiguardian-api-1.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.0.0/6f09c598e9ff64bf0ce2fa7e7de49a99ba83c0b4/opentest4j-1.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="kotlin-test-junit5_java9" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_9">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/junit5/build/classes/java/java9" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/junit5/src/java9">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/junit5/src/java9/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-jvm.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.0.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.junit.platform:junit-platform-commons:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.opentest4j:opentest4j:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+</module>

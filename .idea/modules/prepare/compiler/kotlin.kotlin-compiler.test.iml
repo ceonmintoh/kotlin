@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-compiler:test" external.linked.project.path="$MODULE_DIR$/../../../../prepare/compiler" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../../prepare/compiler/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../prepare/compiler/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect-api.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-script-runtime.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.intellij.deps:trove4j:1.0.20181211" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect.main" scope="RUNTIME" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.kotlin-compiler.main" />
+</module>

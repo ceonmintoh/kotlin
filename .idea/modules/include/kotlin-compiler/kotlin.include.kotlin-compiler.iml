@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":include:kotlin-compiler" external.linked.project.path="$MODULE_DIR$/../../../../include/kotlin-compiler" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../include/kotlin-compiler">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../include/kotlin-compiler/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../include/kotlin-compiler/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../include/kotlin-compiler/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-daemon-client-new" external.linked.project.path="$MODULE_DIR$/../../../../../compiler/daemon/daemon-client-new" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../compiler/daemon/daemon-client-new">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../compiler/daemon/daemon-client-new/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../compiler/daemon/daemon-client-new/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../compiler/daemon/daemon-client-new/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

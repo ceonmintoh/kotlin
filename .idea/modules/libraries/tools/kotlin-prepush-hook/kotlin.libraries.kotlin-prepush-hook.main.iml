@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":libraries:kotlin-prepush-hook:main" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/tools/kotlin-prepush-hook" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-prepush-hook/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-prepush-hook/resources" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-prepush-hook/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-prepush-hook/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

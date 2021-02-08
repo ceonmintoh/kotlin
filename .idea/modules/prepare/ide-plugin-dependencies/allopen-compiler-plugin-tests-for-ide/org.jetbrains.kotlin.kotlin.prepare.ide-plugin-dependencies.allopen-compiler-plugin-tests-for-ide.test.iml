@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":prepare:ide-plugin-dependencies:allopen-compiler-plugin-tests-for-ide:test" external.linked.project.path="$MODULE_DIR$/../../../../../prepare/ide-plugin-dependencies/allopen-compiler-plugin-tests-for-ide" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../../../prepare/ide-plugin-dependencies/allopen-compiler-plugin-tests-for-ide/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../prepare/ide-plugin-dependencies/allopen-compiler-plugin-tests-for-ide/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.prepare.ide-plugin-dependencies.allopen-compiler-plugin-tests-for-ide.main" />
+</module>

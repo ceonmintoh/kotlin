@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="kotlin:buildSrc:test" external.linked.project.path="$MODULE_DIR$/../../buildSrc" external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -java-parameters -Xjsr305=strict -Xskip-runtime-version-check -Xopt-in=kotlin.RequiresOptIn -XXLanguage:+NewInference -XXLanguage:+SamConversionForKotlinFunctions -XXLanguage:+ReferencesToSyntheticJavaProperties" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../buildSrc/build/classes/kotlin/test" />
+          <option name="classpath" value="$MODULE_DIR$/../../buildSrc/build/classes/kotlin/main:/home/bobko/jb/kotlin/buildSrc/build/resources/main:/home/bobko/.gradle/caches/6.7/generated-gradle-jars/gradle-api-6.7.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/groovy-all-1.3-2.5.12.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-common-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk7-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk8-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-reflect-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-installation-beacon-6.7.jar:/home/bobko/.gradle/caches/6.7/generated-gradle-jars/gradle-kotlin-dsl-extensions-6.7.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-kotlin-dsl-6.7.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-kotlin-dsl-tooling-models-6.7.jar:/home/bobko/.gradle/caches/6.7/generated-gradle-jars/gradle-test-kit-6.7.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.72/916d54b9eb6442b615e6f1488978f551c0674720/kotlin-stdlib-jdk8-1.3.72.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.72/86613e1a669a701b0c660bfd2af4f82a7ae11fca/kotlin-reflect-1.3.72.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.5.0-dev-1141/d47f0e378b32fd5d98061c4d452f8a9103af33a1/kotlin-gradle-plugin-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.jakewharton.dex/dex-method-list/3.0.0/ddeeaee0f956c1183e846b8a2611a436da628fd6/dex-method-list-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.72/3adfc2f4ea4243e01204be8081fe63bde6b12815/kotlin-stdlib-jdk7-1.3.72.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.5.0-dev-1141/f667aff02f2f6d1acb0219571d64039a9aeed157/kotlin-gradle-plugin-api-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.5.0-dev-1141/a17c009e93d5f7f671514ffd8d1fa6dbe9f9f76/kotlin-gradle-plugin-model-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-klib/1.5.0-dev-1141/781528ead98a0d87a455f8a0cf0e74d40fa84986/kotlin-util-klib-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.5.0-dev-1141/bf6e11eafef4e4e1664e650866cc1a964e31b85d/kotlin-util-io-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0-dev-1141/52d4dc85066279bf477e9a582bbc698b0ec788d5/kotlin-stdlib-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-gradle-plugin/0.0.21/64fe1e5e1cd06715b111c69a402b72abd0239120/kotlin-build-gradle-plugin-0.0.21.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.gradle.publish/plugin-publish-plugin/0.12.0/c3e1858ffd4a0f008480332960c603ac0d3098fb/plugin-publish-plugin-0.12.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform/0.14/48341d68b4456bea76ca952b6d38b877881350f7/native-platform-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-windows-amd64/0.14/bdf519fab10700fadc9953526a07e8104fad1d07/native-platform-windows-amd64-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-windows-i386/0.14/65b00e123554f42ecd0da054a747033be5da608d/native-platform-windows-i386-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.github.jengelman.gradle.plugins/shadow/5.2.0/ea39779d552998b87eeef0da9317c2246df4b1a2/shadow-5.2.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.2.2/1f2588fc9a39bc357aaa3f10552a3ce446dba09c/proguard-gradle-6.2.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/asm-all/8.0.1/ad919ff1eeadd1619134a768ecf51748ba35869b/asm-all-8.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/gradle.plugin.org.jetbrains.gradle.plugin.idea-ext/gradle-idea-ext/0.5/11ef03310e1ffc9220846ffb33b6143fa8380b88/gradle-idea-ext-0.5.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.gradle/test-retry-gradle-plugin/1.1.9/193d16a4719e5311fef451c7b3523caf91fa04da/test-retry-gradle-plugin-1.1.9.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.gradle.enterprise/test-distribution-gradle-plugin/1.2.1/53fdd7b26349b0fa9d0baaced20c59de8262b83b/test-distribution-gradle-plugin-1.2.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0-dev-1141/7c45a07103f78c8813cc58c64af01fdca7ec0652/kotlin-stdlib-common-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/de.undercouch/gradle-download-task/4.0.2/2aaf2b081cd0dd5b3cf25fde69a20b043dd46fbd/gradle-download-task-4.0.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-freebsd-amd64-libcpp/0.14/b45561900830d676e9e0040561e68abe86fbc10e/native-platform-freebsd-amd64-libcpp-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-freebsd-amd64-libstdcpp/0.14/bcc4e58ef4db56052fe9512d2d1265f11dc9242f/native-platform-freebsd-amd64-libstdcpp-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-freebsd-i386-libcpp/0.14/50b15724c82808c2b7fefd9b0b7c6dd977623f35/native-platform-freebsd-i386-libcpp-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-freebsd-i386-libstdcpp/0.14/d98be0a75890523a6a70dc93795101145828a5da/native-platform-freebsd-i386-libstdcpp-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-amd64/0.14/d0ac539a32015e91e309c20e493d220aae88811b/native-platform-linux-amd64-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-i386/0.14/6576c08a9a514a6ae5623e6f8da04502cac23bde/native-platform-linux-i386-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-osx-amd64/0.14/5e5c113c32c0bac5cf2dcd3a59e4b021023d86a1/native-platform-osx-amd64-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-osx-i386/0.14/fd86b7eedbf5a0df003cf946f0b0c80c06c103ee/native-platform-osx-i386-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-amd64-ncurses5/0.14/6dece223855317a75c371fb72d826582893351c6/native-platform-linux-amd64-ncurses5-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-amd64-ncurses6/0.14/8effac668ad781893fc33fd86f993c5de559d355/native-platform-linux-amd64-ncurses6-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-i386-ncurses5/0.14/80ec77af683abeaa58ed11b9c2cad2d02837e55f/native-platform-linux-i386-ncurses5-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.rubygrapefruit/native-platform-linux-i386-ncurses6/0.14/615dea7e75ca704bba1de9b671652283a9743894/native-platform-linux-i386-ncurses6-0.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.jakewharton.android.repackaged/dalvik-dx/7.1.0_r7/62cfab0d55a1cd2d07db6980b3b0047eb57c3808/dalvik-dx-7.1.0_r7.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.jakewharton.android.repackaged/libcore-dex/7.1.0_r7/dc99188de18096cb28007e0b83c3a0630eb6bc1/libcore-dex-7.1.0_r7.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/6.2.2/9c05bdab3bbcd69dddfe633672b069221e1c964/proguard-base-6.2.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.1-jre/6c57e4b22b44e89e548b5c9f70f0c45fe10fb0b4/guava-25.1-jre.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/2.0.0/518929596ee3249127502a8573b2e008e2d51ed3/checker-qual-2.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.3/39b109f2cd352b2d71b52a3b5a1a9850e1dc304b/error_prone_annotations-2.1.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="buildSrc" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../buildSrc/build/classes/java/main" />
+              <option value="$MODULE_DIR$/../../buildSrc/build/classes/groovy/main" />
+              <option value="$MODULE_DIR$/../../buildSrc/build/classes/kotlin/main" />
+              <option value="$MODULE_DIR$/../../buildSrc/build/libs/buildSrc.jar" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.samWithReceiver:annotation=org.gradle.api.HasImplicitReceiver" />
+              <option value="plugin:org.jetbrains.kotlin.samWithReceiver:annotation=org.gradle.api.HasImplicitReceiver" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.5.0-dev-1141/f667aff02f2f6d1acb0219571d64039a9aeed157/kotlin-gradle-plugin-api-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.5.0-dev-1141/a17c009e93d5f7f671514ffd8d1fa6dbe9f9f76/kotlin-gradle-plugin-model-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.5.0-dev-1141/5096d599b67e44ea74d5c7eb849e44b9db27b9cb/kotlin-script-runtime-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.5.0-dev-1141/402b562bbc9284c387d887041024d9ca68f5f06b/kotlin-scripting-common-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.5.0-dev-1141/4ebb34d253e760e1ecf66c4cdd045995b70b1ec/kotlin-scripting-jvm-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0-dev-1141/7c45a07103f78c8813cc58c64af01fdca7ec0652/kotlin-stdlib-common-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0-dev-1141/52d4dc85066279bf477e9a582bbc698b0ec788d5/kotlin-stdlib-1.5.0-dev-1141.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.8/f62be6d4cbf27781c2969867b4ed952f38378492/kotlinx-coroutines-core-1.3.8.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+              <option value="$KOTLIN_BUNDLED$/lib/sam-with-receiver-compiler-plugin.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../buildSrc/build/classes/kotlin/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../buildSrc/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.buildSrc.main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/6.7/generated-gradle-jars/gradle-api-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/groovy-all-1.3-2.5.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-common-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk7-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk8-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-reflect-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-installation-beacon-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/6.7/generated-gradle-jars/gradle-kotlin-dsl-extensions-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-kotlin-dsl-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-kotlin-dsl-tooling-models-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/6.7/generated-gradle-jars/gradle-test-kit-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.3.72" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.dex:dex-method-list:3.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-build-gradle-plugin:0.0.21" level="project" />
+    <orderEntry type="library" name="Gradle: com.gradle.publish:plugin-publish-plugin:0.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-windows-amd64:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-windows-i386:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.jengelman.gradle.plugins:shadow:5.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-gradle:6.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.intellij.deps:asm-all:8.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: gradle.plugin.org.jetbrains.gradle.plugin.idea-ext:gradle-idea-ext:0.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.gradle:test-retry-gradle-plugin:1.1.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.gradle.enterprise:test-distribution-gradle-plugin:1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-api:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-gradle-plugin-model:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-util-klib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="Gradle: de.undercouch:gradle-download-task:4.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.android.repackaged:dalvik-dx:7.1.0_r7" level="project" />
+    <orderEntry type="library" name="Gradle: com.jakewharton.android.repackaged:libcore-dex:7.1.0_r7" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-freebsd-amd64-libcpp:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-freebsd-amd64-libstdcpp:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-freebsd-i386-libcpp:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-freebsd-i386-libstdcpp:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-amd64:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-i386:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-osx-amd64:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-osx-i386:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-amd64-ncurses5:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-amd64-ncurses6:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-i386-ncurses5:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.rubygrapefruit:native-platform-linux-i386-ncurses6:0.14" level="project" />
+    <orderEntry type="library" name="Gradle: net.sf.proguard:proguard-base:6.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:25.1-jre" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-util-io:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.checkerframework:checker-qual:2.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../buildSrc/build/pluginUnderTestMetadata" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-annotation-processing-gradle:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-compiler-runner:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-compiler-embeddable:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-embeddable:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-compiler-impl-embeddable:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.gundy:semver4j:0.16.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.maven:maven-model:3.0.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.codehaus.groovy:groovy-backports-compat23:2.4.15" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-daemon-client:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-build-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-script-runtime:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-daemon-embeddable:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.intellij.deps:trove4j:1.0.20181211" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-jvm:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.jetbrains.kotlin:kotlin-scripting-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.antlr:antlr4-runtime:4.5.2-1" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.buildSrc.main" />
+</module>

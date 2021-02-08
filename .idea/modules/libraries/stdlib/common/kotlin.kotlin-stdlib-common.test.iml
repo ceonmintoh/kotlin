@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-stdlib-common:test" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/stdlib/common" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="Common (experimental) " allPlatforms="JS []/JVM [1.6]/Native []/Native [general]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xfriend-paths=$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/java/main,$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/main,$MODULE_DIR$/../../../../../libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar -Xopt-in=kotlin.RequiresOptIn,kotlin.RequiresOptIn,kotlin.ExperimentalUnsignedTypes,kotlin.ExperimentalStdlibApi -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/test" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/main:/home/bobko/jb/kotlin/libraries/kotlin.test/common/build/libs/kotlin-test-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/annotations-common/build/libs/kotlin-test-annotations-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar" />
+          <option name="moduleName" value="kotlin-stdlib-common" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output-test url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/src/test" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/test" type="kotlin-test" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/test" type="kotlin-test" />
+    </content>
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.kotlin-stdlib-common.main" />
+</module>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":jps-plugin:main" external.linked.project.path="$MODULE_DIR$/../../../jps-plugin" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xuse-ir -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../jps-plugin/build/classes/kotlin/main" />
+          <option name="classpath" value="$MODULE_DIR$/../../../compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT-original.jar:/home/bobko/jb/kotlin/compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-common/build/libs/daemon-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/build-common/build/libs/kotlin-build-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/idea/idea-jps-common/build/libs/idea-jps-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.java/build/libs/frontend.java-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/cli/cli-common/build/libs/cli-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config.jvm/build/libs/config.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors.jvm/build/libs/descriptors.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.frontend/build/libs/js.frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.serializer/build/libs/js.serializer-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/serialization/build/libs/serialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend/build/libs/frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.config/build/libs/js.config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization/build/libs/deserialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.parser/build/libs/js.parser-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.ast/build/libs/js.ast-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common.jvm/build/libs/resolution.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/psi/build/libs/psi-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution/build/libs/resolution-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors/build/libs/descriptors-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-common-new/build/libs/daemon-common-new-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-client/build/libs/kotlin-daemon-client-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/build/libs/kotlin-daemon-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/preloader/build/libs/kotlin-preloader-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdom.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trove4j.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jps-model.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-api.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders-6.jar:/home/bobko/jb/kotlin/core/compiler.common.jvm/build/libs/compiler.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common.jvm/build/libs/deserialization.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common/build/libs/deserialization.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.common/build/libs/frontend.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config/build/libs/config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common/build/libs/resolution.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/compiler.common/build/libs/compiler.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/container/build/libs/container-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/util.runtime/build/libs/util.runtime-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util/build/libs/util-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata.jvm/build/libs/metadata.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata/build/libs/metadata-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/frontend/build/libs/frontend.native-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/utils/build/libs/kotlin-native-utils-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-io/build/libs/kotlin-util-io-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/jvm/build/libs/kotlin-stdlib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-annotations-jvm/build/libs/kotlin-annotations-jvm-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.8/f62be6d4cbf27781c2969867b4ed952f38378492/kotlinx-coroutines-core-1.3.8.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-network/1.0.1/d4d136b906e18ab17ea4a3e7b22d18080fc701f3/ktor-network-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/bobko/jb/kotlin/libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils-jvm/1.0.1/487ef685b990b5e0d3d64ca91628ade25ae1cc31/ktor-utils-jvm-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-io-jvm/0.1.1/6256f6187928f7f4246f87ef1ffc046c196e9ec0/kotlinx-coroutines-io-jvm-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-io-jvm/0.1.1/a39c1ed745d9f32ef0cfc254c349d1292e223d88/kotlinx-io-jvm-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.1/2cf7a6cc79732e3bdf1647d7404279900ca63eb0/config-1.3.1.jar:/home/bobko/jb/kotlin/compiler/compiler.version/build/libs/compiler.version-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/script-runtime/build/libs/kotlin-script-runtime-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang/2.0.6/415b0d40db4890849270c2a5cb50050fc6ee7636/javaslang-2.0.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/protobuf-lite/2.6.1/9af39e6d6cbd4404d06ae2ae63505b6247e6760b/protobuf-lite-2.6.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils/1.0.1/b6109ded676bda75626d2b28271251e23737b959/ktor-utils-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-io/0.1.1/cbbd8e5674bca2efe1ec1ab2dc00ae86560f9608/kotlinx-coroutines-io-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-io/0.1.1/5fab4d47d88ec84b9958272d503941c5a3e7d3cd/kotlinx-io-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang-match/2.0.6/d57a666939103b659813de52102d3ff0baa8ad5f/javaslang-match-2.0.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.12/eb1de5f3b800992b2b72655ef8c595b4f11ee444/atomicfu-common-0.11.12.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="jps-plugin" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../jps-plugin/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../jps-plugin/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../jps-plugin/resources" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../jps-plugin/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../jps-plugin/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-runner.main" />
+    <orderEntry type="module" module-name="kotlin.daemon-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-build-common.main" />
+    <orderEntry type="module" module-name="kotlin.idea.idea-jps-common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.java.main" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.frontend.main" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.main" />
+    <orderEntry type="module" module-name="kotlin.daemon-common-new.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-daemon-client.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-daemon.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-preloader.main" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Gradle: kotlin.build:ideaIC:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdom.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jps-model.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-api.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trove4j.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Gradle: kotlin.build:jps-standalone:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders-6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.util.main" />
+    <orderEntry type="module" module-name="kotlin.native.frontend.native.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.jvm.main" />
+    <orderEntry type="library" name="Gradle: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.main" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.core.util.runtime.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-annotations-jvm.main" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="module" module-name="kotlin.js.js.serializer.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.config.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.parser.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.ast.main" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.main" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-network:1.0.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.main" />
+    <orderEntry type="module" module-name="kotlin.native.kotlin-native-utils.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.compiler.version.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.psi.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.container.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-script-runtime.main" />
+    <orderEntry type="library" name="Gradle: io.javaslang:javaslang:2.0.6" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.main" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.main" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.main" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.serialization.main" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils-jvm:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-io-jvm:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io-jvm:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: com.typesafe:config:1.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-io.main" />
+    <orderEntry type="library" name="Gradle: io.javaslang:javaslang-match:2.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:protobuf-lite:2.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-io:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-common:0.11.12" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-embeddable.main" scope="RUNTIME" />
+  </component>
+</module>

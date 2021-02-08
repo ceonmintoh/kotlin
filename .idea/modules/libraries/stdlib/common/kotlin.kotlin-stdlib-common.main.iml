@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-stdlib-common:main" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/stdlib/common" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="Common (experimental) " allPlatforms="JS []/JVM [1.6]/Native []/Native [general]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-kotlin-package -Xallow-result-return-type -Xinline-classes -Xopt-in=kotlin.RequiresOptIn,kotlin.ExperimentalMultiplatform,kotlin.contracts.ExperimentalContracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/main" />
+          <option name="moduleName" value="kotlin-stdlib-common" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/build/classes/kotlin/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/common/src" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/src" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/unsigned">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/unsigned/src" type="kotlin-source" />
+    </content>
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

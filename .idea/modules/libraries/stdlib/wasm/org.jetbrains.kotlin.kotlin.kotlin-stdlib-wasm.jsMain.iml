@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-stdlib-wasm:jsMain" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/stdlib/wasm" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="false" externalProjectId=":kotlin-stdlib-wasm" pureKotlinSourceFolders="$MODULE_DIR$/../../../../../libraries/stdlib/wasm/src/jsMain/kotlin;/home/bobko/jb/kotlin/libraries/stdlib/wasm/build/externals/kotlin-kotlin-stdlib-wasm/src;/home/bobko/jb/kotlin/libraries/stdlib/wasm/builtins;/home/bobko/jb/kotlin/libraries/stdlib/wasm/internal;/home/bobko/jb/kotlin/libraries/stdlib/wasm/runtime;/home/bobko/jb/kotlin/libraries/stdlib/wasm/src;/home/bobko/jb/kotlin/libraries/stdlib/wasm/stubs;/home/bobko/jb/kotlin/libraries/stdlib/wasm/build/builtInsSources;/home/bobko/jb/kotlin/libraries/stdlib/wasm/src/jsTest/kotlin;/home/bobko/jb/kotlin/libraries/stdlib/wasm/src/commonMain/kotlin;/home/bobko/jb/kotlin/libraries/stdlib/wasm/build/commonMainSources">
+        <dependsOnModuleNames>:kotlin-stdlib-wasm:commonMain</dependsOnModuleNames>
+        <sourceSets>
+          <sourceSet>org.jetbrains.kotlin.kotlin.kotlin-stdlib-wasm.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xir-module-name=kotlin -Xir-only -Xir-produce-klib-dir -Xallow-kotlin-package -Xallow-result-return-type -Xexplicit-api=warning -Xinline-classes -Xopt-in=kotlin.RequiresOptIn,kotlin.RequiresOptIn,kotlin.ExperimentalUnsignedTypes,kotlin.ExperimentalStdlibApi -Xread-deserialized-contracts -Xuse-experimental=kotlin.Experimental,kotlin.ExperimentalMultiplatform,kotlin.contracts.ExperimentalContracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="outputFile" value="$MODULE_DIR$/../../../../../libraries/stdlib/wasm/build/classes/kotlin/js/main/kotlin-stdlib-wasm.js" />
+          <option name="noStdlib" value="true" />
+          <option name="sourceMap" value="true" />
+          <option name="metaInfo" value="true" />
+          <option name="target" value="v5" />
+          <option name="moduleKind" value="umd" />
+          <option name="main" value="call" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/build/builtInsSources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/build/builtInsSources" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/build/externals/kotlin-kotlin-stdlib-wasm/src" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/builtins">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/builtins" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/internal">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/internal" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/runtime" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/src" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/stubs">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/wasm/stubs" type="kotlin-source" />
+    </content>
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

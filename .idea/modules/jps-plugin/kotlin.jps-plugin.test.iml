@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":jps-plugin:test" external.linked.project.path="$MODULE_DIR$/../../../jps-plugin" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xuse-ir -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../jps-plugin/build/classes/kotlin/test" />
+          <option name="classpath" value="$MODULE_DIR$/../../../jps-plugin/build/classes/java/main:/home/bobko/jb/kotlin/jps-plugin/build/classes/kotlin/main:/home/bobko/jb/kotlin/jps-plugin/build/resources/main:/home/bobko/jb/kotlin/compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT-original.jar:/home/bobko/jb/kotlin/compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/incremental-compilation-impl/build/libs/incremental-compilation-impl-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/incremental-compilation-impl/build/libs/incremental-compilation-impl-1.5.255-SNAPSHOT-tests.jar:/home/bobko/jb/kotlin/compiler/tests-common/build/libs/tests-common-1.5.255-SNAPSHOT-tests.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-common/build/libs/daemon-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/build-common/build/libs/kotlin-build-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/build-common/build/libs/kotlin-build-common-1.5.255-SNAPSHOT-tests.jar:/home/bobko/jb/kotlin/idea/idea-jps-common/build/libs/idea-jps-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/tests-compiler-utils/build/libs/tests-compiler-utils-1.5.255-SNAPSHOT-tests.jar:/home/bobko/jb/kotlin/compiler/cli/cli-js/build/libs/cli-js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/cli/build/libs/cli-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/light-classes/build/libs/light-classes-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.jvm/build/libs/backend.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend/build/libs/backend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/entrypoint/build/libs/entrypoint-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/javac-wrapper/build/libs/javac-wrapper-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.jvm/build/libs/ir.serialization.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.java/build/libs/frontend.java-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/cli/cli-common/build/libs/cli-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend.common.jvm/build/libs/backend.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config.jvm/build/libs/config.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors.jvm/build/libs/descriptors.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.dce/build/libs/js.dce-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.translator/build/libs/js.translator-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.wasm/build/libs/backend.wasm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.js/build/libs/backend.js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.js/build/libs/ir.serialization.js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.frontend/build/libs/js.frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.serializer/build/libs/js.serializer-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.ir2cfg/build/libs/ir.ir2cfg-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.common/build/libs/ir.serialization.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/serialization/build/libs/serialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.common/build/libs/ir.backend.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.psi2ir/build/libs/ir.psi2ir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend-common/build/libs/backend-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/plugin-api/build/libs/plugin-api-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.tree.impl/build/libs/ir.tree.impl-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.interpreter/build/libs/ir.interpreter-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.tree/build/libs/ir.tree-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend/build/libs/frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.config/build/libs/js.config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization/build/libs/deserialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.parser/build/libs/js.parser-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.ast/build/libs/js.ast-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/java/build/libs/java-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common.jvm/build/libs/resolution.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/psi/build/libs/psi-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution/build/libs/resolution-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors/build/libs/descriptors-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-common-new/build/libs/daemon-common-new-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-client/build/libs/kotlin-daemon-client-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/build/libs/kotlin-daemon-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/preloader/build/libs/kotlin-preloader-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/junit/build/libs/kotlin-test-junit-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/bobko/jb/kotlin/compiler/tests-common-jvm6/build/libs/tests-common-jvm6-1.5.255-SNAPSHOT-tests.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/jvm/build/libs/kotlin-test-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/devkit-jps-plugin.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/devkit.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/dtdparser113.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/resources_en.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/aapt2-proto-0.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-analysis-7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-commons-7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-tree-7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-util-7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/automaton-1.12-1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/baksmali-2.2.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-anim-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-awt-util-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-bridge-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-codec-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-constants-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-css-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-dom-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-ext-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-gvt-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-parser-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-svg-dom-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-svggen-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-transcoder-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-util-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-xml-1.12.0-8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bcpkix-jdk15on-1.65.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bcprov-jdk15on-1.65.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bootstrap.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/built-in-server.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/byte-buddy-agent-1.10.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/cglib-nodep-3.2.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/cli-parser-1.1.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-image-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-io-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-lang-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-cli-1.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-codec-1.14.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-collections-3.2.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-compress-1.20.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-httpclient-3.1-patched.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-imaging-1.0-RC-1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-io-2.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-lang-2.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-lang3-3.9.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-logging-1.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-net-3.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/configuration-store-impl.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/coverage-common.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/credential-store.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dbus-java-3.2.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/delight-rhino-sandbox-0.0.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dexlib2-2.2.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dom-impl.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dom-openapi.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/duplicates-analysis.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/error_prone_annotations-2.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/extensions.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/external-system-rt.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/failureaccess-1.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/FastInfoset-1.2.15.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/fluent-hc-4.5.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/forms-1.1-preview.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/forms_rt.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/grazie-spellchecker-0.1.9.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-2.5.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-json-2.5.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-jsr223-2.5.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-templates-2.5.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-xml-2.5.11.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/gson-2.8.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/guava-29.0-jre.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/hamcrest-core-1.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/HdrHistogram-2.1.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpclient-4.5.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpcore-4.4.13.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpmime-4.5.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/icons.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/idea.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/idea_rt.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-core-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-metadata-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-tiff-3.5.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imgscalr-lib-4.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ini4j-0.5.5-2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-coverage-agent-1.0.512.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-deps-fastutil-8.3.1-1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-dvcs.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-test-discovery-agent-1.0.512.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-xml.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ion-java-1.5.2-2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/isorelax-20030108.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/istack-commons-runtime-3.0.7.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/j2objc-annotations-1.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-annotations-2.10.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-core-2.10.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-databind-2.10.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-module-kotlin-2.10.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-compatibility-1.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-string-similarity-1.2.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-utils-1.0.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javac2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javax.activation-1.2.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javax.annotation-api-1.3.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxb-api-2.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxb-runtime-2.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxen-1.2.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jb-jdi-2.2.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcef-81.2.24-gc0b313d-chromium-81.0.4044.113.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcip-annotations-1.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcodings-1.0.48.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdkAnnotations.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdom.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jediterm-pty-2.29.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jetCheck-0.2.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jffi-1.2.19-native.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jffi-1.2.19.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jing-20030619.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jna-platform.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jna.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnaerator-runtime-0.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-a64asm-1.0.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-constants-0.9.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-enxio-0.21.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-ffi-2.1.10.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-posix-3.0.50.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-unixsocket-0.23.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-x86asm-1.0.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/joni-2.1.32.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jps-model.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsch-0.1.55.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jshell-frontend.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/json.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsoup-1.12.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsp-base-openapi.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsr305.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jstun-0.7.5.20200723.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/junit-4.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/junit.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kotlinx-coroutines-core-1.3.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kotlinx-coroutines-jdk8-1.3.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kryo-2.24.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ktor-websockets-1.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/layout_inspector_java_proto-27.0.0.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/libstudio.proto-27.0.0.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/live_sql_java_proto-27.0.0.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/log4j.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/lz4-java-1.7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/markdownj-core-0.4.2-SNAPSHOT.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-artifact-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-builder-support-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-model-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-model-builder-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-repository-metadata-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-api-1.3.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-impl-1.3.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-provider-3.6.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-spi-1.3.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-util-1.3.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/memoryfilesystem-2.1.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/microba.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/miglayout-core-5.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/miglayout-swing-5.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/minlog-1.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/nanoxml-2.2.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/nekohtml-1.9.22.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-buffer-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-http-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-http2-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-socks-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-common-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-handler-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-handler-proxy-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-resolver-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-transport-4.1.47.Final.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/objenesis-3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtend.lib-2.17.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtend.lib.macro-2.17.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtext.xbase.lib-2.17.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/oro-2.0.8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/owasp-java-html-sanitizer-20191001.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-api.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-concurrency.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-core-ui.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-diagnostic.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-ide-util-io.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-impl.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-objectSerializer-annotations.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-objectSerializer.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-rd-community.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-serviceContainer.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-config.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-devkit.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-uploader.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-util-ex.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-util-ui.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-component-annotations-1.7.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-interpolation-1.25.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-utils-3.2.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/protobuf-java-3.5.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/proxy-vole-1.0.5-jb.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/pty4j-0.9.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/purejavacomm-0.0.11.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/qdox-2.0-M10.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/quiche-jna-stubs-15.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-core-0.202.100.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-framework-0.202.100.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-swing-0.202.100.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/resources.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/resources_en.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rhino-1.7.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rngom-20051226-patched.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/serviceMessages-2019.1.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/slf4j-api-1.7.25.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/slf4j-log4j12-1.7.25.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/snakeyaml-1.26.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/snakeyaml-engine-2.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/spellchecker.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/sqlite-jdbc-3.21.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/stax-api-1.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/stax-ex-1.8.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/streamex-0.7.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/structuralsearch.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/swingx-core-1.6.2-2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework-java.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework.core.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tests_bootstrap.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tips-intellij-idea-community-202.13.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tls-channel-0.3.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trang-core.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trove4j.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/txw2-2.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/uast-tests.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util-2.2.4.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/velocity-1.7.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/winp-1.28.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xercesImpl-2.12.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xml-apis-ext-1.3.04.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xml-resolver-1.2.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlbeans-2.6.0.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlgraphics-commons-2.3.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlpull-1.1.3.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlrpc-2.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xpp3_min-1.1.4c.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xstream-1.4.11.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xz-1.8.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/jps-build-test/202.7660.26/98c271e2bee9b6e64c97c67ed55ef37cae642027/jps-build-test-202.7660.26.jar:/home/bobko/jb/kotlin/libraries/reflect/api/build/libs/kotlin-reflect-api-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/reflect/api/build/libs/kotlin-reflect-api-1.5.255-SNAPSHOT-java9.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders-6.jar:/home/bobko/jb/kotlin/core/compiler.common.jvm/build/libs/compiler.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir-serialization/build/libs/fir-serialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir-deserialization/build/libs/fir-deserialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/checkers/build/libs/checkers-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/resolve/build/libs/resolve-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/raw-fir/psi2fir/build/libs/psi2fir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/raw-fir/light-tree2fir/build/libs/light-tree2fir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/raw-fir/raw-fir.common/build/libs/raw-fir.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/tree/build/libs/tree-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/cones/build/libs/cones-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common.jvm/build/libs/deserialization.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common/build/libs/deserialization.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.common/build/libs/frontend.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config/build/libs/config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common/build/libs/resolution.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/compiler.common/build/libs/compiler.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/container/build/libs/container-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/util.runtime/build/libs/util.runtime-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util/build/libs/util-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/jdk8/build/libs/kotlin-stdlib-jdk8-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/plugins/scripting/scripting-compiler/build/libs/kotlin-scripting-compiler-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/tests-mutes/build/libs/tests-mutes-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/plugins/scripting/scripting-compiler-impl/build/libs/kotlin-scripting-compiler-impl-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata.jvm/build/libs/metadata.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata/build/libs/metadata-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-klib-metadata/build/libs/kotlin-util-klib-metadata-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-klib/build/libs/kotlin-util-klib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/frontend/build/libs/frontend.native-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/utils/build/libs/kotlin-native-utils-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-io/build/libs/kotlin-util-io-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/jdk7/build/libs/kotlin-stdlib-jdk7-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/js/build/libs/kotlin-scripting-js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/jvm/build/libs/kotlin-scripting-jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/common/build/libs/kotlin-scripting-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3.1/518ca0985f974017e85f8ca5e8409d4240f02def/kotlinx-collections-immutable-jvm-0.3.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.8/f62be6d4cbf27781c2969867b4ed952f38378492/kotlinx-coroutines-core-1.3.8.jar:/home/bobko/jb/kotlin/libraries/stdlib/jvm/build/libs/kotlin-stdlib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-annotations-jvm/build/libs/kotlin-annotations-jvm-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-network/1.0.1/d4d136b906e18ab17ea4a3e7b22d18080fc701f3/ktor-network-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/bobko/jb/kotlin/compiler/fir/fir2ir/build/libs/fir2ir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/jvm/build/libs/jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir2ir/jvm-backend/build/libs/jvm-backend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/test-infrastructure-utils/build/libs/test-infrastructure-utils-1.5.255-SNAPSHOT-tests.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/android-dx/r23.0.1/d5eac9ade3a0caad8f0f75dfb9bfaf4437126dc9/android-dx-r23.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/r8/2.0.88/2bc0fbd44533717df6553f2e8d1b9df9c12a1667/r8-2.0.88.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/intellij-core.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/asm-all-8.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/guava-29.0-jre.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/common/build/libs/kotlin-test-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/protobuf-relocated/2.6.1/9a9536949348fae596f4878243dffd0ed351993d/protobuf-relocated-2.6.1.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/annotations-common/build/libs/kotlin-test-annotations-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils-jvm/1.0.1/487ef685b990b5e0d3d64ca91628ade25ae1cc31/ktor-utils-jvm-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-io-jvm/0.1.1/6256f6187928f7f4246f87ef1ffc046c196e9ec0/kotlinx-coroutines-io-jvm-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-io-jvm/0.1.1/a39c1ed745d9f32ef0cfc254c349d1292e223d88/kotlinx-io-jvm-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.1/2cf7a6cc79732e3bdf1647d7404279900ca63eb0/config-1.3.1.jar:/home/bobko/jb/kotlin/compiler/compiler.version/build/libs/compiler.version-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/script-runtime/build/libs/kotlin-script-runtime-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang/2.0.6/415b0d40db4890849270c2a5cb50050fc6ee7636/javaslang-2.0.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.16/b1aaf0028852164ab6b4057192ccd0ba7dedd3a5/jansi-1.16.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.3.1/d8a30137fe4ee2246b71b3915baac767d348c5bb/jline-3.3.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/protobuf-lite/2.6.1/9af39e6d6cbd4404d06ae2ae63505b6247e6760b/protobuf-lite-2.6.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-utils/1.0.1/b6109ded676bda75626d2b28271251e23737b959/ktor-utils-1.0.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-io/0.1.1/cbbd8e5674bca2efe1ec1ab2dc00ae86560f9608/kotlinx-coroutines-io-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-io/0.1.1/5fab4d47d88ec84b9958272d503941c5a3e7d3cd/kotlinx-io-0.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang-match/2.0.6/d57a666939103b659813de52102d3ff0baa8ad5f/javaslang-match-2.0.6.jar:/home/bobko/jb/kotlin/compiler/ir/ir.tree.persistent/build/libs/ir.tree.persistent-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/wasm/wasm.ir/build/libs/wasm.ir-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-common/0.11.12/eb1de5f3b800992b2b72655ef8c595b4f11ee444/atomicfu-common-0.11.12.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="jps-plugin" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../../jps-plugin/build/classes/java/main" />
+              <option value="$MODULE_DIR$/../../../jps-plugin/build/classes/kotlin/main" />
+              <option value="$MODULE_DIR$/../../../jps-plugin/build/libs/jps-plugin-1.5.255-SNAPSHOT.jar" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../jps-plugin/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../jps-plugin/jps-tests">
+      <sourceFolder url="file://$MODULE_DIR$/../../../jps-plugin/jps-tests/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../jps-plugin/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.jps-plugin.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-runner.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.incremental-compilation-impl.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.incremental-compilation-impl.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.compiler.tests-common.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.daemon-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-build-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-build-common.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.idea.idea-jps-common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.java.main" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.frontend.main" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.main" />
+    <orderEntry type="module" module-name="kotlin.daemon-common-new.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-daemon-client.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-daemon.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-preloader.main" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-jvm.main" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kotlin.build:devkit:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/devkit.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/devkit-jps-plugin.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/dtdparser113.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/devkit/lib/resources_en.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: kotlin.build:ideaIC:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/FastInfoset-1.2.15.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/HdrHistogram-2.1.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/aapt2-proto-0.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-analysis-7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-commons-7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-tree-7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-util-7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/automaton-1.12-1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/baksmali-2.2.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-anim-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-awt-util-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-bridge-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-codec-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-constants-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-css-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-dom-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-ext-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-gvt-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-parser-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-svg-dom-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-svggen-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-transcoder-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-util-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/batik-xml-1.12.0-8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bcpkix-jdk15on-1.65.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bcprov-jdk15on-1.65.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/bootstrap.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/built-in-server.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/byte-buddy-agent-1.10.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/cglib-nodep-3.2.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/cli-parser-1.1.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-image-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-io-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/common-lang-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-cli-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-codec-1.14.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-collections-3.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-compress-1.20.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-httpclient-3.1-patched.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-imaging-1.0-RC-1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-io-2.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-lang-2.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-lang3-3.9.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-logging-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/commons-net-3.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/configuration-store-impl.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/coverage-common.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/credential-store.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dbus-java-3.2.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/delight-rhino-sandbox-0.0.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dexlib2-2.2.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dom-impl.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/dom-openapi.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/duplicates-analysis.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/error_prone_annotations-2.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/extensions.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/external-system-rt.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/failureaccess-1.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/fluent-hc-4.5.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/forms-1.1-preview.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/forms_rt.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/grazie-spellchecker-0.1.9.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-2.5.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-json-2.5.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-jsr223-2.5.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-templates-2.5.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/groovy-xml-2.5.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/gson-2.8.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/guava-29.0-jre.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/hamcrest-core-1.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpclient-4.5.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpcore-4.4.13.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/httpmime-4.5.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/icons.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/idea.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/idea_rt.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-core-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-metadata-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imageio-tiff-3.5.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/imgscalr-lib-4.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ini4j-0.5.5-2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-coverage-agent-1.0.512.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-deps-fastutil-8.3.1-1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-dvcs.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-test-discovery-agent-1.0.512.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/intellij-xml.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ion-java-1.5.2-2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/isorelax-20030108.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/istack-commons-runtime-3.0.7.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/j2objc-annotations-1.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-annotations-2.10.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-core-2.10.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-databind-2.10.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jackson-module-kotlin-2.10.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-compatibility-1.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-string-similarity-1.2.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/java-utils-1.0.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javac2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javax.activation-1.2.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/javax.annotation-api-1.3.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxb-api-2.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxb-runtime-2.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jaxen-1.2.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jb-jdi-2.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcef-81.2.24-gc0b313d-chromium-81.0.4044.113.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcip-annotations-1.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jcodings-1.0.48.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdkAnnotations.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jdom.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jediterm-pty-2.29.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jetCheck-0.2.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jffi-1.2.19.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jffi-1.2.19-native.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jing-20030619.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jna.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jna-platform.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnaerator-runtime-0.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-a64asm-1.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-constants-0.9.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-enxio-0.21.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-ffi-2.1.10.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-posix-3.0.50.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-unixsocket-0.23.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jnr-x86asm-1.0.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/joni-2.1.32.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jps-model.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsch-0.1.55.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jshell-frontend.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/json.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsoup-1.12.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsp-base-openapi.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jsr305.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/jstun-0.7.5.20200723.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/junit.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/junit-4.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kotlinx-coroutines-core-1.3.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kotlinx-coroutines-jdk8-1.3.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/kryo-2.24.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/ktor-websockets-1.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/layout_inspector_java_proto-27.0.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/libstudio.proto-27.0.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/live_sql_java_proto-27.0.0.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/log4j.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/lz4-java-1.7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/markdownj-core-0.4.2-SNAPSHOT.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-artifact-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-builder-support-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-model-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-model-builder-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-repository-metadata-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-api-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-impl-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-provider-3.6.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-spi-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/maven-resolver-util-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/memoryfilesystem-2.1.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/microba.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/miglayout-core-5.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/miglayout-swing-5.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/minlog-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/nanoxml-2.2.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/nekohtml-1.9.22.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-buffer-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-http-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-http2-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-codec-socks-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-common-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-handler-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-handler-proxy-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-resolver-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/netty-transport-4.1.47.Final.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/objenesis-3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtend.lib-2.17.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtend.lib.macro-2.17.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/org.eclipse.xtext.xbase.lib-2.17.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/oro-2.0.8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/owasp-java-html-sanitizer-20191001.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-api.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-concurrency.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-core-ui.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-diagnostic.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-ide-util-io.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-impl.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-objectSerializer.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-objectSerializer-annotations.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-rd-community.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-serviceContainer.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-config.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-devkit.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-statistics-uploader.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-util-ex.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/platform-util-ui.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-component-annotations-1.7.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-interpolation-1.25.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/plexus-utils-3.2.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/protobuf-java-3.5.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/proxy-vole-1.0.5-jb.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/pty4j-0.9.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/purejavacomm-0.0.11.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/qdox-2.0-M10.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/quiche-jna-stubs-15.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-core-0.202.100.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-framework-0.202.100.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rd-swing-0.202.100.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/resources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/resources_en.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rhino-1.7.12.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/rngom-20051226-patched.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/serviceMessages-2019.1.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/slf4j-api-1.7.25.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/slf4j-log4j12-1.7.25.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/snakeyaml-1.26.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/snakeyaml-engine-2.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/spellchecker.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/sqlite-jdbc-3.21.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/stax-api-1.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/stax-ex-1.8.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/streamex-0.7.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/structuralsearch.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/swingx-core-1.6.2-2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework-java.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/testFramework.core.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tests_bootstrap.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tips-intellij-idea-community-202.13.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/tls-channel-0.3.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trang-core.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/trove4j.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/txw2-2.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/uast-tests.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/util-2.2.4.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/velocity-1.7.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/winp-1.28.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xercesImpl-2.12.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xml-apis-ext-1.3.04.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xml-resolver-1.2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlbeans-2.6.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlgraphics-commons-2.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlpull-1.1.3.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xmlrpc-2.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xpp3_min-1.1.4c.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xstream-1.4.11.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/xz-1.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.jetbrains.intellij.idea:jps-build-test:202.7660.26" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect-api.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect-api.java9" scope="PROVIDED" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Gradle: kotlin.build:jps-standalone:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/jps-standalone/202.7660.26/artifacts/jps-builders-6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli-js.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.main" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.util.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-junit.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib.main" />
+    <orderEntry type="module-library">
+      <library name="Gradle: kotlin.build:intellij-core:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/asm-all-8.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/guava-29.0-jre.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/intellij-core.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kotlin.compiler.tests-compiler-utils.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.compiler.light-classes.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.entrypoint.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli-common.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.translator.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.serializer.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.ir2cfg.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.serialization.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.tree.impl.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.java.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.tests-common-jvm6.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir-serialization.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir-deserialization.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.checkers.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.resolve.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.raw-fir.psi2fir.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.raw-fir.light-tree2fir.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.tree.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.cones.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-jdk8.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.tests-mutes.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler-impl.main" />
+    <orderEntry type="module" module-name="kotlin.native.frontend.native.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir2ir.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir2ir.jvm-backend.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.test-infrastructure-utils.test" production-on-test="" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:android-dx:r23.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.android.tools:r8:2.0.88" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:protobuf-relocated:2.6.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.jvm.main" />
+    <orderEntry type="library" name="Gradle: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.core.util.runtime.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-annotations-jvm.main" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="module" module-name="kotlin.js.js.config.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.parser.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.ast.main" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.main" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-network:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+    <orderEntry type="module" module-name="kotlin.js.js.dce.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.wasm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.js.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.js.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.backend.common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend-common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.javac-wrapper.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.plugin-api.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-klib.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-io.main" />
+    <orderEntry type="library" name="Gradle: org.fusesource.jansi:jansi:1.16" level="project" />
+    <orderEntry type="library" name="Gradle: org.jline:jline:3.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.psi.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.common.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.container.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-script-runtime.main" />
+    <orderEntry type="library" name="Gradle: io.javaslang:javaslang:2.0.6" level="project" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.main" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.compiler.version.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.common.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.native.kotlin-native-utils.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.tree.main" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.raw-fir.raw-fir.common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-jdk7.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-js.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-jvm.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-common.main" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils-jvm:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-io-jvm:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io-jvm:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: com.typesafe:config:1.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.psi2ir.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.tree.persistent.main" />
+    <orderEntry type="module" module-name="kotlin.wasm.wasm.ir.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.interpreter.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.jvm.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-klib-metadata.main" />
+    <orderEntry type="library" name="Gradle: io.javaslang:javaslang-match:2.0.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:protobuf-lite:2.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.ktor:ktor-utils:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-io:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-io:0.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:atomicfu-common:0.11.12" level="project" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar:///usr/lib/jvm/java-8-openjdk/lib/tools.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kotlin.compiler.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.runtime.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.analysis-tests.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.analysis-tests.legacy-fir-tests.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect.main" scope="RUNTIME" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library name="Gradle: kotlin.build:java:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/aether-dependency-resolver.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/completion-ranking-java-0.2.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/debugger-memory-agent-0.0.11.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/ecj-4.13.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/java-api.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/java-impl.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/java_resources_en.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/javac2.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jdkAnnotations.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jgoodies-common-1.4.0.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jps-builders.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jps-builders-6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jps-launcher.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/jshell-protocol.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/maven-resolver-connector-basic-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/maven-resolver-transport-file-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/maven-resolver-transport-http-1.3.3.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/resources.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/resources_en.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/plugins/java/lib/sa-jdwp-1.14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-embeddable.main" scope="RUNTIME" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.openjdk.jmh:jmh-generator-bytecode:1.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.openjdk.jmh:jmh-generator-annprocess:1.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.openjdk.jmh:jmh-core:1.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.openjdk.jmh:jmh-generator-asm:1.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.openjdk.jmh:jmh-generator-reflection:1.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: net.sf.jopt-simple:jopt-simple:4.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.apache.commons:commons-math3:3.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.ow2.asm:asm:5.0.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.jps-plugin.main" />
+</module>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-test:kotlin-test-js:test" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/kotlin.test/js" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false">
+        <implements>
+          <implement>kotlin.kotlin-test.kotlin-test-common.test</implement>
+          <implement>kotlin.kotlin-test.kotlin-test-annotations-common.test</implement>
+        </implements>
+        <productionOutputPath>$MODULE_DIR$/../../../../../libraries/kotlin.test/js/build/classes/main/kotlin-test.js</productionOutputPath>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-kotlin-package" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="outputFile" value="$MODULE_DIR$/../../../../../libraries/kotlin.test/js/build/classes/kotlin/test/kotlin-test-js_test.js" />
+          <option name="noStdlib" value="true" />
+          <option name="target" value="v5" />
+          <option name="moduleKind" value="umd" />
+          <option name="main" value="call" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/js/build/classes/kotlin/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/js/src/test" />
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-js.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-js:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.kotlin-test.kotlin-test-js.main" />
+</module>

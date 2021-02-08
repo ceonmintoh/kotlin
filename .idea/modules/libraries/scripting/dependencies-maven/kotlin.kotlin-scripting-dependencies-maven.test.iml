@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-scripting-dependencies-maven:test" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xuse-ir -Xallow-kotlin-package -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/classes/kotlin/test" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/classes/kotlin/main:/home/bobko/jb/kotlin/libraries/scripting/dependencies/build/libs/kotlin-scripting-dependencies-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/dependencies/build/libs/kotlin-scripting-dependencies-1.5.255-SNAPSHOT-tests.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.5.0-dev-1141/d2b94c0505e783bd439833bd5d19d5d391e68716/kotlin-reflect-1.5.0-dev-1141.jar:/home/bobko/jb/kotlin/libraries/scripting/common/build/libs/kotlin-scripting-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.8/f62be6d4cbf27781c2969867b4ed952f38378492/kotlinx-coroutines-core-1.3.8.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0-dev-1141/52d4dc85066279bf477e9a582bbc698b0ec788d5/kotlin-stdlib-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-aether-provider/3.3.9/29e8e7122f7a166ea53785cd75af0ef9d4d848d4/maven-aether-provider-3.3.9.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-impl/1.1.0/8236fde6a1a4a7c6018d0a09e476f11c5ca8c2e1/aether-impl-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-connector-basic/1.1.0/f5c784bdd704ff64166c086eb6b31e2784c87b66/aether-connector-basic-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-wagon/1.1.0/5aeaa19811ae01f4ec6511e83304120679e47b45/aether-transport-wagon-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-http/1.1.0/5beffae29e88251ac419bf96dd1426babdb6a66f/aether-transport-http-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-transport-file/1.1.0/5c257319ccba22a02fa583c3946bfcbb47638bc8/aether-transport-file-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-util/1.1.0/d0f84ba994f0133580e8b957a44593eaa03d42cd/aether-util-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-spi/1.1.0/a532baa7b965d2893ceace03e804b1882f448052/aether-spi-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.aether/aether-api/1.1.0/5dd291e788f50dfb48822dab29defc16ad70860/aether-api-1.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-core/3.6.3/eca800aa73e750ec9a880eb224f0bb68f5b7873b/maven-core-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings-builder/3.6.3/756d46810b8cc7b2b98585ccc787854cdfde7fd9/maven-settings-builder-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.wagon/wagon-provider-api/3.3.4/7a99fdaa534aa8c01f01a447fe1c7af5cfc7b0d5/wagon-provider-api-3.3.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0-dev-1141/7c45a07103f78c8813cc58c64af01fdca7ec0652/kotlin-stdlib-common-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.5/9783d89b8eea20a517a4afc5f979bd2882b54c44/httpclient-4.3.5.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.6.2/ac4cd2d6d0cf4342b4e8fd520c686851fc681912/jcl-over-slf4j-1.6.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-plugin-api/3.6.3/63fe5967b9c4c1b6fa6004be76e1c939e8bd1d6/maven-plugin-api-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-resolver-provider/3.6.3/115240b65c1d0e9745cb2012b977afc3d1795f94/maven-resolver-provider-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.6.3/4ef1d56f53d3e0a9003b7cc82c89af9878321e82/maven-model-builder-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.6.3/61c7848dce2fbf7f7ab0fdc8e8a7cc9da5dd7827/maven-model-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-settings/3.6.3/bbf4e06dcdb0bb33d1546c080df5c8d92b535d30/maven-settings-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-builder-support/3.6.3/e9a37af390009a525d8faa6b18bd682123f85f9e/maven-builder-support-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.6.3/14d28071c85e76b656c46c465db91d394d6f48f0/maven-repository-metadata-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.6.3/f8ff8032903882376e8d000c51e3e16d20fc7df7/maven-artifact-3.6.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.4.1/1658cfa27978c5949c3a92086514a22ca85394e4/maven-resolver-impl-1.4.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-spi/1.4.1/905a024ff050e804a8a4df53eeee63cc7d153438/maven-resolver-spi-1.4.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-util/1.4.1/3f6d4f4bc3e24b46a776b47ccfeaed9d2ed01549/maven-resolver-util-1.4.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.4.1/ceee6b7ea1bc252afa585fa32f76c2cda206bdcd/maven-resolver-api-1.4.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.maven.shared/maven-shared-utils/3.2.1/8dd4dfb1d2d8b6969f6462790f82670bcd35ce2/maven-shared-utils-3.2.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.plexus/0.3.4/f1335a3b7bc3fd23f67da88bd60cd5d4c3304ef3/org.eclipse.sisu.plexus-0.3.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.3.4/fc3be144183f54dc6f5c55e34462c1c2d89d7d96/org.eclipse.sisu.inject-0.3.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/4.2.1/41e5ab52ec65e60b6c0ced947becf7ba96402645/guice-4.2.1-no_aop.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.enterprise/cdi-api/1.0/44c453f60909dfc223552ace63e05c694215156b/cdi-api-1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-sec-dispatcher/1.4/43fde524e9b94c883727a9fddb8669181b890ea7/plexus-sec-dispatcher-1.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.1/13b015768e0d04849d2794e4c47eb02d01a0de32/plexus-utils-3.2.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-classworlds/2.6.0/8587e80fcb38e70b70fae8d5914b6376bfad6259/plexus-classworlds-2.6.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-component-annotations/2.1.0/2f2147a6cc6a119a1b51a96f31d45c557f6244b9/plexus-component-annotations-2.1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.25/3b37b3335e6a97e11e690bbdc22ade1a5deb74d6/plexus-interpolation-1.25.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.29/e56bf4473a4c6b71c7dd397a833dce86d1993d9d/slf4j-api-1.7.29.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.1-android/bdaab946ca5ad20253502d873ba0c3313d141036/guava-25.1-android.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.sonatype.plexus/plexus-cipher/1.4/50ade46f23bb38cd984b4ec560c46223432aac38/plexus-cipher-1.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.0.0/fc89b03860d11d6213d0154a62bcd1c2f69b9efa/checker-compat-qual-2.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.1.3/39b109f2cd352b2d71b52a3b5a1a9850e1dc304b/error_prone_annotations-2.1.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="kotlin-scripting-dependencies-maven" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/classes/java/main" />
+              <option value="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/classes/kotlin/main" />
+              <option value="$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/libs/kotlin-scripting-dependencies-maven-1.5.255-SNAPSHOT.jar" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output-test url="file://$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/build/classes/kotlin/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/src/test" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/test" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/scripting/dependencies-maven/tests" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-dependencies-maven.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-dependencies.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-dependencies.test" production-on-test="" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-aether-provider:3.3.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-impl:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-connector-basic:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-transport-wagon:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-transport-http:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-transport-file:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-util:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-api:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-core:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-settings-builder:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.wagon:wagon-provider-api:3.3.4" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.aether:aether-spi:1.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-model-builder:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-model:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-repository-metadata:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-utils:3.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-component-annotations:2.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.8.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.3.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jcl-over-slf4j:1.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-plugin-api:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-resolver-provider:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-settings:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-builder-support:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven:maven-artifact:3.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-impl:1.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-spi:1.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-util:1.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.resolver:maven-resolver-api:1.4.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.maven.shared:maven-shared-utils:3.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.inject:guice:no_aop:4.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-classworlds:2.6.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.sonatype.plexus:plexus-sec-dispatcher:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.plexus:plexus-interpolation:1.25" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:slf4j-api:1.7.29" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Gradle: javax.enterprise:cdi-api:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:25.1-android" level="project" />
+    <orderEntry type="library" name="Gradle: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
+    <orderEntry type="library" name="Gradle: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.checkerframework:checker-compat-qual:2.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.1.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-nop:1.7.30" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:1.7.30" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.kotlin-scripting-dependencies-maven.main" />
+</module>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-stdlib-js:main" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/stdlib/js-v1" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false">
+        <implements>kotlin.kotlin-stdlib-common.main</implements>
+        <testOutputPath>$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/classes/kotlin/test/kotlin-stdlib-js_test.js</testOutputPath>
+        <compilerSettings>
+          <option name="additionalArguments" value="-main noCall -source-map-base-dirs $MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/builtin-sources:$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/src:$MODULE_DIR$/../../../../../libraries/stdlib/js/src:$MODULE_DIR$/../../../../../libraries/stdlib/src/kotlin:$MODULE_DIR$/../../../../../libraries/stdlib/common/src:$MODULE_DIR$/../../../../../libraries/stdlib/unsigned/src -Xallow-kotlin-package -Xallow-result-return-type -Xinline-classes -Xopt-in=kotlin.RequiresOptIn,kotlin.ExperimentalMultiplatform,kotlin.contracts.ExperimentalContracts -version" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="outputFile" value="$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/classes/main/kotlin.js" />
+          <option name="noStdlib" value="true" />
+          <option name="sourceMap" value="true" />
+          <option name="sourceMapPrefix" value="./" />
+          <option name="metaInfo" value="true" />
+          <option name="target" value="v5" />
+          <option name="moduleKind" value="commonjs" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/builtin-sources">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/build/builtin-sources" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js-v1/src" type="kotlin-source" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/js/src" type="kotlin-source" />
+    </content>
+    <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+  </component>
+</module>

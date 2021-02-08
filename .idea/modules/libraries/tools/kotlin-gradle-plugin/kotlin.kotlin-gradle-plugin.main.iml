@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-gradle-plugin:main" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xuse-ir -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts -Xskip-prerelease-check" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin/build/classes/kotlin/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/6.7/generated-gradle-jars/gradle-api-6.7.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/groovy-all-1.3-2.5.12.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-common-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk7-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk8-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-reflect-1.3.72.jar:/home/bobko/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-installation-beacon-6.7.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-gradle-plugin-api/build/libs/kotlin-gradle-plugin-api-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-gradle-plugin-model/build/libs/kotlin-gradle-plugin-model-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/plugins/scripting/scripting-compiler/build/libs/kotlin-scripting-compiler-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/incremental-compilation-impl/build/libs/incremental-compilation-impl-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/plugins/kapt3/kapt3-compiler/build/libs/kotlin-annotation-processing-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/cli/cli-js/build/libs/cli-js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/cli/build/libs/cli-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.wasm/build/libs/backend.wasm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.js/build/libs/backend.js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.js/build/libs/ir.serialization.js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.jvm/build/libs/backend.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.jvm/build/libs/ir.serialization.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/serialization.common/build/libs/ir.serialization.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-klib-metadata/build/libs/kotlin-util-klib-metadata-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-klib/build/libs/kotlin-util-klib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-common/build/libs/daemon-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/reflect/api/build/libs/kotlin-reflect-api-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/reflect/api/build/libs/kotlin-reflect-api-1.5.255-SNAPSHOT-java9.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-annotation-processing/build/libs/kotlin-annotation-processing-gradle-1.5.255-SNAPSHOT-base.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-annotation-processing/build/libs/kotlin-annotation-processing-gradle-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.0.0/2356ee8e98b68c53dafc28898e7034080e5c91aa/gradle-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.0.0/b4b02fa623c5a618e68478d9a4a67e1e87c023c6/gradle-core-3.0.0.jar:/home/bobko/jb/kotlin/compiler/cli/cli-common/build/libs/cli-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/frontend/build/libs/frontend.native-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/native/utils/build/libs/kotlin-native-utils-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util-io/build/libs/kotlin-util-io-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/light-classes/build/libs/light-classes-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend/build/libs/backend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/javac-wrapper/build/libs/javac-wrapper-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.java/build/libs/frontend.java-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend.common.jvm/build/libs/backend.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config.jvm/build/libs/config.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors.jvm/build/libs/descriptors.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/plugin-api/build/libs/plugin-api-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/backend.common/build/libs/ir.backend.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.dce/build/libs/js.dce-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.translator/build/libs/js.translator-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.psi2ir/build/libs/ir.psi2ir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/backend-common/build/libs/backend-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.frontend/build/libs/js.frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.serializer/build/libs/js.serializer-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/serialization/build/libs/serialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.interpreter/build/libs/ir.interpreter-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/ir/ir.tree/build/libs/ir.tree-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend/build/libs/frontend-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.config/build/libs/js.config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization/build/libs/deserialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution/build/libs/resolution-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/java/build/libs/java-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common.jvm/build/libs/resolution.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/psi/build/libs/psi-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.parser/build/libs/js.parser-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/js/js.ast/build/libs/js.ast-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/descriptors/build/libs/descriptors-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/checkers/build/libs/checkers-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir-deserialization/build/libs/fir-deserialization-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/resolve/build/libs/resolve-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/raw-fir/psi2fir/build/libs/psi2fir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/raw-fir/raw-fir.common/build/libs/raw-fir.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/tree/build/libs/tree-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/frontend.common/build/libs/frontend.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/config/build/libs/config-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/resolution.common/build/libs/resolution.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/util/build/libs/util-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/js/build/libs/kotlin-scripting-js-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/plugins/scripting/scripting-compiler-impl/build/libs/kotlin-scripting-compiler-impl-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/jvm/build/libs/kotlin-scripting-jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/scripting/common/build/libs/kotlin-scripting-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.0.0/36884960f350cb29f1c2c93107f4fa27f4e7444e/builder-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/26.0.0/6c58c8b0066addaaffd174b78d701948b819cf23/lint-26.0.0.jar:/home/bobko/jb/kotlin/core/compiler.common.jvm/build/libs/compiler.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common.jvm/build/libs/deserialization.common.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/deserialization.common/build/libs/deserialization.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/cones/build/libs/cones-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/compiler.common/build/libs/compiler.common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata.jvm/build/libs/metadata.jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/metadata/build/libs/metadata-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT-original.jar:/home/bobko/jb/kotlin/compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.3.8/f62be6d4cbf27781c2969867b4ed952f38378492/kotlinx-coroutines-core-1.3.8.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/26.0.0/fe04d508baa247a0d32cafbfd158ca439f875dbd/lint-checks-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/26.0.0/ba8981e318f342456c77a2420b9d9f0967eaf138/lint-api-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.0.0/f625bcad5f5dc0cb373e6b62595d64a552a8d073/manifest-merger-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.0.0/3cf21b0652068a57852663610e8c7f0a044dc700/sdk-common-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-collections-immutable-jvm/0.3.1/518ca0985f974017e85f8ca5e8409d4240f02def/kotlinx-collections-immutable-jvm-0.3.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.0.0/5bc6118beed3c516fba2057e5feea3af932c1e22/sdklib-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.0.0/7ad3d113c50642163badf3b8d890c6b41b1c6238/repository-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.1.3-2/2104f139db2a2d230c529b004c34a0993c4c2f19/kotlin-reflect-1.1.3-2.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0-dev-1141/52d4dc85066279bf477e9a582bbc698b0ec788d5/kotlin-stdlib-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.0.0/f75df0e15d6db4ed1ba42e9d22bde29868db3f0f/tracker-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.0.0/bf1943bf2ff33b50f8f18e25353cd82d70ab24ba/shared-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.6/9180733b7df8542621dc12e21e87557e8c99b8cb/gson-2.8.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/de.undercouch/gradle-download-task/4.0.2/2aaf2b081cd0dd5b3cf25fde69a20b043dd46fbd/gradle-download-task-4.0.2.jar:/home/bobko/jb/kotlin/compiler/build/libs/compiler-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/prepare/android-extensions-compiler-gradle/build/libs/kotlin-android-extensions-1.5.255-SNAPSHOT-original.jar:/home/bobko/jb/kotlin/prepare/android-extensions-compiler-gradle/build/libs/kotlin-android-extensions-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/build-common/build/libs/kotlin-build-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-gradle-statistics/build/libs/kotlin-gradle-statistics-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-gradle-build-metrics/build/libs/kotlin-gradle-build-metrics-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.0.0/e98ade5c308a99980d2a61f4ce1d9286df0105e3/gradle-api-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.0.0/a86b254415fded5297e1d849fa1884dfdf62ff42/builder-model-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy/groovy-all/2.4.12/760afc568cbd94c09d78f801ce51aed1326710af/groovy-all-2.4.12.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/intellij-core.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/asm-all-8.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/guava-29.0-jre.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/gson-2.8.6.jar:/home/bobko/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/serviceMessages-2019.1.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.github.gundy/semver4j/0.16.4/de8c77583e97bbbd3cdbe5f406b583e9b081ff56/semver4j-0.16.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0-dev-1141/7c45a07103f78c8813cc58c64af01fdca7ec0652/kotlin-stdlib-common-1.5.0-dev-1141.jar:/home/bobko/jb/kotlin/compiler/daemon/daemon-client/build/libs/kotlin-daemon-client-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.external.org-jetbrains/uast/26.0.0/86234f897e27e97c4aebe5686fa0e21139a1fc4e/uast-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.databinding/compilerCommon/3.0.0/243ebf26597dca96c60681106157e27f0762edf9/compilerCommon-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/85bee1acea9e27152b920746c68133b30b11431/transform-api-2.0.0-deprecated-use-gradle-api.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/5.1/6d1bf8989fc7901f868bee3863c44f21aa63d110/asm-analysis-5.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.1/25d8a575034dd9cfcb375a39b5334f0ba9c8474e/asm-commons-5.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/5.1/b60e33a6bd0d71831e0c249816d01e6c1dd90a47/asm-util-5.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.1/87b38c12a0ea645791ead9d3e74ae5268d1d6c34/asm-tree-5.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.report/0.7.4.201502262128/5c6bb5f95ae695dc4510b95f7d5ad0397e4881ad/org.jacoco.report-0.7.4.201502262128.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jacoco/org.jacoco.core/0.7.4.201502262128/31482f50411a3a5769b6c78fa9b97ba731c205e7/org.jacoco.core-0.7.4.201502262128.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/ee9e9eaa0a35360dcfeac129ff4923215fd65904/jopt-simple-4.9.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/5.3.3/ad23a0505f58d0dfc95bb1472decc397460406c9/proguard-gradle-5.3.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.0.0/9700759196d267fc7cf3c85806c157050ea37dc9/protos-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.0.0/6d325aa7c921661d84577c0a93d82da4df9fa4c8/protobuf-java-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.0.0/9bb354af21d8754ecc9c1c07f80bd85e3a76695f/builder-test-api-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.0.0/79daeff3eab3fc4ff963f5717392f1f2476ed788/ddmlib-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.0.0/2e64aac3c6a6f201df4b7e1c0bd452d8839fb47b/layoutlib-api-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.0.0/50d8b18ccc5233c4e7ca4c98f9708d44f80ace82/dvlib-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.0.0/a75e1cbf30e55dd23f73801c32cd565b6eb5fb3f/common-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.0.0/fc587b91f1d2390a90d0b02a3e41a0bed140e9c1/annotations-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.5.2-1/7fe31fde811943a1970cc97359557c57747026ef/antlr4-runtime-4.5.2-1.jar:/home/bobko/jb/kotlin/compiler/container/build/libs/container-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/core/util.runtime/build/libs/util.runtime-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/kotlin-annotations-jvm/build/libs/kotlin-annotations-jvm-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/home/bobko/jb/kotlin/compiler/compiler.version/build/libs/compiler.version-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/tools/script-runtime/build/libs/kotlin-script-runtime-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang/2.0.6/415b0d40db4890849270c2a5cb50050fc6ee7636/javaslang-2.0.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.fusesource.jansi/jansi/1.16/b1aaf0028852164ab6b4057192ccd0ba7dedd3a5/jansi-1.16.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jline/jline/3.3.1/d8a30137fe4ee2246b71b3915baac767d348c5bb/jline-3.3.1.jar:/home/bobko/jb/kotlin/compiler/fir/jvm/build/libs/jvm-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir2ir/build/libs/fir2ir-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/compiler/fir/fir2ir/jvm-backend/build/libs/jvm-backend-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.0.0/21465a36db10551cfcfd8ad39bb496511f78354c/apksig-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/4648af70268b6fdb24674fb1fd7c1fcc73db1231/bcpkix-jdk15on-1.56.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.56/a153c6f9744a3e9dd6feab5e210e1c9861362ec7/bcprov-jdk15on-1.56.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/5ad3a2bb04143f70aa0765fc29fc29571a7d6b34/fastutil-7.2.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.6.1/5555607add54eb79c5a0729134e663fe2e6300c2/ecj-4.6.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.jimfs/jimfs/1.1/8fbd0579dc68aba6186935cc1bee21d2f3e7ec1c/jimfs-1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.3/528b6f8bde3157f17530aa366631f2aad2a6cf9/lombok-ast-0.2.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/22.0/3564ef3803de51fb0530a8377ec6100b33b0d073/guava-22.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.0.0/223fbb31236b0714328c415c1475fc8f55a4416e/baseLibrary-3.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/5.3.3/988b6b0636ce343d4962b3b37f6319dcc6e99a61/proguard-base-5.3.3.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/protobuf-lite/2.6.1/9af39e6d6cbd4404d06ae2ae63505b6247e6760b/protobuf-lite-2.6.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/io.javaslang/javaslang-match/2.0.6/d57a666939103b659813de52102d3ff0baa8ad5f/javaslang-match-2.0.6.jar:/home/bobko/jb/kotlin/compiler/ir/ir.tree.persistent/build/libs/ir.tree.persistent-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/wasm/wasm.ir/build/libs/wasm.ir-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/84caa68576e345eb5e7ae61a0e5a9229eb100d7b/commons-compress-1.12.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.2.6/e4ca30a6a3a075053a61c6fc850d2432dc012ba7/httpclient-4.2.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/9ba2dcdf94ce35c8a8e9bff242db0618ca932e92/httpmime-4.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.0.18/5f65affce1684999e2f4024983835efc3504012e/error_prone_annotations-2.0.18.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/ed28ded51a8b1c6b112568def5f4b455e6809019/j2objc-annotations-1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.intellij/annotations/12.0/bbcf6448f6d40abe506e2c83b70a3e8bfd2b4539/annotations-12.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.2.5/472f0f5f8dba5d1962cb9d7739feed739a31c30d/httpcore-4.2.5.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.android.tools.external.com-intellij/intellij-core/26.0.0/47396aa1fead8512c246fdf4698552c1f33b1710/intellij-core-26.0.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.trove4j/trove4j/20160824/33c3e174a9c8368d93761d3d12712db18e903959/trove4j-20160824.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="kotlin-gradle-plugin" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin/build/classes/kotlin/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/tools/kotlin-gradle-plugin/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/6.7/generated-gradle-jars/gradle-api-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/groovy-all-1.3-2.5.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-common-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk7-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-stdlib-jdk8-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/kotlin-reflect-1.3.72.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7-bin/efvqh8uyq79v2n7rcncuhu9sv/gradle-6.7/lib/gradle-installation-beacon-6.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kotlin.kotlin-gradle-plugin-api.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-gradle-plugin-model.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.incremental-compilation-impl.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-annotation-processing.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-klib.main" />
+    <orderEntry type="module" module-name="kotlin.daemon-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect-api.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-annotation-processing-gradle.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle-core:3.0.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.native.kotlin-native-utils.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder:3.0.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-runner.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.6" level="project" />
+    <orderEntry type="library" name="Gradle: de.undercouch:gradle-download-task:4.0.2" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-android-extensions.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-build-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-gradle-statistics.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-gradle-build-metrics.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder-model:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.groovy:groovy-all:2.4.12" level="project" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Gradle: kotlin.build:intellij-core:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/asm-all-8.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/guava-29.0-jre.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/intellij-core/202.7660.26/artifacts/intellij-core.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library name="Gradle: kotlin.build:ideaIC:202.7660.26">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/asm-all-8.0.1.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/gson-2.8.6.jar!/" />
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/ideaIC/202.7660.26/artifacts/lib/serviceMessages-2019.1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/kotlin-build-dependencies/repo/kotlin.build/sources/intellij-202.7660.26-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.github.gundy:semver4j:0.16.4" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-js.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler-impl.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli-js.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.java.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.descriptors.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.util.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.plugin-api.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-io.main" />
+    <orderEntry type="module" module-name="kotlin.compiler.cli-common.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.lint:lint:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:gradle-api:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.external.org-jetbrains:uast:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.databinding:compilerCommon:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:transform-api:2.0.0-deprecated-use-gradle-api" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm-analysis:5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm-commons:5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm-util:5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm:5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jacoco:org.jacoco.report:0.7.4.201502262128" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jacoco:org.jacoco.core:0.7.4.201502262128" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.sf.jopt-simple:jopt-simple:4.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.sf.proguard:proguard-gradle:5.3.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.protobuf:protobuf-java:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:manifest-merger:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:sdk-common:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:sdklib:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.analytics-library:tracker:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.analytics-library:shared:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.ow2.asm:asm-tree:5.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.analytics-library:protos:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:builder-test-api:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.ddms:ddmlib:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:common:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.build:apksig:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.squareup:javawriter:2.5.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.56" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.56" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: it.unimi.dsi:fastutil:7.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.googlecode.json-simple:json-simple:1.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-daemon-client.main" scope="PROVIDED" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:annotations:26.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.antlr:antlr4-runtime:4.5.2-1" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-script-runtime.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.wasm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.js.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.js.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.backend.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.dce.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.translator.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend-common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.serializer.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.native.frontend.native.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.light-classes.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.javac-wrapper.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.serialization.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.java.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.checkers.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.resolve.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.raw-fir.psi2fir.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.fusesource.jansi:jansi:1.16" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jline:jline:3.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir2ir.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir2ir.jvm-backend.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.jvm.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.annotation:jsr250-api:1.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.util.runtime.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-annotations-jvm.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.psi.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.frontend.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.config.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.container.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.javaslang:javaslang:2.0.6" level="project" />
+    <orderEntry type="module" module-name="kotlin.core.deserialization.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.compiler.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.compiler.version.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.backend.common.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.config.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.lint:lint-checks:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.eclipse.jdt.core.compiler:ecj:4.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.guava:guava:22.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.databinding:baseLibrary:3.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.antlr:antlr4:4.5.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.googlecode.juniversalchardet:juniversalchardet:1.0.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.sf.proguard:proguard-base:5.3.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: net.sf.kxml:kxml2:2.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:repository:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.layoutlib:layoutlib-api:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools:dvlib:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.commons:commons-compress:1.12" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.httpcomponents:httpclient:4.2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.httpcomponents:httpmime:4.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.psi2ir.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.frontend.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.tree.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.ast.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.tree.persistent.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.wasm.wasm.ir.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.interpreter.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.js.js.parser.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.ir.serialization.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.kotlin-util-klib-metadata.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.fir-deserialization.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.core.metadata.jvm.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.tree.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.resolution.common.main" scope="PROVIDED" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.cones.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlinx:kotlinx-collections-immutable-jvm:0.3.1" level="project" />
+    <orderEntry type="module" module-name="kotlin.compiler.fir.raw-fir.raw-fir.common.main" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: io.javaslang:javaslang-match:2.0.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:protobuf-lite:2.6.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.lint:lint-api:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.code.findbugs:jsr305:1.3.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.errorprone:error_prone_annotations:2.0.18" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.google.jimfs:jimfs:1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.intellij:annotations:12.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apache.httpcomponents:httpcore:4.2.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.1.3-2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.external.lombok:lombok-ast:0.2.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.android.tools.external.com-intellij:intellij-core:26.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.jetbrains.trove4j:trove4j:20160824" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-reflect.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.kotlin-compiler-embeddable.main" scope="RUNTIME" />
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../libraries/tools/kotlin-annotation-processing/build/libs/kotlin-annotation-processing-gradle-1.5.255-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../prepare/android-extensions-compiler-gradle/build/libs/kotlin-android-extensions-1.5.255-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../../../compiler/compiler-runner/build/libs/kotlin-compiler-runner-1.5.255-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler-embeddable.main" scope="RUNTIME" />
+    <orderEntry type="module" module-name="kotlin.kotlin-scripting-compiler-impl-embeddable.main" scope="RUNTIME" />
+  </component>
+</module>

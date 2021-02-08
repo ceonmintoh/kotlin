@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-test:kotlin-test-testng:test" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <implements>kotlin.kotlin-test.kotlin-test-annotations-common.test</implements>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xjvm-default=compatibility -Xallow-kotlin-package" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/classes/kotlin/test" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/classes/kotlin/main:/home/bobko/jb/kotlin/libraries/kotlin.test/testng/build/resources/main:/home/bobko/jb/kotlin/libraries/kotlin.test/annotations-common/build/libs/kotlin-test-annotations-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/jvm/build/libs/kotlin-test-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.13.1/2495393a0b4b7d7a4b49ea1f8516376f70f482c/testng-6.13.1.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/common/build/libs/kotlin-test-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.0-dev-1141/52d4dc85066279bf477e9a582bbc698b0ec788d5/kotlin-stdlib-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.0-dev-1141/7c45a07103f78c8813cc58c64af01fdca7ec0652/kotlin-stdlib-common-1.5.0-dev-1141.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/com.beust/jcommander/1.72/6375e521c1e11d6563d4f25a07ce124ccf8cd171/jcommander-1.72.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="kotlin-test-testng" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/classes/java/main" />
+              <option value="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/classes/kotlin/main" />
+              <option value="$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/libs/kotlin-test-testng-1.5.255-SNAPSHOT.jar" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output-test url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/build/classes/kotlin/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/kotlin.test/testng/src/test/kotlin" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.test" production-on-test="" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-testng.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-jvm.main" />
+    <orderEntry type="library" name="Gradle: org.testng:testng:6.13.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.0-dev-1141" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.0-dev-1141" level="project" />
+    <orderEntry type="library" name="Gradle: com.beust:jcommander:1.72" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="kotlin.kotlin-test.kotlin-test-testng.main" />
+</module>

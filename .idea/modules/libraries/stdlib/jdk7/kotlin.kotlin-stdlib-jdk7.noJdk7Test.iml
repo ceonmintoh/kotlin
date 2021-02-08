@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":kotlin-stdlib-jdk7:noJdk7Test" external.linked.project.path="$MODULE_DIR$/../../../../../libraries/stdlib/jdk7" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="org.jetbrains.kotlin" external.system.module.type="sourceSet" external.system.module.version="1.5.255-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -Xnormalize-constructor-calls=enable -Xjvm-default=compatibility -Xno-kotlin-nothing-value-exception -Xno-optimized-callable-references -Xopt-in=kotlin.RequiresOptIn -Xread-deserialized-contracts" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../../libraries/stdlib/jdk7/build/classes/kotlin/noJdk7Test" />
+          <option name="classpath" value="$MODULE_DIR$/../../../../../libraries/stdlib/coroutines-experimental/build/libs/kotlin-coroutines-experimental-compat-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/junit/build/libs/kotlin-test-junit-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/jvm/build/libs/kotlin-test-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/jvm/build/libs/kotlin-stdlib-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/annotations-common/build/libs/kotlin-test-annotations-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/kotlin.test/common/build/libs/kotlin-test-common-1.5.255-SNAPSHOT.jar:/home/bobko/jb/kotlin/libraries/stdlib/common/build/libs/kotlin-stdlib-common-1.5.255-SNAPSHOT.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/bobko/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="kotlin-stdlib-jdk7_noJdk7Test" />
+          <option name="languageVersion" value="1.4" />
+          <option name="apiVersion" value="1.4" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output url="file://$MODULE_DIR$/../../../../../libraries/stdlib/jdk7/build/classes/kotlin/noJdk7Test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/jdk7/src/noJdk7Test" />
+    <content url="file://$MODULE_DIR$/../../../../../libraries/stdlib/jdk7/testNoJdk7">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../libraries/stdlib/jdk7/testNoJdk7" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="kotlin.kotlin-coroutines-experimental-compat.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-junit.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-jvm.main" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-annotations-common.main" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-stdlib-common.main" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="module" module-name="kotlin.kotlin-test.kotlin-test-common.main" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+</module>
