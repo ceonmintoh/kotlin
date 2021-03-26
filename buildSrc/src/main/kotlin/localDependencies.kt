@@ -68,7 +68,8 @@ fun RepositoryHandler.kotlinBuildLocalRepo(project: Project): IvyArtifactReposit
     }
 }
 
-fun Project.intellijDep(module: String? = null) = "kotlin.build:${module ?: ideModuleName()}:${ideModuleVersion()}"
+@Suppress("UNUSED_PARAMETER")
+fun Project.intellijDep(module: String? = null, forIde: Boolean = false) = "kotlin.build:${module ?: ideModuleName()}:${ideModuleVersion()}"
 
 fun Project.intellijCoreDep() = "kotlin.build:intellij-core:${rootProject.extra["versions.intellijSdk"]}"
 
@@ -93,7 +94,7 @@ fun Project.kotlinxCollectionsImmutable() = "org.jetbrains.kotlinx:kotlinx-colle
  */
 fun Project.intellijRuntimeAnnotations() = "kotlin.build:intellij-runtime-annotations:${rootProject.extra["versions.intellijSdk"]}"
 
-fun Project.intellijPluginDep(plugin: String) = intellijDep(plugin)
+fun Project.intellijPluginDep(plugin: String, forIde: Boolean = false) = intellijDep(plugin, forIde)
 
 fun Project.intellijUltimateDep() = intellijDep("ideaIU")
 
