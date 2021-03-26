@@ -466,6 +466,8 @@ allprojects {
 
             if (useJvmIrBackend) {
                 useIR = true
+            } else {
+                useOldBackend = true
             }
 
             if (useJvmFir) {
