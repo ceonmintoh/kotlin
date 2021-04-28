@@ -42,9 +42,21 @@ private fun Project.ideModuleName() = when (IdeVersionConfigurator.currentIde.ki
     }
 }
 
-private fun Project.ideModuleVersion() = when (IdeVersionConfigurator.currentIde.kind) {
+private fun Project.ideModuleVersion(forIde: Boolean) = when (IdeVersionConfigurator.currentIde.kind) {
     Ide.Kind.AndroidStudio -> rootProject.findProperty("versions.androidStudioBuild")
-    Ide.Kind.IntelliJ -> rootProject.findProperty("versions.intellijSdk")
+    Ide.Kind.IntelliJ -> {
+        if (forIde) {
+            intellijSdkVersionForIde()
+                ?: error("Please specify 'kotlin.build.dependencies.kotlinIde.combined' in your local.properties")
+        } else {
+            rootProject.findProperty("versions.intellijSdk")
+        }
+    }
+}
+
+fun Project.intellijSdkVersionForIde(): String? {
+    val majorVersion = kotlinBuildProperties.getOrNull("kotlin.build.dependencies.kotlinIde.combined") as? String ?: return null
+    return rootProject.findProperty("versions.intellijSdk.forIde.$majorVersion") as? String
 }
 
 fun RepositoryHandler.kotlinBuildLocalRepo(project: Project): IvyArtifactRepository = ivy {
@@ -70,7 +82,8 @@ fun RepositoryHandler.kotlinBuildLocalRepo(project: Project): IvyArtifactReposit
 }
 
 @Suppress("UNUSED_PARAMETER")
-fun Project.intellijDep(module: String? = null, forIde: Boolean = false) = "kotlin.build:${module ?: ideModuleName()}:${ideModuleVersion()}"
+fun Project.intellijDep(module: String? = null, forIde: Boolean = false) =
+    "kotlin.build:${module ?: ideModuleName()}:${ideModuleVersion(forIde)}"
 
 fun Project.intellijCoreDep() = "kotlin.build:intellij-core:${rootProject.extra["versions.intellijSdk"]}"
 
@@ -127,7 +140,7 @@ object IntellijRootUtils {
     fun getIntellijRootDir(project: Project): File = with(project.rootProject) {
         return File(
             getRepositoryRootDir(this),
-            "${ideModuleName()}/${ideModuleVersion()}/artifacts"
+            "${ideModuleName()}/${ideModuleVersion(forIde = false)}/artifacts"
         )
     }
 }
